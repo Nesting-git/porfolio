@@ -1,0 +1,934 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+.container
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 20px
+    position: relative
+    z-index: 4
+
+.main-page-top
+    min-height: 100vh
+    position: relative
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    padding-bottom: 50px
+
+.swiper-container
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    z-index: 2
+
+.swiper-slide
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+.ops-slider
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background: rgba(50, 96, 158, 0.7)
+    z-index: 4
+
+h1, h2, h3, h4 
+    font-family: "Montserrat", sans-serif
+    margin: 0px
+    padding: 0px
+    font-weight: 400
+
+.d-flex
+    display: flex
+
+.header
+    position: relative
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+    z-index: 10
+    padding: 10px 0
+
+.header__row
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.logo-site
+    margin-right: 2%
+    a
+        max-width: 100px
+
+.opas-men
+    display: none
+
+.wrap-menu
+    width: 77%
+    display: flex
+    justify-content: center
+
+.burger-menu-mob
+    display: none
+
+.close-menu
+    display: none
+
+.ul-amin-menu
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    list-style: none
+    li
+        margin: 0 0.5vw
+    
+.link-menu
+    color: #fff
+    font-weight: 600
+    transition: 0.4s
+    position: relative
+    font-size: 16px
+    &:before
+        content: ''
+        position: absolute
+        top: 105%
+        left: 0
+        height: 2px
+        background: #fff
+        width: 0
+        transition: 0.4s
+    &:hover
+        &:before
+            width: 100%
+    
+.mobile-header
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+.mobile-amin
+    font-weight: 600
+    color: #fff
+    padding-bottom: 10px
+    font-size: 20px
+
+.btn-request
+    background: transparent
+    color: #fff
+    font-family: 'Montserrat', sans-serif
+    border: none
+    outline: none
+    cursor: pointer
+    span
+        display: inline-flex
+        margin-left: 15px
+        
+.main-wrapp
+    position: relative
+    z-index: 10
+    padding-top: 5%
+    h1
+        color: #fff
+        margin: 0
+        font-size: 54px
+        line-height: 56px
+        text-shadow: 5px 5px 10px rgba(11, 12, 17, 0.35)
+        font-weight: 400
+        text-align: center
+    h2
+        color: #fff
+        font-size: 24px
+        text-shadow: 5px 5px 10px rgba(11, 12, 17, 0.35)
+        padding: 2% 0
+        font-weight: 400
+        text-align: center
+
+.video_link
+    cursor: pointer
+    display: flex
+    color: #fff
+    position: relative
+    transition: 0.4s
+    width: fit-content
+    width: 110px
+    height: 110px
+    border-radius: 50%
+    background: #0094ff
+    align-items: center
+    justify-content: center
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+        top: -30px
+        right: -30px
+        bottom: -30px
+        left: -30px
+        background: #0094ff
+        z-index: -1
+        animation: 1s scales .2s ease-in infinite
+        border-radius: 50%
+        opacity: 0.2
+        transform: scale(1)
+    &:after
+        animation: scales 1s ease-in infinite
+        opacity: 0.3
+        top: -15px
+        right: -15px
+        bottom: -15px
+        left: -15px
+    i
+        color: #fff
+        font-size: 80px
+        left: 0
+        top: 0
+        transition: 0.4s
+
+@keyframes scales
+    0%
+       transform: scale(1)
+    50% 
+        transform: scale(1.2)
+    60% 
+        transform: scale(0.9)
+        opacity: 0
+
+.video_block
+    padding-top: 9%
+    display: flex
+    justify-content: center
+
+
+.main_form_icons
+    display: flex
+    padding-top: 9%
+
+.main_form_icons--item
+    flex: 0 0 25%
+    color: #fff
+    padding: 0 5vh
+    width: fit-content
+    text-align: center
+    span
+        max-width: 300px
+        display: block
+
+
+.error_text
+    color: red
+    font-size: 16px
+
+    
+
+    
+.main_form_icons-title
+    margin-top: 25px
+    font-size: 20px
+    max-width: 300px
+    line-height: 24px
+    padding-bottom: 10px
+
+img
+    max-width: 100%
+    height: auto
+    vertical-align: middle
+    border: 0
+
+.body__wrapper
+    background: #fff
+    overflow-x: hidden
+
+.img-icon
+    max-width: 50px
+    height: 42px
+
+section
+    padding: 50px 0
+    position: relative
+
+.title-site
+    font-size: 36px
+    margin-bottom: 35px
+    text-align: center
+
+.opportunities__row
+    display: flex
+    flex-wrap: wrap
+
+.opportunities__items
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    flex: 0 0 33.33333%
+    padding: 15px
+    bottom: 30px
+    .img-icon
+        max-width: 65px
+    
+p
+    margin: 10px 0
+
+.opportunities-title
+    font-size: 20px
+    margin-top: 20px
+
+.advantages
+    background: #f0f5f8
+
+.advantages__row
+    display: flex
+    justify-content: center
+
+.advantages__items
+    flex: 0 0 25%
+    padding: 15px
+
+.advantages__item-cont
+    background: #fff
+    transition: 0.4s
+    img
+        width: 100%
+    &:hover
+        box-shadow: 0 10px 20px 0px rgba(0, 148, 255, .15)
+    
+.item-cont
+    padding: 0 20px 20px 20px
+    span
+        font-size: 14px
+
+.item-cont__title
+    margin: 15px 0
+    font-size: 20px
+
+.about-us
+    padding-top: 5%
+
+.about__row
+    display: flex
+    align-items: center
+
+.about__item
+    flex: 0 0 33.333%
+    padding: 0 20px
+
+.about__cont
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.about__trext
+    text-align: center
+    margin-top: 10px
+    font-size: 14px
+
+.linl-about
+    text-decoration: underline
+    text-transform: uppercase
+
+.warranty__row
+    display: flex
+    justify-content: center
+
+.warranty__item
+    display: flex
+
+.warranty_contant
+    padding-left: 40px
+    max-width: 560px
+
+.warranty__img
+    max-width: 280px
+    width: 280px
+    position: relative
+
+.site-icon
+    position: absolute
+    top: -5px
+    left: -5px
+    background: #0094ff
+    display: block
+    color: #fff
+    span
+        font-size: 20px
+        padding: 4px 8px
+    i
+        padding: 9px 10px
+
+.warranty-title
+    color: #0094ff
+    font-size: 36px
+    line-height: 36px
+
+.warranty-text
+    color: #333
+    font-size: 18px
+    margin: 30px 0
+    line-height: 24px
+
+.warranty-form__row
+    display: flex
+    align-items: center
+    & > div
+        flex: 1
+
+input
+    border: 1px solid #eee
+
+.warranty-form__input
+    margin-right: 4px
+
+.warranty-form__btn
+    margin-left: 4px
+    
+.input-site
+    width: 100%
+    height: 44px
+    padding: 0 15px
+    border-radius: 3px
+    border: 1px solid #cfd3d7
+    line-height: 44px
+
+.site-btn 
+    border: none
+    outline: none
+    cursor: pointer
+    height: 44px
+    background: #0094ff
+    color: #fff
+    font-size: 12px
+    text-transform: uppercase
+    text-align: center
+    border-radius: 3px
+    line-height: 44px
+
+.warranty-form__btn
+    .site-btn
+        width: 100%
+
+
+
+
+.color-white
+    color: #fff
+
+.simple-solution
+    background-position: top
+    background-repeat: no-repeat
+    background-size: cover
+
+.simple-solution__row
+    position: relative
+    display: flex
+    flex-direction: column
+
+.simple-solution__row
+    margin-top: 100px
+
+.simple-solution__row-item
+    display: flex
+    justify-content: space-between
+
+.simple-solution__row_margin
+    margin-top: 120px
+
+.simple-solution__item
+    max-width: 320px
+    position: relative
+    z-index: 10
+    cursor: pointer
+
+.simple-solution__item-img
+    img
+        max-width: 65px
+
+.simple-solution__item-title
+    color: #fff
+    margin-top: 30px
+
+.simple-solution__item-text 
+    color: #fff
+
+.simple-solution__ipad
+    width: 700px
+    height: 600px
+    background: url('../img/ipad.png') top right no-repeat
+    bottom: -200px
+    z-index: 2
+    position: absolute
+    left: 50%
+    transform: translateX(-75%)
+
+.max-1200
+    max-width: 1200px
+
+.content-right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    .simple-solution__item-text
+        text-align: right
+
+.simple-soliution__iphone
+    width: 300px
+    height: 350px
+    position: absolute
+    background: url(../img/iphone.png) top right no-repeat
+    bottom: -175px
+    z-index: 3
+    left: 50%
+    transform: translateX(-35%)
+
+.simple-solution__ipad_bg
+    position: absolute
+    width: 295px
+    height: 390px
+    top: 48px
+    right: 68px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+.simple-soliution__iphone_bg
+    position: absolute
+    width: 115px
+    height: 202px
+    right: 7px
+    top: 40px
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+.our-scheme
+    margin-top: 130px
+
+.our-scheme__tabs
+    display: flex
+    justify-content: center
+    position: relative
+    border-bottom: 1px solid #d5e1e9
+    &:after
+        content: ''
+        position: absolute
+        width: 5000px
+        left: 0
+        top: 55%
+        transform: translate(-50%)
+        height: 1px 
+        background: #d5e1e9
+        z-index: 20
+
+.our-scheme__tabs_item
+    flex: 0 0 20%
+    padding: 20px
+    cursor: pointer
+
+.our-scheme__tabs_icons
+    height: 110px
+    position: relative
+    &:after
+        content: '\2B25'
+        position: absolute
+        color: #0094ff
+        font-size: 24px
+        top: 100%
+        left: 50%
+        transform: translateX(-50%)
+        line-height: 0
+        z-index: 30
+        opacity: 0
+        transition: 0.4s
+
+
+
+.our-scheme__icons
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    transition: 0.4s
+    display: block
+    height: inherit
+
+.our-scheme__tabs_text
+    text-transform: uppercase
+    text-align: center
+    font-size: 14px
+    display: flex
+    justify-content: center
+    padding: 20px 0
+    transition: 0.4s
+    span
+        max-width: 180px
+
+
+.our-scheme__tabs_item
+    .our-scheme__icons_1
+        background-image: url(../img/tabs_ico_1.png)
+    &:hover,
+    &.active
+        .our-scheme__icons_1
+            background-image: url(../img/tabs_ico_11.png)
+
+    .our-scheme__icons_2
+        background-image: url(../img/tabs_ico_2.png)
+    &:hover,
+    &.active
+        .our-scheme__icons_2
+            background-image: url(../img/tabs_ico_22.png)
+
+    .our-scheme__icons_3
+        background-image: url(../img/tabs_ico_3.png)
+    &:hover,
+    &.active
+        .our-scheme__icons_3
+            background-image: url(../img/tabs_ico_33.png)
+
+    .our-scheme__icons_4
+        background-image: url(../img/tabs_ico_4.png)
+    &:hover,
+    &.active
+        .our-scheme__icons_4
+            background-image: url(../img/tabs_ico_44.png)
+
+    .our-scheme__icons_5
+        background-image: url(../img/tabs_ico_5.png)
+    &:hover,
+    &.active
+        .our-scheme__icons_5
+            background-image: url(../img/tabs_ico_55.png)
+    &:hover,
+    &.active
+        .our-scheme__tabs_icons
+            &:after
+                opacity: 1
+        .our-scheme__tabs_text
+            color: #0094ff
+
+.our-scheme__tab
+    padding: 40px 0 60px
+    border-bottom: 1px solid #d5e1e9
+
+.our-scheme__tab_content
+    display: flex
+    max-width: 900px
+    margin: 0 auto
+
+.our-scheme__tab_img
+    min-width: 320px
+    max-width: 320px
+    img
+        width: 100%
+
+.our-scheme__tab_contant
+    padding-left: 40px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    p
+        font-size: 14px
+    .site-btn
+        width: fit-content
+        padding: 0 40px
+        margin-top: 10px
+
+.presentation
+    background: #00bff3
+    .container  
+        z-index: auto
+    
+    
+.presentation__wrap-skype
+    min-height: 530px
+    background: url(../img/skype.png) 50% 0 no-repeat
+    display: flex
+    justify-content: center
+    background-size: contain
+
+.presentation__wrap-skype_text
+    color: #000
+    font-size: 16px
+    max-width: 500px
+    text-align: center
+    padding-top: 365px
+
+.presentation__wrapp-btn
+    display: flex
+    justify-content: center
+    margin-top: 50px
+    position: relative
+    z-index: 4
+
+.presentation-btn
+    padding: 5px 30px
+    background: #fff
+    color: #0094ff
+    font-weight: 600
+    transition: 0.4s
+    font-size: 14px
+    height: auto
+    &:hover
+        box-shadow: 0 0 18px rgba(237,251,255,.9)
+
+.trust__row
+    display: flex
+    flex-wrap: wrap
+    margin-top: 20px
+    border-bottom: 1px solid #d5e1e9
+
+.trust__item
+    margin-bottom: 10px
+    padding: 0 15px
+    flex: 0 0 33.33333%
+
+.trust__item_img
+    img
+        width: 100%
+
+.trust__item_title
+    color: #000000
+    font-size: 20px
+    margin: 15px 0
+
+.trust__item_text
+    font-size: 16px
+    line-height: 21px
+    color: #000
+    margin: 15px 0
+
+.question
+    background: #f0f5f8
+
+.question__row
+    display: flex
+    margin-top: 10px
+    flex-wrap: wrap
+
+.question__item
+    flex: 0 0 50%
+    margin-bottom: 20px
+    padding-right: 50px
+
+.question__item_questions
+    display: flex
+    align-items: flex-start
+    margin-bottom: 10px
+
+.question__item_left
+    min-width: 100px
+    color: #999999
+    font-size: 13px
+
+.question__item_title
+    font-size: 20px
+    line-height: 22px
+    position: relative
+    &:before
+        content: '\2B25'
+        position: absolute
+        color: #0094ff
+        font-size: 24px
+        line-height: 0
+        left: -20px
+        top: 10px
+        z-index: 5
+        
+.question__item_text
+    font-size: 13px
+    color: #333333
+
+.reviews-subtitle
+    text-align: center
+
+.reviews__row
+    max-width: 800px
+    margin: 0 auto
+    margin-top: 40px
+
+.reviews__item
+    display: flex
+    align-items: flex-start
+    margin-bottom: 30px
+
+.reviews__item_img
+    min-width: 100px
+    width: 100px
+    border-radius: 50%
+    overflow: hidden
+    img
+        width: 100%
+
+.reviews__item_content
+    padding-left: 40px
+
+.reviews__item_title
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 10px
+
+.maps__row
+    display: flex
+
+.maps__mapa
+    flex: 0 0 50%
+    position: relative
+    z-index: 4
+    iframe
+        width: 100%!important
+        height: 600px
+        
+.maps__contacts
+    flex: 0 0 50%
+    font-size: 14px
+    position: relative
+    z-index: 4
+    a
+        color: #666
+
+.presentation_title
+    color: #fff
+
+.maps__contacts_content
+    max-width: 500px
+    padding-left: 40px
+
+.maps__contacts_title
+    font-size: 36px
+    margin-bottom: 20px
+
+.maps__contacts_wrap
+    margin-bottom: 20px
+
+.maps__contacts_wrap_title
+    text-transform: uppercase
+    color: #999999
+    display: block
+
+.maps__contacts_wrap--text
+    font-size: 13px
+
+.maps__contacts__col
+    display: flex
+    align-items: center
+    .site-btn
+        margin-left: 20px
+        padding: 0 20px
+
+.footer
+    .container
+        max-width: 1200px
+    padding: 15px 0
+    background: #283b49
+    .logo-site a
+        max-width: 80px
+    .mobile-amin
+        font-size: 16px
+
+// popup
+.popup
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 500
+    background: rgba(0,0,0,.5)
+    display: flex
+    align-items: center
+    justify-content: center
+
+.popup__wrapp
+    max-width: 360px
+    padding: 40px 20px
+    background: #fff
+    position: relative
+    border-radius: 5px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+
+.popup__close
+    display: block
+    width: 25px
+    height: 25px
+    background: #fff
+    border-radius: 50%
+    position: absolute
+    top: -30px
+    right: -30px
+    background: #fff
+    cursor: pointer
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+        width: 70%
+        height: 2px
+        background: #000000
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) rotate(-45deg)
+    &:after
+        transform: translate(-50%, -50%) rotate(45deg)
+
+.popup__title
+    font-size: 24px
+    color: #000000
+    text-align: center
+
+.form-row
+    margin-top: 15px
+
+.input-popup
+    width: 100%
+    height: 35px
+    padding: 0 15px
+
+.icon-required
+    position: relative
+    &:before
+        content: '*'
+        position: absolute
+        font-size: 20px
+        color: red
+        top: 0px
+        right: 10px
+
+.form-row-btn
+    display: flex
+    justify-content: center
+    .site-btn
+        height: 35px
+        line-height: 35px
+
+.popup_video
+    max-width: 80%
+    padding: 0
+    background: transparent
+    iframe
+        width: 100%
+        height: 40vw
+
+.popup_thanks
+    font-size: 24px
+    line-height: 40px
+
+    text-align: center
+
+#demo-canvas
+    display: block
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+
+.none
+    display: none
+
+@import "media" // Всегда в конце

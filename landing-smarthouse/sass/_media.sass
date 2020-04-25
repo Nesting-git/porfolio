@@ -1,0 +1,481 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	.wrap-menu
+		width: 62%
+
+@media only screen and (max-width : 1200px)
+	.link-menu
+		font-size: 14px
+	.main-wrapp h1
+		font-size: 46px
+		line-height: 50px
+	.main_form_icons--item
+		padding: 0 2vh
+
+@media only screen and (max-width : 1100px)
+	.simple-solution__item
+		max-width: 235px
+	.presentation-btn
+		padding: 0 25px
+	.site-btn
+		height: 35px
+		line-height: 35px
+	.input-site
+		line-height: 35px
+		height: 35px
+		font-size: 12px
+	.logo-site a
+		max-width: 70px
+	.logo-site
+		margin-right: 1%
+	.wrap-menu
+		width: 70%
+	.mobile-amin
+		padding-bottom: 0
+	.video_link 
+		width: 90px
+		height: 90px
+		i
+			font-size: 50px
+	.maps__mapa iframe
+		height: 400px
+	.our-scheme__tabs:after
+		display: none
+		
+
+@media only screen and (max-width : 992px)
+	.main-wrapp h1
+		font-size: 36px
+		line-height: 40px
+	.main-page-top
+		margin-top: 57px
+	.main-menu
+		position: fixed
+		top: 0
+		left: -100%
+		bottom: 0
+		background: #fff
+		width: 40%
+		min-width: 320px
+		z-index: 120
+		padding: 40px 20px
+		transition: 0.4s
+		&.open
+			left: 0
+		a
+			color: #000
+	.header
+		position: relative
+		z-index: 100
+		&.fixed
+			position: fixed
+			top: 0
+			right: 0
+			left: 0
+			width: 100%
+			background: #38495c
+	.wrap-menu
+		justify-content: flex-start
+		width: fit-content
+	.ul-amin-menu
+		flex-direction: column
+		align-items: flex-start
+	.link-menu
+		font-size: 18px
+	.burger-menu-mob
+		display: block
+		width: 30px
+		height: 22px
+		margin-left: 20px
+		position: relative
+		&:before,
+		&:after,
+		span:before
+			content: ''
+			width: 100%
+			height: 3px
+			background: #fff
+			position: absolute
+			left: 0
+			border-radius: 2px
+		&:before
+			top: 0
+		&:after
+			top: 50%
+		span:before
+			top: 100%
+	.footer
+		padding: 5px 0
+		.wrap-menu
+			display: none
+	.mobile-header
+		flex: 1 1 50%
+		margin-left: 3vw
+		display: flex
+		align-items: center
+		flex-direction: row-reverse
+	.mobile-amin
+		margin-left: 30px
+	.close-menu
+		display: block
+		position: absolute
+		width: 25px
+		height: 25px
+		top: 15px
+		right: 15px
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 2px
+			background: #000
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+		&:after
+			transform: translate(-50%, -50%) rotate(45deg)
+		&:before
+			transform: translate(-50%, -50%) rotate(-45deg)
+	.opas-men
+		position: fixed
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(0,0,0,.5)
+		z-index: 110
+		&.active
+			display: block
+	.header
+		padding: 5px 0
+	.simple-solution__ipad
+		width: 400px
+		height: 600px
+		transform: translateX(-49%)
+	.simple-solution__item
+		max-width: 170px
+	.simple-solution__row_margin
+		margin-top: 20px
+	.video_block
+		padding-top: 3%
+	.main_form_icons-title
+		line-height: 28px
+		padding-bottom: 10px
+		margin-top: 10px
+	.main_form_div
+		margin-left: 10px
+	.img-icon
+		height: 35px
+
+@media only screen and (max-width : 800px)
+	.simple-solution__ipad
+		position: relative
+		left: 0
+		transform: translateX(0)
+		bottom: 0
+		top: 50px
+		left: 50%
+		transform: translateX(-50%)
+	.simple-solution__item
+		max-width: 340px
+	.simple-solution__row
+		margin-top: 30px
+	.title-site
+		font-size: 28px
+	.simple-soliution__iphone
+		bottom: -50px
+	.our-scheme
+		margin-top: 0
+	.advantages__row
+		flex-wrap: wrap
+	.advantages__items
+		flex: 0 0 50%
+	.opportunities__items
+		flex: 0 0 50%
+	.img-icon
+		height: 40px
+	.our-scheme__tabs
+		flex-wrap: wrap
+	.our-scheme__tabs_item
+		flex: 0 1 30%
+		padding: 10px
+	.our-scheme__tabs_text
+		padding: 10px 0 0 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.img-icon
+		max-width: 30px
+		height: 30px
+	.main-wrapp h1
+		font-size: 28px
+		line-height: 36px
+	.main_form_icons-title
+		font-size: 16px
+		line-height: 21px
+	.logo-site a,
+	.footer .logo-site a
+		max-width: 50px
+	.main-page-top
+		margin-top: 44px
+	.maps__row
+		flex-direction: column
+	.maps
+		padding-top: 0
+	.presentation__wrap-skype_text
+		padding-top: 43%
+	.presentation__wrapp-btn
+		margin-top: 0
+	.question__item
+		flex: 0 1 100%
+	section
+		padding: 30px 0
+		padding-top: 40px
+	.presentation__wrap-skype
+		min-height: 65vw
+	.our-scheme__tab_img
+		max-width: 250px
+		min-width: 250px
+	.simple-solution__row-item
+		flex-direction: column
+	.simple-solution__item
+		width: 100%
+		max-width: 100%
+		align-items: center
+		display: flex
+		flex-direction: column
+		margin-bottom: 15px
+	.main_form_icons
+		flex-direction: column
+		padding-top: 20px
+	.main-wrapp h2
+		font-size: 18px
+	.popup__close
+		right: 0
+	.question__item
+		padding-right: 0
+	.simple-solution__item-text
+		text-align: center!important
+	.main_form_icons--item
+		flex: 1 1 100%
+		margin-top: 10px
+		display: flex
+		text-align: left
+	.main_form_icons--item span,
+	.main_form_icons-title
+		max-width: 100%
+	.main_form_icons-title
+		padding-bottom: 5px
+	.video_link
+		width: 70px
+		height: 70px
+		&:before
+			top: -20px
+			right: -20px
+			bottom: -20px
+			left: -20px
+		i
+			font-size: 30px
+	#demo-canvas
+		opacity: 0.2
+	.input-site
+		max-width: 360px
+		margin: 0 auto
+	.warranty-form__input
+		display: flex
+		justify-content: center
+	.question__item_left
+		display: none
+	.question__item_title:before
+		display: none
+	.question__item_content
+		padding-left: 20px
+		position: relative
+	.question__item_questions
+		&:first-child
+			.question__item_content
+				&:before
+					content: ''
+					position: absolute
+					width: 10px
+					height: 15px
+					left: 5px
+					top: 2px
+					background: url(../img/arrow-bot.svg) 50% 50%/ contain no-repeat
+		&:nth-child(2)
+			display: none
+	.question__item.active
+		.question__item_questions:first-child
+			.question__item_content
+				&:before
+					transform: rotate(180deg)
+		.question__item_questions:nth-child(2)
+			display: block
+	.mobile-header
+		margin-left: 0
+
+@media only screen and (max-width : 600px)
+	.mobile-amin
+		font-size: 14px
+	.burger-menu-mob
+		height: 14px
+	.our-scheme__tab_content
+		flex-direction: column
+		align-items: center
+	.our-scheme__tab_contant
+		display: flex
+		flex-direction: column
+		align-items: center
+	.warranty__item
+		flex-direction: column
+		align-items: center
+	.warranty-title
+		text-align: center
+	.warranty_contant
+		margin-top: 20px
+		padding-left: 0
+	.about__row
+		flex-wrap: wrap
+		justify-content: center
+	.about__item
+		flex: 0 1 50%
+		margin-bottom: 20px
+	.linl-about
+		text-align: center
+	.warranty-form__row
+		flex-direction: column
+	.warranty-form__input
+		margin-bottom: 15px
+		width: 100%
+	.presentation__wrapp-btn
+		margin-top: 40px
+	.presentation-btn
+		padding: 0 10px
+		font-size: 12px
+	.maps__contacts_content
+		padding-left: 20px
+		padding-right: 20px
+	.question__item_left
+		min-width: 80px
+	.warranty-title,
+	.title-site
+		font-size: 24px
+		line-height: 30px
+	.popup__wrapp
+		padding: 20px
+	.video_block
+		padding-top: 7%
+	.main_form_icons--item span
+		line-height: 1.1
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.popup__wrapp
+		max-width: 90%
+	.footer
+		.header__row
+			flex-direction: column-reverse
+		.mobile-header
+			flex-direction: column
+		.mobile-amin
+			margin-left: 0
+			margin-bottom: 10px
+		.btn-request
+			margin-bottom: 10px
+	.simple-soliution__iphone
+		transform: translateX(-48%)
+	.simple-solution__ipad
+		transform: translateX(-46%)
+	.about__item
+		flex: 1 1 100%
+	.advantages__items
+		width: 100%
+		flex: 1 1 100%
+	.opportunities__items
+		flex: 1 1 100%
+	.mobile-amin
+		font-size: 12px
+	.header
+		.btn-request 
+			width: 28px
+			height: 28px
+			border: 1px solid #fff
+			span
+				margin-left: 0
+				font-size: 0
+	.burger-menu-mob
+		margin-left: 8px
+	.mobile-amin
+		margin-left: 30px
+	.main-wrapp h1
+		font-size: 22px
+		line-height: 28px
+	.main-wrapp h2
+		font-size: 14px
+	.opportunities__items_top
+		display: flex
+	.opportunities-title
+		margin-left: 15px
+		margin-top: 0
+	.opportunities-title
+		font-size: 18px
+	.our-scheme__tabs_item
+		flex: 0 0 100%
+		display: flex
+		align-items: center
+	.our-scheme__tabs_icons
+		width: 90px
+		height: 90px
+	.our-scheme__tabs_text span
+		max-width: 100%
+		text-align: left
+	.our-scheme__tabs_icons:after
+		display: none
+	.title-site
+		margin-bottom: 20px
+	.presentation__wrap-skype_text
+		font-size: 11px
+		padding-top: 41%
+	.warranty-text
+		margin: 15px 0	
+		max-width: 280px
+	.popup_video iframe
+		height: 60vw
+		
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

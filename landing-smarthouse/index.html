@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+	<div class="body__wrapper">
+		<canvas id="demo-canvas" width="1920" height="489"></canvas>
+
+		<div class="main-page-top js-select" data-select-id="100" style="background-image: url(img/slider-1.jpg);">
+			<header class="header">
+				<div class="container">
+					<div class="header__row">
+						<div class="logo-site">
+							<a href="#" class="d-flex js-reloar">
+								<img src="img/logo.png" class="img-responsive" alt="logo">
+							</a>
+						</div>
+						<div class="wrap-menu">
+							<nav class="main-menu">
+								<ul class="ul-amin-menu">
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="0">Возможность</a>
+									</li>
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="1">Почему мы?</a>
+									</li>
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="4">Схема работы</a>
+									</li>
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="5">Видео
+											презентация</a></li>
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="8">Чаво</a></li>
+									<!-- <li><a href="#" class="link-menu js-link-menu " data-id-select="9">Отзывы</a></li> -->
+									<li><a href="#" class="link-menu js-link-menu" data-id-select="10">контакты</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="opas-men"></div>
+						</div>
+						<div class="mobile-header">
+							<a href="tel:+38(067)821-47-76" class="mobile-amin">+38(067)821-47-76</a>
+							<button class="btn-request js-btn-popoup" data-btn-popup="0"><i
+									class="fas fa-phone-alt"></i><span>Заказать
+									звонок</span></button>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<div class="main-wrapp">
+				<div class="container">
+					<div class="row-main-wrapp">
+						<h1>Умный дом Кластер –<br>надежное решение по доступной цене</h1>
+						<h2>Интерактивный тур по умному дому</h2>
+						<div class="video_block">
+							<a href="#" class="video_link js-btn-popoup" data-btn-popup="1">
+								<i class="far fa-play-circle"></i>
+							</a>
+						</div>
+						<div class="main_form_icons">
+							<div class="main_form_icons--item">
+								<img src="img/money_ico.png" class="img-icon" alt="">
+								<div class="main_form_div">
+									<h3 class="main_form_icons-title">Самая низкая стоимость</h3>
+									<span>
+										Система умного дома под ключ по цене обычной электрики
+									</span>
+								</div>
+							</div>
+							<div class="main_form_icons--item">
+								<img src="img/guard_ico.png" class="img-icon" alt="">
+								<div class="main_form_div">
+									<h3 class="main_form_icons-title">7 лет работы без сбоев</h3>
+									<span>
+										Гарантия 5 лет от производителя, проверенная надежность
+									</span>
+								</div>
+							</div>
+							<div class="main_form_icons--item">
+								<img src="img/money_ico.png" class="img-icon" alt="">
+								<div class="main_form_div">
+									<h3 class="main_form_icons-title">Самая низкая стоимость</h3>
+									<span>
+										Система умного дома под ключ по цене обычной электрики
+									</span>
+								</div>
+							</div>
+							<div class="main_form_icons--item">
+								<img src="img/guard_ico.png" class="img-icon" alt="">
+								<div class="main_form_div">
+									<h3 class="main_form_icons-title">7 лет работы без сбоев</h3>
+									<span>
+										Гарантия 5 лет от производителя, проверенная надежность
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="ops-slider"></div> -->
+		</div>
+
+		<section class="opportunities js-select" data-select-id="0">
+			<div class="container">
+				<div class="title-site">Возможности системы Умного дома</div>
+				<div class="opportunities__row">
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_1.png" class="img-icon" alt="">
+							<h3 class="opportunities-title">Безопасность в доме</h3>
+						</div>
+						<p>Решение для обеспечения максимальной безопасности дома, систама следит за основными
+							показателями и мгновенно реагирует в случае возникровения нештатных ситуаций.</p>
+					</div>
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_2.png" class="img-icon" alt="">
+							<h3 class="opportunities-title">Управление климатом</h3>
+						</div>
+						<p>Поддержание комфортного климата, дистанционное включение отопления и функции
+							энергосбережения. Система умного дома самостоятельно поддерживает идеальный микроклимат и
+							управляет любыми климатическими системами.</p>
+					</div>
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_3.png" class="img-icon" alt="">
+						</div>
+						<h3 class="opportunities-title">Управление освещением</h3>
+						<p>Решение по управлению освещением в квартире и загородном доме. Автоматическое включение света
+							в проходных зонах, комплексные сценарии освещения и плавная регулировка яркости и теплоты
+							света в течение дня.</p>
+					</div>
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_4.png" class="img-icon" alt="">
+							<h3 class="opportunities-title">Охрана в доме</h3>
+						</div>
+						<p>Решение по централизованному управлению системами охраны в Вашем доме. Умный дом контролирует
+							различные датчики, камеры видеонаблюдения, домофон и даже электрозамок.</p>
+					</div>
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_5.png" class="img-icon" alt="">
+							<h3 class="opportunities-title">Управление устройствами</h3>
+						</div>
+						<p>Решения по управлению всевозможными устрайствами в Вашем доме. К Умному дому Кластер можно
+							подключить шторы и жалюзи, розетки, системы проветривания и вентиляции и многое другое.</p>
+					</div>
+					<div class="opportunities__items">
+						<div class="opportunities__items_top">
+							<img src="img/cap_ico_6.png" class="img-icon" alt="">
+							<h3 class="opportunities-title">Управление мультимедиа</h3>
+						</div>
+						<p>Решение по управлению системой мультимедиа в Вашем доме. Умный дом самостоятельно включит
+							Вашу любимую радиостанцию, когда Вы вернетесь домой, а также подберет плей-лист для
+							романтического ужина.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages js-select" data-select-id="1">
+			<div class="container">
+				<div class="title-site">Почему мы?</div>
+				<div class="advantages__row">
+					<div class="advantages__items">
+						<div class="advantages__item-cont">
+							<img src="img/img-tehpodderzhka.png" alt="img">
+							<div class="item-cont">
+								<h3 class="item-cont__title">Полная поддержка</h3>
+								<span>Техническая поддержка на всех этапах установки системы и эксплуатации
+									системы</span>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__items">
+						<div class="advantages__item-cont">
+							<img src="img/img-tehpodderzhka.png" alt="img">
+							<div class="item-cont">
+								<h3 class="item-cont__title">Полная поддержка</h3>
+								<span>Техническая поддержка на всех этапах установки системы и эксплуатации
+									системы</span>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__items">
+						<div class="advantages__item-cont">
+							<img src="img/img-tehpodderzhka.png" alt="img">
+							<div class="item-cont">
+								<h3 class="item-cont__title">Полная поддержка</h3>
+								<span>Техническая поддержка на всех этапах установки системы и эксплуатации
+									системы</span>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__items">
+						<div class="advantages__item-cont">
+							<img src="img/img-tehpodderzhka.png" alt="img">
+							<div class="item-cont">
+								<h3 class="item-cont__title">Полная поддержка</h3>
+								<span>Техническая поддержка на всех этапах установки системы и эксплуатации
+									системы</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="about-us">
+					<div class="title-site">Информация о нас</div>
+					<div class="about__row">
+						<div class="about__item">
+							<div class="about__cont">
+								<img src="img/dop_1.png" alt="">
+								<div class="about__trext">Участник программы</div>
+								<a href="#" class="linl-about js-btn-popoup" data-btn-popup="2">Смотреть короткий
+									ролик</a>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__cont">
+								<img src="img/dop_2.png" alt="">
+								<div class="about__trext">Партнер союза дизайнеров и архитекторов</div>
+							</div>
+						</div>
+						<div class="about__item">
+							<div class="about__cont">
+								<img src="img/dop_3.png" alt="">
+								<div class="about__trext">Участник Цифровой стратегии Москвы 2030</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="warranty js-select" data-select-id="2">
+			<div class="container">
+				<div class="warranty__row">
+					<div class="warranty__item">
+						<div class="warranty__img">
+							<img src="img/short_form_img_1.jpg" alt="img">
+							<span class="site-icon"><span>₽</span></span>
+						</div>
+						<div class="warranty_contant">
+							<div class="warranty-title">Гарантия лучшей цены</div>
+							<p class="warranty-text">2-комнатная квартира под ключ всего 220 000 ₽.
+								Нашли дешевле? Дадим скидку!</p>
+							<div class="warranty__form">
+								<form action="" name="warranty" class="warranty-form">
+									<div class="warranty-form__row">
+										<div class="warranty-form__input">
+											<input type="text" name="warranty_input" class="input-site js-validation"
+												placeholder="ВАШ ТЕЛЕФОН" title="Формат: +380999999999">
+										</div>
+										<div class="warranty-form__btn">
+											<button class="site-btn js-btn-form">Получить консультацию</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="simple-solution js-select" data-select-id="3"
+			style="background-image: url(img/middle_cover.jpg)">
+			<div class="container max-1200">
+				<div class="title-site color-white">Простое решение для Умной автоматизации</div>
+				<div class="simple-solution__row">
+					<div class="simple-solution__row-item">
+						<div class="simple-solution__item content-right simple-solution_top_left js-simple-solution__item"
+							data-ipad-img="img/pl1.jpg" data-iphone-img="img/tel1.jpg">
+							<div class="simple-solution__item-img">
+								<img src="img/solution_ico_1.png" alt="img">
+							</div>
+							<h3 class="simple-solution__item-title">Готовые сценарии</h3>
+							<p class="simple-solution__item-text">Умное управление всеми устройствами и безопасностью
+							</p>
+						</div>
+						<div class="simple-solution__item simple-solution_top_left js-simple-solution__item"
+							data-ipad-img="img/pl1.jpg" data-iphone-img="img/tel1.jpg">
+							<div class="simple-solution__item simple-solution_top_right " data-ipad-img="img/pl2.jpg"
+								data-iphone-img="img/tel2.jpg">
+								<div class="simple-solution__item-img">
+									<img src="img/solution_ico_2.png" alt="img">
+								</div>
+								<h3 class="simple-solution__item-title">Настройка под квартиру</h3>
+								<p class="simple-solution__item-text">Мобильное приложение настраивается индивидуально
+									под
+									Ваши задачи</p>
+							</div>
+						</div>
+					</div>
+					<div class="simple-solution__row-item simple-solution__row_margin">
+						<div class="simple-solution__item content-right simple-solution_bottom_left js-simple-solution__item"
+							data-ipad-img="img/pl3.jpg" data-iphone-img="img/tel3.jpg">
+							<div class="simple-solution__item-img">
+								<img src="img/solution_ico_3.png" alt="img">
+							</div>
+							<h3 class="simple-solution__item-title">Push и SMS уведомления</h3>
+							<p class="simple-solution__item-text">Оперативные оповещения даже при отсутствии интернета
+							</p>
+						</div>
+						<div class="simple-solution__item simple-solution_bottom_right js-simple-solution__item"
+							data-ipad-img="img/pl4.jpg" data-iphone-img="img/tel1.jpg">
+							<div class="simple-solution__item-img">
+								<img src="img/solution_ico_4.png" alt="img">
+							</div>
+							<h3 class="simple-solution__item-title">Android и iOS устройства</h3>
+							<p class="simple-solution__item-text">Скачайте бесплатное мобильное приложение в AppStore и
+								GooglePlay</p>
+						</div>
+					</div>
+					<div class="simple-solution__ipad">
+						<div class="simple-solution__ipad_bg js-ipad_bg" style="background-image: url(img/pl1.jpg);">
+						</div>
+					</div>
+					<div class="simple-soliution__iphone">
+						<div class="simple-soliution__iphone_bg js-iphone_bg"
+							style="background-image: url(img/tel1.jpg);"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-scheme js-select" data-select-id="4">
+			<div class="container">
+				<div class="title-site ">Наша схема работы с клиентами</div>
+				<div class="our-scheme__row">
+					<div class="our-scheme__tabs">
+						<div class="our-scheme__tabs_item js-tabs_item active" data-tags="0">
+							<div class="our-scheme__tabs_icons">
+								<i class="our-scheme__icons our-scheme__icons_1"></i>
+							</div>
+							<div class="our-scheme__tabs_text">
+								<span>Бесплатная консультация</span>
+							</div>
+						</div>
+						<div class="our-scheme__tabs_item js-tabs_item" data-tags="1">
+							<div class="our-scheme__tabs_icons">
+								<i class="our-scheme__icons our-scheme__icons_2"></i>
+							</div>
+							<div class="our-scheme__tabs_text">
+								<span>расчет стоимости системы</span>
+							</div>
+						</div>
+						<div class="our-scheme__tabs_item js-tabs_item" data-tags="2">
+							<div class="our-scheme__tabs_icons">
+								<i class="our-scheme__icons our-scheme__icons_3"></i>
+							</div>
+							<div class="our-scheme__tabs_text">
+								<span>проектирование и шеф-монтаж</span>
+							</div>
+						</div>
+						<div class="our-scheme__tabs_item js-tabs_item" data-tags="3">
+							<div class="our-scheme__tabs_icons">
+								<i class="our-scheme__icons our-scheme__icons_4"></i>
+							</div>
+							<div class="our-scheme__tabs_text">
+								<span>Сборка системы и оборудования</span>
+							</div>
+						</div>
+						<div class="our-scheme__tabs_item js-tabs_item" data-tags="4">
+							<div class="our-scheme__tabs_icons">
+								<i class="our-scheme__icons our-scheme__icons_5"></i>
+							</div>
+							<div class="our-scheme__tabs_text">
+								<span>Настройка под ваши задачи</span>
+							</div>
+						</div>
+					</div>
+					<div class="our-scheme__tab">
+						<div class="our-scheme__tab_content js-scheme__tab" data-tab="0">
+							<div class="our-scheme__tab_img">
+								<img src="img/tab-1.jpg" alt="tab">
+							</div>
+							<div class="our-scheme__tab_contant">
+								<p>Наши специалисты обязательно приезжают на объект для инженерного аудита и
+									консультации по всем вопросам работы системы Кластер.</p>
+								<button class="site-btn js-btn-popoup" data-btn-popup="0">Заказать консультацию</button>
+							</div>
+						</div>
+						<div class="our-scheme__tab_content js-scheme__tab none" data-tab="1">
+							<div class="our-scheme__tab_img">
+								<img src="img/tab-2.jpg" alt="tab">
+							</div>
+							<div class="our-scheme__tab_contant">
+								<p>Расчет включает в себя сразу все возможные платежи и работы. Согласованная смета
+									работ не претерпет позже никаких изменений..</p>
+								<button class="site-btn js-btn-popoup" data-btn-popup="0">Заказать расчет</button>
+							</div>
+						</div>
+						<div class="our-scheme__tab_content js-scheme__tab none" data-tab="2">
+							<div class="our-scheme__tab_img">
+								<img src="img/tab-3.jpg" alt="tab">
+							</div>
+							<div class="our-scheme__tab_contant">
+								<p>Наши специалисты выполняют все проектные работы в короткий срок и согласовывают его
+									со всеми инженерными системами в доме. Инженерный надзор и шеф-монтаж гарнатируют
+									выполнение всех работ в надлежащие сроки и в оптимальном качестве в соответствии с
+									проектом.</p>
+							</div>
+						</div>
+						<div class="our-scheme__tab_content js-scheme__tab none" data-tab="3">
+							<div class="our-scheme__tab_img">
+								<img src="img/tab-2.jpg" alt="tab">
+							</div>
+							<div class="our-scheme__tab_contant">
+								<p>Все работы по сборке оборудования осуществляют сертифицированные специалисты.
+									Монтажные работы ведутся параллельно с финишной отделкой и не влияют на сроки сдачи
+									объекта.</p>
+							</div>
+						</div>
+						<div class="our-scheme__tab_content js-scheme__tab none" data-tab="4">
+							<div class="our-scheme__tab_img">
+								<img src="img/tab-1.jpg" alt="tab">
+							</div>
+							<div class="our-scheme__tab_contant">
+								<p>Настройка системы Кластер осуществляется под Ваши конкретные задачи по согласованному
+									заданию, система сдается полностью готовой к использованию. Дальнейшие изменения
+									смогут вносить как сами хозяева через мобильное приложение, так и сервисный инженер.
+								</p>
+								<button class="site-btn js-btn-popoup" data-btn-popup="0">Заказать проект</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="presentation js-select" data-select-id="5">
+			<div class="container">
+				<div class="title-site presentation_title">Видео Презентация Умного дома онлайн</div>
+				<div class="presentation__wrap-skype">
+					<div class="presentation__wrap-skype_text">Запишитесь на skype-презентацию возможностей Умного дома.
+						И узнайте, какие сценарии и функции подойдут вам. <strong>А мы рассчитаем стоимость вашего
+							проекта.</strong></div>
+				</div>
+				<div class="presentation__wrapp-btn">
+					<button class="site-btn presentation-btn js-btn-popoup" data-btn-popup="3">Записаться на
+						skype-презентацию</button>
+				</div>
+			</div>
+		</section>
+
+	
+
+		<section class="warranty js-select" data-select-id="7">
+			<div class="container">
+				<div class="warranty__row">
+					<div class="warranty__item">
+						<div class="warranty__img">
+							<img src="img/short_form_img_1.jpg" alt="img">
+							<span class="site-icon"><i class="fas fa-lock"></i></span>
+						</div>
+						<div class="warranty_contant">
+							<div class="warranty-title">Специальные условия!</div>
+							<p class="warranty-text">«Фиксация цены» для владельцев квартир в строящихся домах. Нашли
+								дешевле? Дадим скидку!</p>
+							<div class="warranty__form">
+								<form action="" name="warranty" class="warranty-form">
+									<div class="warranty-form__row">
+										<div class="warranty-form__input">
+											<input type="text" name="warranty_input" class="input-site js-validation"
+												placeholder="ВАШ ТЕЛЕФОН" title="Формат: +380999999999">
+										</div>
+										<div class="warranty-form__btn">
+											<button class="site-btn js-btn-form">Получить консультацию</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="question js-select" data-select-id="8">
+			<div class="container">
+				<div class="title-site ">Часто задаваемые вопросы</div>
+				<div class="question__row">
+					<div class="question__item active">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Возможна ли оплата
+									безналичным способом</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Да, мы можем работать
+									по договору с безналичной оплатой.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Входят ли в стоимость
+									монтажные работы?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Наша компания не
+									осуществляет монтажные работы (протягивание проводов, штробление стен), мы можем
+									посоветовать наших партнеров или организовать шеф-монтаж для Вашей бригады.
+									Все работы по пуско-наладке и настройке системы мы осуществляем самостоятельно и они
+									входят в стоимость.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Где я могу купить
+									дополнительные устройства для этой системы?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Мы самостоятельно
+									производим все устройства, совместимые с системой Кластер, приобрести Вы можете их у
+									нас или у наших партнеров. Сторонние устройства, купленные в обычном магазине не
+									поддерживаются.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Нужно ли монтировать
+									всю систему за один раз?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Не обязательно,
+									система Кластер абсолютно гибкая, к ней в любой момент можно подключать любые
+									дополнительные модули.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Нужно ли покупать
+									какие-то специальные розетки и выключатели света?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Нет, модуль управления
+									совместим абсолютно с любыми стандартными розетками и выключателями любых марок и
+									расцветок.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Можно ли взломать
+									систему и получить доступ к управлению?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Система замкнута и
+									защищена от внешних атак, даже если злоумышленник получит доступ к вашему мобильному
+									приложению, он не сможет сломать или испортить систему.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Что произойдет, если
+									система выйдет из строя?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Даже если из строя
+									выйдет один из модулей, то система продолжит работу, каждый элемент в системе, даже
+									центральный контроллер, независим.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">По какому протоколу
+									работает система?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Система работает по
+									проводному промышленному протоколу RS-485, который отличается очень высокой
+									надежностью и используется в авиации.
+									Беспроводное подключение (например, по протоколу Z-Wave) является менее надежным,
+									чем проводное соединение, поэтому система не поддерживает этот протокол.</span>
+							</div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Что будет, если
+									отключат интернет?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Система продолжит
+									работу в обычном режиме. Управление со смартфона сохранится в пределах квартиры даже
+									без доступа к интернету по внутренней wifi-сети.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Как управлять
+									системой?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Управлять системой
+									можно через мобильное приложение в телефоне (как внутри дома, так и за его
+									пределами), через веб-браузер, с помощью специального пульта управления в доме у
+									входа, а также с помощью кнопок и выключателей, расположенных в доме.</span></div>
+						</div>
+					</div>
+					<div class="question__item">
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Вопрос:</span></div>
+							<div class="question__item_content"><span class="question__item_title">Могу ли я подключить
+									к системе устройства от других производителей умных домов?</span></div>
+						</div>
+						<div class="question__item_questions">
+							<div class="question__item_left"><span>Ответ:</span></div>
+							<div class="question__item_content"><span class="question__item_text">Сторонние решения
+									подключить нельзя, но в линейке компании есть весь необходимый спектр устройств для
+									обустройства квартиры.</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="maps js-select" data-select-id="10">
+			<div class="maps__row">
+				<div class="maps__mapa">
+					<div class="map">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162618.95940409714!2d30.42538068249019!3d50.44256765781391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1585321556526!5m2!1sru!2sua"
+							width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+							aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+				<div class="maps__contacts">
+					<div class="maps__contacts_content">
+						<div class="maps__contacts_title">Контакты</div>
+						<div class="maps__contacts_wrap">
+							<span class="maps__contacts_wrap_title">ПРЕДСТАВИТЕЛЬСТВО В ПЕТЕРБУРГЕ</span>
+							<a href="mailto:spb@clustersystem.ru">spb@clustersystem.ru</a><br>
+							<a href="tel:+7 (812) 649-16-48">+7 (812) 649-16-48</a>
+						</div>
+						<div class="maps__contacts_wrap">
+							<span class="maps__contacts_wrap_title">АДРЕС:</span>
+							<span>г. Москва, ул. Б. Новодмитровская 23 стр. 6</span>
+						</div>
+						<div class="maps__contacts_wrap">
+							<span class="maps__contacts_wrap_title">ТЕЛЕФОН:</span>
+							<a href="tel:+7 (812) 649-16-48">+7 (812) 649-16-48</a>
+						</div>
+						<div class="maps__contacts_wrap">
+							<span class="maps__contacts_wrap_title">EMAIL:</span>
+							<a href="mailto:spb@clustersystem.ru">spb@clustersystem.ru</a><br>
+						</div>
+						<div class="maps__contacts_wrap">
+							<div class="maps__contacts__col">
+								<img src="img/tea.png" alt="img">
+								<button class="site-btn js-btn-popoup" data-btn-popup="3">Записатся на шоурум</button>
+							</div>
+							<p class="maps__contacts_wrap--text">Обязательно приходите к нам на чашку ароматного кофе.
+								Совместно обсудим ваш проект, продемонстрируем работу системы умного дома Кластер в
+								нашем шоуруме! Если нужно, проконсультируем по Skype, телефону или почте – просто
+								напишите нам сообщение и укажите предпочтительный способ для связи.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="header__row">
+					<div class="logo-site js-link-menu" data-id-select="100">
+						<a href="#" class="d-flex">
+							<img src="img/logo.png" class="img-responsive" alt="logo">
+						</a>
+					</div>
+					<div class="wrap-menu">
+						<nav class="main-menu">
+							<ul class="ul-amin-menu">
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="0">Возможность</a></li>
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="1">Почему мы?</a></li>
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="4">Схема работы</a></li>
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="5">Видео презентация</a>
+								</li>
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="8">Чаво</a></li>
+								<!-- <li><a href="#" class="link-menu js-link-menu " data-id-select="9">Отзывы</a></li> -->
+								<li><a href="#" class="link-menu js-link-menu" data-id-select="10">контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mobile-header">
+						<a href="tel:+38(067)821-47-76" class="mobile-amin">+38(067)821-47-76</a>
+						<button class="btn-request js-btn-popoup"><i class="fas fa-phone-alt"></i><span>Заказать
+								звонок</span></button>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- popup -->
+
+		<div class="popup js-popup none" data-id-popup="0">
+			<div class="popup__wrapp">
+				<i class="popup__close js-popup-close"></i>
+
+				<div class="popup__content">
+					<h3 class="popup__title">Обратный звонок</h3>
+					<form action="" method="" name="">
+						<div class="form-row icon-required">
+							<input type="text" name="telephone" class="input-popup js-validation" placeholder="Телефон"
+								title="Формат: +380999999999">
+						</div>
+						<div class="form-row form-row-btn">
+							<button class="site-btn js-btn-form" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup js-popup none" data-id-popup="1">
+			<div class="popup__wrapp popup_video">
+				<i class="popup__close js-popup-close"></i>
+
+				<div class="popup__content">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gLO6YUUWiFg" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup js-popup none" data-id-popup="2">
+			<div class="popup__wrapp popup_video">
+				<i class="popup__close js-popup-close"></i>
+
+				<div class="popup__content">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gLO6YUUWiFg" frameborder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup js-popup none" data-id-popup="3">
+			<div class="popup__wrapp">
+				<i class="popup__close js-popup-close"></i>
+
+				<div class="popup__content">
+					<h3 class="popup__title">Обратный звонок</h3>
+					<form action="" method="" name="">
+						<div class="form-row">
+							<input type="text" name="name" class="input-popup" placeholder="Имя">
+						</div>
+						<div class="form-row icon-required">
+							<input type="text" name="telephone" class="input-popup js-validation" placeholder="Телефон"
+								title="Формат: +380999999999">
+						</div>
+						<div class="form-row form-row-btn">
+							<button class="site-btn js-btn-form" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="popup js-popup js-popup_thanks none">
+			<div class="popup__wrapp"">
+				<i class=" popup__close js-popup-close"></i>
+
+				<div class="popup__content popup_thanks">
+					<div>Спасибо!</div>
+					<div>Вам перезвонит менеджер!</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- style -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- script -->
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/cecd78bd8c.js" crossorigin="anonymous"></script>
+	<script src="libs/swiper-slick/js/swiper.min.js"></script>
+	<script src="libs/modernizr_min.js"></script>
+	<script src="libs/master/jquery.maskedinput.js"></script>
+	<script src="libs/plugins_min.js"></script>
+	<script src="libs/init_min.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>
