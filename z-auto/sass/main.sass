@@ -1,0 +1,674 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+.block
+    display: block    
+
+.tit 
+    font-size: 30px
+    font-weight: 300
+    color: #ffffff
+    padding-bottom: 20px
+
+.tit_line-after-bottom
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        width: 29px
+        height: 3px
+        background-color: #fff402
+        bottom: 0
+.padding-top-title 
+    padding-top: 50px
+    width: 100%
+    
+.z-index 
+    position: relative
+
+.z-index
+    z-index: 10
+
+.header
+    position: relative
+    background: url(../img/bg__header_top.jpg) no-repeat 0 0
+    background-size: cover
+    padding-top: 45px
+    padding-bottom: 86px
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 86px
+        left: 0
+        bottom: 4%
+        background: url(../img/bg__header_bottom.jpg) no-repeat 0 0
+        background-size: contain
+
+
+
+.header__top 
+    padding: 67px 61px 23px 70px
+    background: url(../img/bg__header_container.jpg) no-repeat 0 0 
+    z-index: 1
+    position: relative
+
+.padding-rig-40
+    padding-right: 70px
+
+.contacts__wrapp
+    position: relative
+    padding-left: 50px
+    &:before 
+        content: ''
+        position: absolute
+        width: 25px
+        height: 25px
+        background: url(../img/icon__phone.png) 0 0 
+        top: 17px
+        left: 0
+
+.contacts_mobile
+    display: block
+    color: #ffffff
+    font-size: 24px
+    &:hover 
+        text-decoration: underline
+
+    
+.header-title
+    font: 900 60px/1 Roboto,sans-serif
+    letter-spacing: 1px
+    margin-bottom: 35px
+
+.header-title__top
+    font-size: 22px
+    font-weight: 400
+
+.header-title__color-ye
+    color: #fff402
+
+.addres-wrapp
+    position: relative
+    padding-left: 54px
+    font-size: 13px
+    line-height: 2
+    letter-spacing: 1px
+    text-transform: uppercase
+    &:before
+        content: ''
+        position: absolute
+        width: 40px
+        height: 40px
+        background: url(../img/icon__marker.png) 0 0
+        top: 0
+        left: 0
+
+.btn-c
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    font-family: Roboto,sans-serif
+    font-size: 18px
+    font-weight: 900
+    text-transform: uppercase
+    color: #000000
+    z-index: 1
+    border: 0
+    outline: 0
+    cursor: pointer
+    width: 270px
+    height: 60px
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#fffb9f),to(#ffd902))
+    background: -o-linear-gradient(#fffb9f 10%,#ffd902 100%)
+    background: linear-gradient(#fffb9f 10%,#ffd902 100%)
+    border-radius: 30px
+    -webkit-box-shadow: -1px 14px 19px -8px rgba(0,0,0,.35)
+    box-shadow: -1px 14px 19px -8px rgba(0,0,0,.35)
+    -webkit-transition: background .25s cubic-bezier(.55,.085,.68,.53)
+    -o-transition: background .25s cubic-bezier(.55,.085,.68,.53)
+    transition: background .25s cubic-bezier(.55,.085,.68,.53) 
+    &:hover, &:focus, &:active
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(10%,#ffd902),to(#fffb9f))
+        background: -o-linear-gradient(#ffd902 10%,#fffb9f 100%)
+        background: linear-gradient(#ffd902 10%,#fffb9f 100%)
+        -webkit-transition: background .25s cubic-bezier(.55,.085,.68,.53)
+        -o-transition: background .25s cubic-bezier(.55,.085,.68,.53)
+        transition: background .25s cubic-bezier(.55,.085,.68,.53)
+
+
+.header__top-img-auto img 
+    min-width: 300px
+    min-height: 240px
+
+.main 
+    background-color: #8d8d8d
+    margin-top: -40px
+
+.main_items
+    position: relative
+    cursor: pointer
+    max-width: 270px
+    margin-bottom: 30px
+    &:hover 
+        .figcation
+            background: rgba(255,244,2,.85)
+        .btn-items
+            background: #4f4f4f
+            transition: .5s
+            width: 127px
+            height: 50px
+            cursor: pointer
+        .items__title
+            color: #000
+
+.figcation
+    position: absolute
+    top: 0 
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(51,51,51,.85)
+    -webkit-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    -o-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    transition: all .25s cubic-bezier(.55,.085,.68,.53)
+
+.items__title
+    text-align: center
+    font-size: 16px
+
+.btn-items
+    background: #fff402
+    width: 29px
+    height: 3px
+    -webkit-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    -o-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    overflow: hidden
+    outline: none
+    border: none
+    font-size: 12px
+    color: #fff402
+    box-shadow: none
+    -webkit-box-shadow: none
+    border-radius: 30px
+    margin-top: 15px
+
+.our-advantages 
+    margin-top: 10px
+    flex-wrap: wrap
+
+.our-advantages_col
+    max-width: 20%
+    margin: 0 -0.95em
+    webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    text-align: center
+    padding: 0 8px
+    .our-advantages_title
+        width: 85%
+        margin-bottom: 15px
+    &:hover .wrapp-img:after
+        border-color: #fff402
+        
+
+        
+.wrapp-img
+    position: relative
+    width: 104px
+    height: 104px
+    margin-bottom: 20px
+    transition: 0.5s
+    &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        border-radius: 50%
+        border: 2px dashed #fff
+
+.our-advantages_text
+    font-size: 12px
+    line-height: 1.2
+    color: #eaeaea
+    width: 80%
+    font-weight: 300
+
+.text-about-block
+    font: 900 46px/1 Roboto, sans-serif
+    color: #fff402
+
+.block-form-truck
+    position: relative
+    padding: 68px 95px 50px
+    background: #6e6e6e
+    margin-top: 30px
+    margin-right: 0
+    margin-left: 0
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 45px
+        width: 70px
+        height: 91px
+        background: url(../img/before_delta.jpg) no-repeat 0 0
+    &:after
+        content: ''
+        position: absolute
+        top: 30px
+        right: 30px
+        width: 360px
+        height: 248px
+        background: url(../img/img__map-sm.png) no-repeat 0 0
+
+
+.title-truck
+    font: 900 30px/1 Roboto,sans-serif
+    color: #fff402
+    margin-bottom: 0px
+
+.title-truck-subtitle
+    font-size: 16px
+    font-weight: 300
+    display: block
+    position: relative
+    padding-bottom: 26px
+    margin-bottom: 46px
+    &:after
+        content: ''
+        position: absolute
+        width: 90%
+        bottom: 0
+        left: 0
+        height: 1px
+        background-color: #8d8d8d
+
+.truck-text
+    font-size: 13px
+    max-width: 80%
+    color: #cbcbcb
+    font-weight: 300
+
+.wrap-select
+    margin-bottom: 55px
+
+.wrap-select-truck
+    width: 65%
+
+.wrap-select-truck-city
+    width: 35%
+    margin-left: 15px
+
+.wrap-select_subtitle
+    font-size: 13px
+    line-height: 1.4
+    margin-bottom: 10px
+
+.track-select
+    position: relative
+    .st-select
+        width: 100%
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        opacity: 0
+        z-index: 5
+        option
+            opacity: 0
+
+.js-select
+    position: relative
+    z-index: 10
+    height: 45px
+    background: 0 0
+    border: 1px solid #dbf1f0
+    min-width: 160px
+    min-height: 25px
+    border-radius: 20px
+    overflow: hidden
+    padding-left: 15px
+    padding-right: 45px
+    font-size: 13px
+    line-height: 1.4
+    cursor: pointer
+
+.truck__list-masa 
+    position: absolute
+    top: 24px
+    right: 0
+    left: 0
+    border: 1px solid #dbf1f0
+    border-top: none
+    border-radius: 20px
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    background: #5f5f5f
+    margin-top: 6px
+    z-index: 20
+    display: none
+    border-color: #fff402
+
+.open__put-truck
+    display: block
+    background: #5f5f5f
+    border-color: #fff402
+    text-align: left
+
+.truck__list-masa ul li
+    cursor: pointer
+    transition: color 0.2s, text-indent 0.2s
+    padding: 5px
+    padding-left: 15px
+
+.truck__list-masa ul li:hover 
+    text-indent: 4px
+    background-color: #b1a139
+    
+.track-select ul 
+    list-style: none
+    padding-left: 0
+    padding-top: 5px
+    
+.selected_sel 
+    color: #fff402
+    text-indent: 3px
+
+
+.title-result
+    font-size: 13px
+    line-height: 1.4
+
+.result
+    font-size: 30px
+    line-height: 1
+    margin-bottom: 10px
+    
+.btn-truck
+    margin-right: -20px
+    
+.jq-select__trigger
+    position: absolute
+    right: 15px
+    trnasition: all .25s cubic-bezier(.55, .085, .068, .53)
+    -webkit-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    -o-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+
+.jq-select__trigger.open-rotate 
+    transform: rotate(180deg)
+
+.jq-select__trigger-arrow
+    top: 20px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 4px 3.5px 0 3.5px
+    border-color: #fff202 transparent transparent transparent
+
+.opend.jq-select__trigger-arrow
+    transform: rotate(180deg)
+    -webkit-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    -o-transition: all .25s cubic-bezier(.55,.085,.68,.53)
+    transition: all .25s cubic-bezier(.55,.085,.68,.53)
+
+.geografy
+    padding-bottom: 50px
+
+.geografy-mt
+    position: relative
+    margin-top: 20px
+    p 
+        line-height: 1.6
+        font-size: 14px
+        font-weight: 300
+
+.geografy-mt-right
+    padding-left: 95px
+
+.title-help
+    font-size: 18px
+    margin-bottom: 15px
+    span
+        color: #fff402
+
+.icon-star
+    position: relative
+    padding-top: 30px
+    padding-left: 10px
+    margin-top: 25px
+    border-top: 1px solid #a3a3a3
+    &:before
+        content: '*'
+        position: absolute
+        bottom: -3px
+        left: 0
+        color: #fff402
+
+
+.footer-info
+    position: relative
+    background: url(../img/bg__footer.jpg) no-repeat 0 0
+    background-size: cover
+    padding-bottom: 40px
+    
+
+.footer-info__content
+    position: relative
+    background: url(../img/bg__footer_container.jpg) no-repeat 0 0
+    padding-top: 10px
+    margin: 0
+    &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 120px
+        -webkit-box-shadow: inset 0 -120px 125px -120px rgba(0,0,0,.65)
+        box-shadow: inset 0 -120px 125px -120px rgba(0,0,0,.65)
+    &:after
+        content: ''
+        position: absolute
+        bottom: -20px
+        height: 20px
+        left: 0
+        right: 0
+        background: url(../img/warning_tape.jpg) repeat-x 0 0 
+
+.footer-info__title
+    font-weight: 900
+    text-transform: uppercase
+    font: 900 30px/1 Roboto, sans-serif
+    color: #fff402
+    margin-bottom: 20px
+
+.footer-info__text
+    line-height: 1.6
+    font-size: 14px
+    font-weight: 300    
+
+.footer-info___section
+    max-width: 72%
+
+.slider
+    margin-top: 20px
+
+.slider__img-praw
+    width: 270px
+    height: 270px
+    position: relative
+    padding: 35px
+    margin-left: 50px
+    overflow: hidden
+    img
+        border-radius: 50%
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: url(../img/bg__img-comment.png) no-repeat center center
+        background-size: contain
+
+.slider_contetn
+    width: 65%
+    font-size: 13px
+    font-weight: 300
+    margin-top: -20px
+
+.item__comment-name
+    padding-bottom: 27px
+    font-size: 18px
+    display: block
+    font-weight: 700
+    border-bottom: 1px solid grey
+    margin-bottom: 25px
+
+.slick-dots
+    top: 50px
+    display: flex
+    justify-content: flex-end
+    bottom: 100%
+    
+.slick-dots li button:before
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    border: 1px solid #a9a9a9
+    opacity: 1
+
+.slick-dots li button:before
+    color: transparent
+
+.slick-slide 
+    outline: none
+
+.slick-dots li.slick-active button:before
+    background-color: #fff402
+    border-color: transparent
+    color: transparent
+    opacity: 1
+
+.footer-bg
+    background-color: #333
+
+.footer
+    color: #999
+    padding: 10px
+    font-size: 13px
+    a 
+        color: #fff402
+
+.white-popup
+    position: relative
+    max-width: 370px
+    margin: 0 auto
+    background: #ffffff
+    padding: 50px 40px
+    color: #000
+    flex-direction: column
+    box-shadow: 10px 10px 200px 17px rgba(250,250,250,.5)
+    &:before 
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 44px
+        height: 36px
+        background: #000
+        border-radius: 0 0 0 38px
+
+.liner_bottom-popup:after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 8px
+    background: url(../img/warning_tape.jpg) repeat-x
+
+.mfp-close-btn-in .mfp-close
+    color: #ffffff
+    &:hover
+        color: #ffd902
+
+.mfp-close 
+    top: -8px
+    right: -4px
+    font-size: 25px
+    opacity: 1
+    &:active
+        top: -8px
+
+.popup-title
+    font-weight: 900
+    text-transform: uppercase
+    margin-bottom: 25px
+    color: #333333
+    text-align: center
+
+.popup-mobile 
+    position: relative
+    color: #333
+    padding-bottom: 15px
+    font-size: 18px
+    text-align: center
+    font-weight: 700
+    transition: color .3sm text-decoration .3s
+    &:hover
+        color: #000000
+        text-decoration: underline
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 50px
+        width: 22px
+        height: 22px
+        background: url(../img/icon__sprite-operator.png) 0 0
+    &:nth-child(2):before
+        background-position: 0 22px
+    &:nth-child(4):before
+        background-position: 0 22px
+
+.form-evak label 
+    font-size: 14px
+    font-weight: 600
+    width: 100%
+    margin-top: 10px
+
+.form-input
+    margin-top: 10px
+    width: 100%
+    height: 30px
+    border: 1.3px solid #333
+    border-radius: 5px
+    padding: 0 10px
+    outline: none
+
+.form-popup__button 
+    width: 100%
+    height: 30px
+    margin-top: 10px
+
+.phone-error
+    color: red
+
+.pop_sencu
+    line-height: 2
+
+
+@import "media" // Всегда в конце
