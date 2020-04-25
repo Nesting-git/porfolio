@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Zuzako</title>
+	<meta name="description" content="сайт Zuzako">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/png" href="img_icons/icons/favicon.png">
+
+	<style>
+		body {
+			opacity: 0;
+			overflow-x: hidden;
+		}
+
+		html {
+			background-color: #fff;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="body__wrapper">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<div class="row__header d-flex align-it-center">
+					<div class="header__logo">
+						<a href="#" class="d-flex logo-site">
+							<img src="img_icons/logo.svg" alt="logo" class="img">
+						</a>
+					</div>
+					<!-- <div class="header__center d-flex align-it-center"> -->
+						<div class="header__menu d-flex">
+							<div class="mob-searh"><i class="fa fa-search" aria-hidden="true"></i></div>
+							<div class="menu_button d-flex align-it-center">
+								<span class="burger-menu">
+									<span></span>
+								</span>
+								<span>Меню</span>
+							</div>
+						</div>
+						<div class="header__search">
+							<form action="" method="POST" name="form_search">
+								<div class="d-flex align-it-center">
+									<div class="pos-form js-pos-form">
+										<input type="text" class="input_search js-input_search" neme="input_search"
+											placeholder="Найти" required autocomplete="off" autocapitalize="off"
+											autocorrect="off" value="">
+										<i class="close-input"></i>
+									</div>
+									<button type="submit" class="btn_submit">Найти</button>
+								</div>
+							</form>
+						</div>
+					<!-- </div> -->
+					<div class="header__info d-flex align-it-center">
+						<div class="info-project info--items">
+							<a href="#" class="info_items">
+								<i class="fa fa-puzzle-piece" aria-hidden="true"></i> О проекте</a>
+						</div>
+						<div class="info-reclama info--items">
+							<a href="#" class="info_items"><i class="fa fa-tags" aria-hidden="true"></i> Реклама</a>
+						</div>
+						<div class="info-contacts info--items">
+							<a href="#" class="info_items">
+								<i class="fa fa-address-card" aria-hidden="true"></i>Контакты</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- sub header -->
+		<div class="sub-header">
+			<div class="container">
+				<div class="sub-header__row d-flex align-it-center">
+					<!-- <div class="sub-header__heading">
+						<a href="#" class="heading">Рубрики</a>
+					</div> -->
+					<div class="sub-header__dop-info d-flex align-it-center">
+						<div class="dop-info__items">
+							<i class="fa fa-tags" aria-hidden="true"></i>
+							<a href="#">Скидки? Беру!</a>
+						</div>
+						<div class="dop-info__items">
+							<i class="fa fa-taxi" aria-hidden="true"></i>
+							<span>Бесплатная</span>
+							<a href="#">Доставка</a>
+						</div>
+						<div class="dop-info__items">
+							<i class="fa fa-credit-card" aria-hidden="true"></i>
+							<span>Удобная</span>
+							<a href="#">оплата</a>
+						</div>
+						<div class="dop-info__items">
+							<i class="fa fa-exchange" aria-hidden="true"></i>
+							<span>Лёгкий</span>
+							<a href="#">возврат</a>
+						</div>
+						<div class="dop-info__items">
+							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+							<span>Город</span>
+							<a href="#">Киров</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <div class="main-info-reclams">
+            <div class="container">
+                <div class="main-info-bread">
+                    <ul class="main-info__breadcrumbs">
+                        <li class="main-info__li"><a href="#" class="main-info__link">Главная</a></li>
+                    </ul>
+                </div>
+
+                <h1 class="page-title-site">Рекламодателям</h1>
+                <p>Свяжитесь с нами, используя email ниже, и вместе мы подберём устраивающий вас рекламный формат.</p>
+                <p>adv[собачка]netbro.media</p>
+
+                <div class="main-info__bottom">
+                    <p>Поделитесь с друзьями в социальных сетях</p>
+                    <div class="share">
+                        <ul class="share__list">
+                            <li class="share__item">
+                                <a href="#" class="share__item_link share__item-vk"></a>
+                            </li>
+                            <li class="share__item">
+                                <a href="#" class="share__item_link share__item-ok"></a>
+                            </li>
+                            <li class="share__item">
+                                <a href="#" class="share__item_link share__item-fb"></a>
+                            </li>
+                            <li class="share__item">
+                                <a href="#" class="share__item_link share__item-tw"></a>
+                            </li>
+                            <li class="share__item">
+                                <a href="#" class="share__item_link share__item-tel"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- "mailing -->
+        <div class="mailing">
+            <div class="container">
+                <div class="mailing__title"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>Получайте самые
+                    интересные статьи по почте</div>
+                <div class="mailing__subtitle">Мы присылаем их не чаще раза в неделю</div>
+
+                <div class="mailing__forms d-flex ju-con-cent">
+                    <form action="" method="POST" class="mailing-form d-flex allig-it-center">
+                        <div class="forms-field forms-input">
+                            <input type="email" name="forms-email" class="forms-email" placeholder="Email" required>
+                        </div>
+                        <div class="forms-field forms-btn"><button class="forms-button">Подписаться</button></div>
+                    </form>
+                </div>
+
+                <div class="d-flex ju-con-cent">
+                    <p class="subscriptionForm max-600">Нажимая «Подписаться», я соглашаюсь получать рекламные и иные
+                        маркетинговые сообщения от NETBRO.MEDIA на условиях <a href="#">Политики конфиденциальности</a>
+                        и <a href="#">Пользовательского соглашения</a>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row d-flex">
+                    <div class="footer-col footer__col-1">
+                        <a href="#" class="footer__logo">
+                            <img src="img_icons/logo.svg" alt="logo" class="img">
+                        </a>
+                        <div class="footer__text"> © 2020 ООО «Яндекс.Маркет» — совместное предприятие с участием
+                            Яндекса и группы компаний Сбербанк </div>
+
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+                    <div class="footer-col footer__col-2">
+                        <div class="footer__items-title">Меню</div>
+                        <ul class="footer__items-ul">
+                            <li class="footer__items__li"><a href="#">Обратная связь</a></li>
+                            <li class="footer__items__li"><a href="#">Мои заказы</a></li>
+                            <li class="footer__items__li"><a href="#">Настройки</a></li>
+                            <li class="footer__items__li"><a href="#">О сервисе</a></li>
+                            <li class="footer__items__li"><a href="#">Новости компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer__col-2">
+                        <div class="footer__items-title">Меню</div>
+                        <ul class="footer__items-ul">
+                            <li class="footer__items__li"><a href="#">Обратная связь</a></li>
+                            <li class="footer__items__li"><a href="#">Мои заказы</a></li>
+                            <li class="footer__items__li"><a href="#">Настройки</a></li>
+                            <li class="footer__items__li"><a href="#">О сервисе</a></li>
+                            <li class="footer__items__li"><a href="#">Новости компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer__col-2">
+                        <div class="footer__items-title">Меню</div>
+                        <ul class="footer__items-ul">
+                            <li class="footer__items__li"><a href="#">Обратная связь</a></li>
+                            <li class="footer__items__li"><a href="#">Мои заказы</a></li>
+                            <li class="footer__items__li"><a href="#">Настройки</a></li>
+                            <li class="footer__items__li"><a href="#">О сервисе</a></li>
+                            <li class="footer__items__li"><a href="#">Новости компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer__col-3">
+                        <div class="footer__items-title">Маркетплейс Беру
+                            в социальных сетях</div>
+                        <div class="social d-flex allig-it-center">
+                            <a href="#" class="social-link social-fb"></a>
+                            <a href="#" class="social-link social-in"></a>
+                            <a href="#" class="social-link social-vk"></a>
+                            <a href="#" class="social-link social-ok"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- main-menu -->
+        <div class="main-menu">
+            <div class="btn-mob-menu-return">Назад</div>
+            <div class="container d-flex">
+                <div class="main-menu__left-category">
+                    <ul class="left-category d-flex">
+                        <li class="left-category__li">
+                            <a href="#">Новый год</a>
+                        </li>
+                        <li class="left-category__li">
+                            <a href="#">Автотовары</a>
+                        </li>
+                        <li class="left-category__li">
+                            <a href="#">Техника</a>
+                        </li>
+                        <li class="left-category__li">
+                            <a href="#">Товары для дома</a>
+                        </li>
+                        <li class="left-category__li">
+                            <a href="#">Продукты</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu__right-subcategory">
+                    <div class="subcategory__items active">
+                        <ul class="subcategory">
+                            <li class="subcategory__li li-bold"><a href="#">Новый год</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                        </ul>
+                    </div>
+                    <div class="subcategory__items">
+                        <ul class="subcategory">
+                            <li class="subcategory__li li-bold"><a href="#">Автотовары</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                        </ul>
+                    </div>
+                    <div class="subcategory__items">
+                        <ul class="subcategory">
+                            <li class="subcategory__li li-bold"><a href="#">Техника</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                        </ul>
+                    </div>
+                    <div class="subcategory__items">
+                        <ul class="subcategory">
+                            <li class="subcategory__li li-bold"><a href="#">Товары для дома</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                        </ul>
+                    </div>
+                    <div class="subcategory__items">
+                        <ul class="subcategory">
+                            <li class="subcategory__li li-bold"><a href="#">Продуткы</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                            <li class="subcategory__li"><a href="#">Items</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="opas-mnu"></div>
+
+        <!-- scroll top -->
+        <div class="scroll-top">
+			<i class="active-scroll">0%</i>
+		</div>
+
+    </div>
+
+    <!-- подключение файлов css и js -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://use.fontawesome.com/f276963c81.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

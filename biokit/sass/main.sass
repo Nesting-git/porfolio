@@ -1,0 +1,2576 @@
+@import "fonts"
+@import "libs"
+@import "base"
+
+// Пользовательские стили
+
+.container  
+    max-width: 1476px
+    margin: 0 auto
+    padding: 0 15px
+
+.body__wrapper
+    overflow: hidden
+    margin-top: 59px
+
+.d-flex 
+    display: flex
+
+.align-it-center
+    align-items: center
+
+.ju-con-cent
+    justify-content: center
+
+.flex-wrap 
+    flex-wrap: wrap
+
+.img 
+    display: block
+    max-width: 100%
+    width: 100%
+    height: auto
+
+.header
+    background: #3e2d8f
+    padding: 10px 0
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 20
+    &.active
+        z-index: 50!important
+    &:after
+        content: ''
+        transition: 0s
+        position: absolute
+        opacity: 1
+        z-index: -1
+        display: block
+        width: 0
+        height: 0
+        content: ""
+        border-color: #3e2d8f transparent transparent #3e2d8f
+        border-style: solid
+        border-width: 60px 100vw
+        top: 101%
+        
+.logo-site
+    max-width: 105px
+
+.header__center
+    height: 50px
+    margin-left: 3%
+    width: 50%
+
+body.active
+    .header
+        // position: fixed
+        // top: 0 
+        // left: 0
+        // width: 100%
+        z-index: 30
+        &:after
+            top: 0
+            opacity: 0
+    .main-menu
+        position: fixed
+        top: 58px
+            
+
+.menu_button
+    background: #6a3df7
+    color: #fff
+    position: relative
+    padding: 3px 20%
+    height: 100%
+    font-weight: 600
+    cursor: pointer
+    transition: 0.4s
+    &:hover
+        background-color: rgba(106,61,247,.9)
+
+.burger-menu
+    display: block
+    position: relative
+    width: 18px
+    height: 12px
+    margin-right: 15px
+    transition: all 0.4s
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        background: #fff
+        height: 2px
+        width: 100%
+        border-radius: 5px
+    &:after
+        top: 100%
+    span
+        display: block
+        width: 100%
+        &:before,
+        &:after
+            content: ''
+            position: absolute
+            top: 50%
+            left: 0
+            background: #fff
+            height: 2px
+            width: 100%
+            border-radius: 5px
+.row__header
+    justify-content: space-between
+
+.menu_button.active
+    background: #fff
+    color: #6a3df7
+    .burger-menu
+        &:before,
+        &:after
+            width: 0
+            background: #6a3df7
+        span
+            &:before
+                transform: rotate(-45deg)
+                background: #6a3df7
+            &:after
+                transform: rotate(45deg)
+                background: #6a3df7
+
+.header__search
+    margin-left: 4%
+    width: 36%
+    height: 30px
+    form
+        height: 100%
+        width: 100%
+        div 
+            height: 100%
+    .input_search,
+    .btn_submit
+        height: 100%
+        border: none    
+        outline: none
+    .input_search
+        border-radius: 4px 0 0 4px
+        padding: 0 15px
+        width: 100%
+        padding-right: 40px
+    &.active
+        display: block
+
+.header__menu
+    margin-left: 4%
+
+.mob-searh
+    font-size: 25px
+    color: #fff
+    margin-right: 20px
+    display: none
+    &.active
+        color: #ffc800
+    
+
+.btn_submit
+    cursor: pointer
+    font-size: 16px
+    color: #fff
+    padding: 0 10%
+    background: #6a3df7
+    font-weight: 600
+    border-radius: 0 4px 4px 0
+    transition: 0.4s
+    &:hover
+        background-color: rgba(106, 61, 247, 0.9)
+
+.pos-form
+    width: 100%
+    position: relative
+
+.close-input
+    visibility: hidden
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 40px
+    cursor: pointer
+    &:after,
+    &:before
+        content: ''
+        position: absolute
+        width: 60%
+        height: 2px
+        background: #999
+        top: 50%
+        left: 50%
+    &:after
+        transform: translate(-50%, -50%) rotate(-45deg)
+    &:before
+        transform: translate(-50%, -50%) rotate(45deg)
+    &.active
+        visibility: visible
+
+.header__info
+    justify-content: space-between
+    width: 30%
+
+.info_items
+    color: #fff
+    font-weight: 600
+    text-decoration: none
+    opacity: 0.8
+    transition: 0.4s
+
+.info--items .fa
+    font-size: 120%
+    color: #fff
+    padding-right: 10px
+    opacity: 0.8
+    transition: 0.4s
+
+.info--items:hover
+    .info_items
+        opacity: 1
+    .fa
+        opacity: 1
+        
+.sub-header
+    position: relative
+    z-index: 22
+    background: #3e2d8f
+    font-size: 14px
+    color: #fff
+    transition: 0.4s
+    a
+        color: #fff
+        font-size: 14px
+        opacity: 1
+        transition: 0.2s
+        &:hover
+            opacity: 0.8
+
+body.active
+    .sub-header
+        opacity: 0
+
+.sub-header__row
+    padding: 10px 0
+    justify-content: center
+
+.dop-info__items
+    margin-left: 30px
+    .fa
+        padding-right: 5px
+
+.main-menu
+    position: fixed
+    width: 100%
+    top: 58px
+    background: linear-gradient(90deg,#f7f7f7 50%,#fff 0)
+    display: none
+    z-index: 100
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.12), 0 9px 46px 0 rgba(0,0,0,.06)
+
+.opas-mnu
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,0.5)
+    z-index: 40
+    display: none
+    transition: 0.5s
+    &.active
+        display: block
+        
+        
+.left-category
+    flex-direction: column
+    
+.main-menu__left-category
+    width: 20%
+
+.main-menu__right-subcategory
+    width: 80%
+
+.left-category 
+    .left-category__li
+        padding: 5px 0
+    list-style: none
+    a
+        color: #222
+        font-size: 16px
+        line-height: 18px
+        text-decoration: none
+        transition: 0.4s
+    .left-category__li
+        padding-left: 10px
+        transition: 0.4s
+        cursor: pointer
+        &:hover
+            background: #fff
+            a
+                color: #6a3df7
+                font-weight: 600
+        &.active
+            background: #fff
+            a
+                color: #6a3df7
+                font-weight: 600
+
+.main-menu__right-subcategory
+    background: #fff
+    padding: 30px
+    padding-left: 40px
+
+.subcategory
+    list-style: none
+    a
+        text-decoration: none
+        color: #222 
+        opacity: 0.7
+        &:hover
+            opacity: 0.5
+
+.li-bold
+    a
+        color: #000000
+        transition: 0.3s
+        font-weight: 600
+
+.subcategory__li
+    width: fit-content
+
+.subcategory__items
+    display: none
+    &.active    
+        display: block
+
+.main-slider__items
+    position: relative
+    background-repeat: no-repeat
+    padding-top: 20.5%
+    background-position: center
+    background-size: cover 
+
+.main-slider__text-posit
+    position: absolute
+    top: 40%
+    left: 20%
+    color: #000
+
+.main-slider__title
+    font-size: 36px
+    font-weight: 700
+
+.main-slider__subtitle
+    font-size: 20px
+    font-weight: 600
+   
+
+.main-slider__link
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0, .2)
+    z-index: 5
+    outline: none
+
+.js-img
+    display: none
+
+.main-slider
+    position: relative
+    z-index: 22
+    .js-amin-slider
+        position: relative
+    .slick-track
+        display: flex
+    .slick-list
+        overflow: hidden
+    .slick-arrow
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 10
+        border-radius: 50%
+        outline: none   
+        border: none    
+        width: 50px
+        height: 50px
+        font-size: 0
+        background-color: rgba(255, 255,255,0.5)
+        cursor: pointer
+        transition: 0.3s
+        background-repeat: no-repeat
+        background-position: 50%
+        background-image: url('../img_icons/icons/arrow.svg')
+        background-size: 30%
+        &:hover
+            background-color: rgba(255, 255,255,0.9)
+    .slick-prev
+        left: 5%
+        transform: translate(-50%, -50%) rotate(180deg)
+    .slick-next
+        left: 95%
+    .slick-slide
+        outline: none
+    .slick-dots
+        list-style: none
+        display: flex
+        position: absolute
+        margin-left: 0
+        padding-left: 0
+        top: 85%
+        left: 50%
+        transform: translate(-50%, -50%)
+        li
+            width: auto 
+            height: auto
+            margin: 0 5px
+        button
+            font-size: 0
+            border-radius: 50%
+            border: none
+            outline: none
+            width: 8px
+            height: 8px
+            display: block
+            padding: 0
+            cursor: pointer
+            background: rgba(255,255,255, 0.6)
+        li.slick-active
+            button
+                background: rgba(255,255,255, 1)!important
+
+.section
+    padding: 25px 0
+
+.title-section
+    text-align: center
+    font-size: 35px
+    font-weight: 700
+    color: #000
+
+.title-section_after
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        width: 150px
+        height: 40px
+        left: 50%
+        top: 100%
+        transform: translate(-50%, -50%)
+        background: url(../img_icons/title-site.svg) 0 0/cover no-repeat
+        z-index: -1
+
+.section-slider__img
+    border-radius: 10px
+    overflow: hidden
+    position: relative
+    margin-bottom: 15px
+    max-height: 200px
+    min-height: 180px
+    img
+        width: 100%
+        max-width: 100%
+        display: block
+
+.section-slider__link
+    font-weight: bold
+    font-size: 22px
+    line-height: 22px
+    color: #000000
+    display: block
+    margin-bottom: 9px
+    text-decoration: none
+    outline: none
+    &:after
+        content: ''
+        position: absolute
+        top: 0 
+        left: 0
+        width: 100%
+        height: 100%
+        display: block
+
+.section-slider__paragraph
+    font-size: 18px
+    line-height: 18px
+    color: rgba(0, 0, 0, 0.5)
+
+.section-slider__bottom
+    justify-content: space-between
+
+.left_photo
+    width: 20px
+    height: 20px
+    overflow: hidden
+    margin-right: 20px
+    img
+        width: 100%
+        display: block
+        max-width: 100%
+.section-slider__name
+    font-size: 18px
+    color: #000
+
+.section-slider__items
+    padding: 20px
+    transition: 0.4s
+    position: relative
+    &:hover
+        transform: translateY(-10px)
+
+.marg-min
+    margin: 40px -20px
+
+.section-slider__view
+    font-weight: 300
+    font-size: 14px
+    color: #000000
+    position: relative
+    &:before
+        content: ''
+        background: url(../img_icons/icons/view-black.svg)
+        position: absolute
+        left: -23px
+        top: 5px
+        width: 16px
+        height: 12px
+        background-position: center
+        background-repeat: no-repeat
+
+.section
+    .section-slider 
+        overflow: hidden
+        position: relative
+        margin: 0 -20px
+    .slick-track
+        display: flex
+    .slick-arrow
+        position: absolute
+        top: 27%
+        left: 50%
+        transform: translate(-50%,-50%)
+        z-index: 10
+        cursor: pointer
+        outline: none
+        border: none
+        border-radius: 50%
+        padding: 0
+        font-size: 0
+        width: 50px
+        height: 50px
+        transition: 0.4s
+        opacity: 0.8
+        background: #f1bd00 url(../img_icons/icons/right.svg) 50% 50%/ 40% no-repeat
+        &:hover
+            opacity: 1
+    .slick-next
+        left: 98.2%
+    .slick-prev
+        left: 1.8%
+        transform: translate(-50%,-50%) rotate(180deg)
+
+.article-item
+    padding: 2px 5px 
+    position: absolute
+    left: 10px
+    bottom: 10px
+    border-radius: 5px
+    font-size: 18px
+    color: #fff
+
+.section__all
+    justify-content: flex-end
+
+.categor__all
+    font-weight: bold
+    color: #000
+    font-size: 16px
+    line-height: 10px
+    margin-right: 20px
+    text-decoration: none
+    padding-bottom: 5px
+    margin-bottom: 10px
+    border-bottom: 3px solid #3bff9f
+
+.mailing
+    padding: 3% 0 
+
+.mailing__title
+    text-align: center
+    font-weight: 700
+    font-size: 22px
+    color: #000000
+    .fa
+        padding-right: 20px
+        font-size: 40px
+        color: #F1BD00
+
+.mailing__subtitle
+    text-align: center
+    font-size: 18px
+    color: #505050
+    margin-bottom: 25px
+
+.mailing-form
+    width: 45%
+
+.forms-field
+    height: 35px
+
+.forms-input
+    width: 70%
+    margin-right: 4%
+    position: relative
+    &:after
+        content: '*'
+        position: absolute
+        top: 1px
+        right: 6px
+        color: #D4696A
+
+.forms-btn
+    width: 30%
+
+.forms-email
+    height: 100%
+    border: 2px solid #F1BD00
+    outline: none
+    font-size: 15px
+    padding: 0 10px
+    width: 100%
+    height: 100%
+    border-radius: 5px
+
+.forms-button
+    width: 100%
+    height: 100%
+    border: none
+    outline: none
+    border-radius: 5px
+    background: #F1BD00
+    color: #000000
+    font-size: 18px
+    cursor: pointer
+    transition: 0.4s
+    &:hover
+        transform: translateY(-5px)
+
+
+.subscriptionForm
+    text-align: center
+    color: #505050
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: center
+    margin-top: 20px
+    
+.max-600
+    max-width: 600px
+
+.footer
+    background-color: #3e2d8f
+    padding: 3% 0
+    color: #fff
+    a
+        color: #fff
+        text-decoration: none
+        transition: 0.4s
+        opacity: 1
+        &:hover
+            opacity: 0.8
+
+.footer__col-1
+    width: 23%
+    padding-right: 2%
+
+.footer__col-2
+    width: 22%
+
+.footer__logo
+    max-width: 110px
+    display: block
+
+.footer__text
+    color: #fff
+    font-size: 14px
+    line-height: 20px
+    font-weight: 400
+    margin-top: 20px
+    margin-bottom: 20px
+    opacity: 0.8
+
+.footer__items-title
+    font-weight: 700
+    font-size: 20px
+
+.footer__items-ul
+    list-style: none
+    padding-left: 0
+    margin-top: 20px
+
+.footer__items__li
+    padding: 5px 0
+
+.footer__col-3
+    width: 13%
+
+.social
+    padding-top: 20px
+    justify-content: space-between
+
+.social-link
+    width: 30px
+    height: 30px
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: 60%
+    border-radius: 50%
+    background-color: #6a3df7
+    transition: 0.4s
+    &:hover
+        transform: translateY(-5px)
+
+.social-fb
+    background-image: url(../img_icons/icons/facebook.svg)
+
+.social-in
+    background-image: url(../img_icons/icons/instagram.svg)
+
+.social-vk
+    background-image: url(../img_icons/icons/vk.svg)
+
+.social-ok
+    background-image: url(../img_icons/icons/odnoklassniki.svg)
+
+.scroll-top
+    position: fixed
+    bottom: 6%
+    right: 2%
+    width: 70px
+    height: 70px
+    background: #F1BD00 url(../img_icons/icons/top.svg) 50% 50%/ 40% no-repeat
+    border-radius: 50%
+    cursor: pointer
+    opacity: 0.9
+    transition: 0.4s
+    display: none
+    z-index: 20
+    &:hover
+        opacity: 1
+    &.active
+        display: block
+
+.section__row
+    flex-wrap: wrap
+    margin: 0 -20px
+
+.section-categor
+    margin-top: 5%
+
+.section-categor__items
+    width: 25%
+    margin-bottom: 4%
+
+.pagination
+    list-style: none
+    font-size: 20px
+    font-weight: 700
+
+.pagination__link
+    color: #505050
+    opacity: 0.5
+    text-decoration: none
+    padding-bottom: 2px
+
+.pagination-page__item
+    min-width: 29px
+    height: 29px
+    font-size: 20px
+    font-weight: bold
+    text-align: center
+    margin-right: 10px
+
+.page-current
+    background: #6302C3
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+        color: #fff
+        opacity: 1
+
+.pagination__arrow
+    color: #6302C3
+    display: block
+    position: relative
+    font-weight: bold
+    font-size: 20px
+    padding-left: 10px
+    text-decoration: none
+
+
+.pagination__prev
+    padding-left: 0
+    padding-right: 20px
+
+.category-head
+    z-index: 20
+    height: 450px
+    position: relative
+    .container
+        position: relative
+        height: 100%
+    .category-head__head
+        position: relative
+        height: 100%
+        background-position: 50% 50% 
+        background-size: cover
+        background-repeat: no-repeat
+        flex-direction: column
+        justify-content: space-between
+        &:after
+            content: ''
+            position: absolute
+            top: 0 
+            left: 0
+            right: 0
+            bottom: 0
+            background: rgba(0,0,0,.5)
+
+.breadcrumbs
+    position: relative
+    z-index: 25
+
+.breadcrumbs__link
+    position: relative
+    color: #fff
+    text-decoration: none
+    font-size: 16px
+    padding-right: 15px
+    margin-right: 15px
+    transition: 0.4s
+    &:hover
+        text-decoration: underline
+    &:after
+        content: '/'
+        position: absolute
+        right: 0
+        top: -2px
+
+
+.breadcrumbs__page
+    list-style: none
+
+.category__title
+    color: #ffffff
+    position: relative
+    z-index: 10
+    padding-left: 40px
+
+.main-info-reclams
+    padding-top: 6%
+    padding-bottom: 4%
+
+.main-info__breadcrumbs
+    list-style: none
+    padding-left: 0
+
+.main-info__link
+    color: #000
+    opacity: 0.7
+    text-decoration: none
+    font-size: 16px
+    position: relative
+    padding-right: 15px
+    margin-right: 15px
+    transition: 0.4s
+    &:hover
+        opacity: 1
+    &:after
+        content: '/'
+        position: absolute
+        right: 0
+        top: -2px
+        font-size: 16px
+        opacity: 0.7
+
+.page-title-site
+    color: #000
+    font-weight: 800
+    font-size: 45px
+    line-height: 45px
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        left: -27px
+        top: 0px
+        background: url(../img_icons/icons/line-desc.svg) 50% 50%/ contain no-repeat
+        width: 20px
+        height: 100%
+
+.main-info-reclams p
+    font-weight: 300
+    font-size: 18px
+    line-height: 24px
+    margin-bottom: 20px
+    max-width: 920px
+
+.main-info__bottom
+    padding-top: 5%
+    
+.share
+    background: #F1BD00
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    max-width: 330px
+    width: 100%
+    padding: 15px
+
+.share__list
+    padding-left: 0
+    list-style: none
+    margin-bottom: 0
+    margin-top: 0
+    margin-left: auto
+    margin-right: auto
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: space-between
+    -webkit-justify-content: space-between
+    -ms-flex-pack: space-between
+    justify-content: space-between
+
+.share__item_link
+    display: block
+    width: 38px 
+    height: 30px
+    background-position: 50% 50%
+    background-size: contain
+    background-repeat: no-repeat
+
+.share__item-vk
+    background-image: url(../img_icons/icons/share1.svg)
+
+.share__item-ok
+    background-image: url(../img_icons/icons/share2.svg)
+
+.share__item-fb
+    background-image: url(../img_icons/icons/share3.svg)
+
+.share__item-tw
+    background-image: url(../img_icons/icons/share4.svg)
+
+.share__item-tel
+    background-image: url(../img_icons/icons/share5.svg)
+
+.main-info__title-p
+    color: #000000
+    font-weight: 700!important
+
+.main-info__page-header
+    flex-wrap: wrap
+    max-width: 700px
+    padding-bottom: 2%
+
+.marg-min
+    margin: 5px 0!important
+
+.page-header_mail
+    color: #000000
+    position: relative
+    padding-bottom: 2px
+    border-bottom: 3px solid #F1BD00
+    font-weight: 600
+    transition: 0.4s
+    &:hover
+        background: #F1BD00
+        opacity: 0.8
+
+.page-header_item
+    margin-bottom: 3%
+    margin-right: 1.5%
+    width: 28%
+
+
+// pageAutor
+.section-autor
+    position: relative
+    margin-top: 5%
+    margin-bottom: 5%
+
+.section-autor__left 
+    flex: 0 0 30%
+
+.section-autor__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    img
+        max-width: 250px
+
+.name-autor
+    text-align: center
+    color: #000
+    font-size: 20px
+    font-weight: 700
+    padding: 2% 0
+
+.site-autor
+    display: flex
+    justify-content: center
+    span
+        text-align: center
+        color: #9b9b9b
+        position: relative
+        width: fit-content
+        &:before
+            content: ''
+            position: absolute
+            width: 20px 
+            height: 15px
+            left: -30px
+            top: 5px
+            background: url(../img_icons/icons/ukraine.svg) 50% 50%/ contain no-repeat
+
+.section-autor__right
+    flex: 0 0 70%
+
+.border-inform
+    color: #4e4e4e
+    border: 1px solid #dcdcdc
+    padding: 15px
+    box-shadow: 0 1px 8px -2px rgba(0,0,0,.2)
+    
+.prof-data
+    margin-bottom: 1.5%
+
+.prof-data-line
+    margin-bottom: 1.5%
+    font-weight: 700
+    color: #000000
+    border-bottom: 1px solid #e8e8e8
+    .fa
+        margin-right: 10px
+
+.profile__data-setsrc
+    padding-bottom: 1%
+    display: block
+    span
+        display: block
+    .fa
+       padding-right: 2px
+       margin-left: -20px
+       font-size: 15px
+    .fa-clock-o
+        font-size: 17px
+
+.profile__data-group
+    padding-left: 20px
+
+.section-autor-category-btn
+    margin-top: 3%
+
+.section-autor-btn
+    border: 1px solid #F1BD00
+    text-align: center
+    cursor: pointer
+    transition: 0.4s
+    padding: 2px 10px 
+    width: fit-content
+    margin-right: 1%
+    &:hover
+        transform: translateY(-5px)
+    &.active
+        background: #F1BD00
+
+.section-autor-category
+    margin-top: 1%
+
+.bold
+    font-weight: 700
+
+.section-categor-item
+    margin-bottom: 4%
+
+.section-categor__news-link
+    font-weight: 700
+    color: #000
+    text-decoration: none
+    font-size: 23px
+    transition: 0.4s
+    &:hover
+        opacity: 0.7
+
+.news__rubric
+    margin: 1% 0
+    .razdel
+        display: inline-block
+        padding: 0 1%
+        font-size: 14px
+    a
+        text-decoration: none
+        color: #ff4e0f
+        transition: 0.4s
+        &:hover
+            color: #000
+
+.section-autor__date
+    color: #a4a4a4
+    display: inline-block
+    padding-left: 1%
+
+.cat-imagebox
+    flex: 0 0 40%
+    margin-right: 1%
+
+.cat-text
+    flex: 0 0 59%
+    font-weight: 600
+
+.blcok-cat
+    display: none
+    &.active
+        display: block
+
+.kit-discuss__meta-row
+    justify-content: space-between
+    padding-bottom: 1%
+    a 
+        color: #787878
+        transition: 0.4s
+        text-decoration: none
+        &:hover
+            color: #000
+    .data-time
+        font-size: 13px
+        color: #787878
+        font-weight: 600
+
+.kit-discuss__info
+    color: #585858
+    text-decoration: none
+    transition: 0.4s
+    font-weight: 700
+    &:hover
+        color: #000
+
+.kit-discuss__data
+    .fa
+        display: none
+        font-size: 20px
+    &.kit-discuss-ggod
+        color: green
+        .fa-thumbs-up
+            display: inline-block
+            color: green
+    &.kit-discuss-no
+        color: red
+        .fa-thumbs-down
+            color: red
+            display: inline-block
+
+.number-soc
+    font-weight: 600
+    padding-left: 5px
+
+.discuss__item
+    border: 1px solid #f1f1f1
+    background-color: #f9f9f9
+    padding: 5px 12px
+    transition: all .18s ease-in
+    margin-bottom: 4%
+
+.discuss__item--img
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 30px 
+    height: 30px
+    border-radius: 50%
+    overflow: hidden
+    display: inline-block
+
+.discuss__item-top
+    justify-content: space-between
+
+.name-autor-top
+    color: #000000
+    padding-left: 10px
+    display: inline-block
+    font-weight: 600
+    font-size: 14px
+
+.discuss__time
+    color: #262626
+    font-size: 14px
+    padding-left: 10px
+
+.pad-l-10 
+    padding-left: 10px
+    
+.popup-discuss
+    cursor: pointer
+    position: relative
+    .popup-discuss__menu
+        display: none
+        position: absolute
+        bottom: -35px
+        width: max-content
+        left: 10px
+        padding: 2px 5px
+        color: #4a4a4a
+        border: 1px solid #e4e4e4
+        border-bottom-color: #d6d6d6
+        background-color: #f8f8f8
+        box-shadow: 0 2px 11px -4px rgba(0,0,0,.6)
+        transition: all .35s ease-in
+        &:hover
+            background: #F1BD00
+        a
+            text-decoration: none
+            color: #000000
+        &.active
+            display: block
+
+.discuss__content--ful
+    font-weight: 400
+    padding: 1% 0 
+
+.kit-discuss__data--men
+    .fa
+        font-size: 16px
+
+
+
+// article
+.article
+    position: relative
+    z-index: 20
+    .article__header
+        position: relative
+        background-size: cover
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        border: 1px solid #fff
+        padding: 20px
+        padding-left: 30px
+        &  *
+            position: relative
+            z-index: 2
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(0,0,0,0.5)
+
+.page-slink .breadcrumbs__page
+    padding-left: 0
+
+.article__header-btn
+    margin-top: 2%
+
+.article__header-btn_link
+    transition: 0.4s
+    padding: 5px 4%
+    text-align: center
+    color: #fff
+    text-decoration: none
+    border-radius: 5px
+    &:hover
+        transform: translateY(-5px)
+
+.title-article
+    max-width: 80%
+    color: #fff
+    margin-top: 5%
+
+.article__subtitle
+    font-size: 24px
+    line-height: 28px
+    color: #fff
+
+.article-autor
+    justify-content: space-between
+    margin-top: 2%
+
+.article-autor-dat
+    margin-left: 20px
+
+.article-autor-img
+    width: 55px
+    height: 55px
+    min-width: 55px
+    overflow: hidden
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+.article-autor-name
+    color: #F1BD00
+    font-weight: 600
+    font-size: 20px
+
+.autor__description
+    font-size: 18px
+    color: rgba(255, 255, 255, 0.7)
+    padding-top: 3px
+    font-weight: 600
+    padding: 0
+
+.article_date
+    margin-right: 50px
+
+.article-autor__righ
+    color: #fff
+    font-weight: 600
+    font-size: 14px
+
+.article-view
+    color: #fff
+    font-weight: 600
+
+.article__main
+    padding: 0 30px
+    .article__main__left
+        max-width: 920px
+        flex: 0 0 68%
+        padding-left: 3%
+
+.article__main 
+    p
+        font-weight: 300
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 20px
+    h2
+        font-weight: 800
+        font-size: 35px
+        margin-bottom: 15px
+        margin-top: 39px
+        line-height: 36px
+    
+    
+
+.article__info-text p
+    font-size: 22px
+    line-height: 28px
+    color: #464646
+    font-weight: 500
+
+//proba
+
+.articleMain__info 
+    max-width: 920px
+    
+.articleMain 
+  position: relative 
+  width: 100%
+
+.articleNavigation 
+  position: absolute
+  right: 250px
+  top: 0
+
+.articleNavigation_spectext p 
+    font-size: 14px
+    font-weight: 300
+    line-height: 18px
+    opacity: 1
+
+.articleNavigation_spectext p a
+    text-decoration: none
+    transition: 0.5s
+    &:hover
+        background: #F1BD00
+    &:after
+        content: ""
+        width: 100%
+        height: 2px
+        background: #F1BD00
+        position: absolute
+        left: 0
+        bottom: -2px
+
+.articleMain .intro-txt p
+    font-size: 22px
+    line-height: 28px
+    color: #464646
+    font-weight: 500
+  
+.articleNavigation_spectext 
+    right: 0
+    width: 450px
+  
+.articleNavigation p 
+    font-size: 14px
+    color: #000000
+    opacity: 1
+
+.articleMain__info p > a, .articleMain__info > ul li a, .articleMain__info > ol li a, .articleMain__info table a, .ratingItem__info li a, .ratingItem__info p a, .ratingItem__info table a
+    font-weight: 400
+    color: #000000
+    position: relative
+
+.articleMain__info > ol, .category__seo ol, .ratingItem__info ol
+    counter-reset: myCounter
+    padding-left: 0
+
+.articleMain__info > ol li, .category__seo ol li, .ratingItem__info ol li
+    list-style: none
+    font-size: 18px
+    font-weight: 300
+    padding-left: 30px
+    position: relative
+    margin-bottom: 5px
+
+.articleMain__info > ol li::before, .category__seo ol li::before, .ratingItem__info ol li:before
+    counter-increment: myCounter
+    content: counter(myCounter)
+    color: #000
+    background: #F1BD00
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    font-size: 14px
+    font-weight: bold
+    width: 20px
+    height: 20px
+    position: absolute
+    left: 0
+    top: 2px
+
+
+.rating__table
+    border-top: 1px solid #D6D6D6
+    max-width: 920px
+    width: 100%
+    margin-bottom: 22px
+
+.rating__table thead 
+    border-bottom: 1px solid #D6D6D6
+
+.rating__table tbody
+    text-align: center
+
+.rating__table tbody:last-child 
+    border-bottom: none
+
+
+.articleMain__info table td 
+    font-size: 18px
+    color: #000
+    font-weight: 300
+    padding: 10px
+    border: 1px solid #D6D6D6
+
+
+.rating__table thead td 
+    font-size: 18px
+    color: #000
+    font-weight: 300
+    padding-top: 11px
+    padding-bottom: 9px
+
+.rating__table tbody:last-child 
+    border-bottom: none
+
+
+.rating__table tbody .rating__category 
+    font-size: 20px
+    line-height: 29px
+    background: rgba(241, 189, 0, 0.1)
+    vertical-align: middle
+    padding-top: 19px
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+
+.rating__table tbody .rating__top 
+    font-size: 18px
+    font-weight: 300
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+
+.rating__table tbody tr:first-child td 
+    padding-top: 20px
+
+.rating__table tbody .rating__name a
+    color: #000
+    font-size: 18px
+    position: relative
+    font-weight: 700
+
+.articleMain__info p > a, .articleMain__info > ul li a, .articleMain__info > ol li a, .articleMain__info table a, .ratingItem__info li a, .ratingItem__info p a, .ratingItem__info table a
+    font-weight: 400
+    color: #000
+    position: relative
+
+.rating__table tbody .rating__name a
+    text-decoration: none
+    &:before
+        content: ""
+        width: 100%
+        height: 2px
+        background: 
+        position: absolute
+        bottom: 2px
+        background: #F1BD00
+
+.rating__name
+    text-align: left
+
+.rating__table tbody .rating__rating span
+    opacity: 0.5
+
+table 
+    border-collapse: collapse
+
+.articleMain__info table .rating__additional a
+    font-weight: 500
+    padding: 5px 10px
+    background: #F1BD00
+    color: #000
+    border-radius: 5px
+    font-size: 15px
+    font-weight: 600
+    transition: 0.4s
+    &:hover
+        background: #ffc800
+
+.article a 
+    text-decoration: none
+
+.opros_link
+    position: relative
+    text-align: center
+    margin-bottom: 60px
+    
+.opros_link p > a 
+    font-size: 24px
+    font-weight: 800
+    color: #000000
+    transition: all .5s
+    padding: 5px 30px
+    border-radius: 10px
+    background: #F1BD00
+    transition: 0.4s
+    opacity: 1
+    &:hover
+       background: #ffc800
+    
+.ratingItem
+    color: #000
+    margin: 40px 0 0 0
+
+.ratingItem__head
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    margin-bottom: 20px
+
+.ratingItem__top
+    width: 66px
+    height: 66px
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    background: #F1BD00
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    font-size: 35px
+    font-weight: 800
+    text-decoration: underline
+    margin-right: 20px
+
+.articleMain__info h3.ratingItem__name
+    margin: 0
+
+.articleMain__info h3
+    font-weight: 800
+    font-size: 30px
+    line-height: 32px
+    margin-bottom: 5px
+    margin-top: 39px
+
+.ratingItem__price
+    font-size: 18px
+    font-weight: 300
+    padding-left: 2px
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.relative
+    width: 100%
+    position: relative
+
+blockquote
+    margin: 0 0 1rem
+
+.notice 
+    border: 3px solid #F1BD00
+    -webkit-border-radius: 10px
+    border-radius: 10px
+    font-size: 18px
+    line-height: 27px
+    display: inline-block
+    padding-left: 23px
+    padding-top: 20px
+    padding-bottom: 18px
+    padding-right: 30px
+    position: absolute
+    top: 0
+    right: -424px
+    max-width: 364px
+
+.notice::before
+    content: ""
+    width: 75px
+    height: 84px
+    background: url(../img_icons/icons/bee1.svg)
+    position: absolute
+    right: -105px
+    top: -3px
+
+.notice::after
+    content: url(../img_icons/icons/slice1.svg)
+    position: absolute
+    top: -3px
+    right: -20px
+
+
+.ratingItem__info 
+    font-size: 18px
+    font-weight: 300
+    line-height: 27px
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 583px
+    -ms-flex: 0 0 583px
+    flex: 0 0 583px
+    max-width: 583px
+
+
+.ratingItem__img 
+    -webkit-box-flex: 1
+    -webkit-flex-grow: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    text-align: right
+    position: relative
+
+
+.item-rating 
+    width: 117px
+    height: 117px
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    background: #F1BD00
+    color: #000
+    position: absolute
+    left: 49px
+    top: 19px
+    padding-top: 23px
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+
+
+.ratingItem__img 
+    -webkit-box-flex: 1
+    -webkit-flex-grow: 1
+    -ms-flex-positive: 1
+    flex-grow: 1
+    text-align: right
+    position: relative
+
+
+.item-rating__value 
+    font-size: 35px
+    font-weight: 800
+    margin-bottom: -10px
+    span
+        opacity: .5
+        font-size: 18px
+        font-weight: 300
+        margin-left: -6px
+
+
+.item-rating__txt 
+    font-weight: bold
+    font-size: 14px
+    text-transform: uppercase
+
+.pros-and-cons 
+    max-width: 920px
+    width: 100%
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    margin-top: 59px
+    background: rgba(241, 189, 0, 0.1)
+    -webkit-border-radius: 3px 3px 0 0
+    border-radius: 3px 3px 0 0
+    padding-bottom: 24px
+    margin-bottom: 46px
+
+
+.pros-and-cons .pros 
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 50%
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+    max-width: 50%
+
+
+.pros-and-cons .pros__head 
+    background: #F1BD00
+    color: #000
+    font-weight: 800
+    font-size: 26px
+    padding-left: 30px
+    padding-top: 5px
+    padding-bottom: 6px
+
+
+.pros-and-cons .pros__head span::after 
+    content: url(../img_icons/icons/like.svg)
+    margin-left: 6px
+
+
+.pros-and-cons .pros__head
+    background: #F1BD00
+    color: #000
+    font-weight: 800
+    font-size: 26px
+    padding-left: 30px
+    padding-top: 5px
+    padding-bottom: 6px
+
+.pros-and-cons .pros__main 
+    padding-left: 30px
+    margin-top: 20px
+    border-right: 1px solid #F1BD00
+    padding-bottom: 5px
+
+
+
+.pros-and-cons__list 
+    padding-left: 0
+    list-style: none
+    font-size: 18px
+    font-weight: 300
+    margin-bottom: 0
+
+
+.pros-and-cons__list ul, .pros-and-cons__list ol 
+    list-style: none
+    margin: 0
+    padding: 0
+
+
+.pros-and-cons__list li 
+    position: relative
+    padding-left: 20px
+    padding-right: 10px
+    margin-bottom: 11px
+
+
+.pros-and-cons__list li::before 
+    content: ""
+    width: 9px
+    height: 9px
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    background: #F1BD00
+    display: block
+    position: absolute
+    left: 0
+    top: 7px
+
+
+.pros-and-cons .cons 
+    -webkit-box-flex: 0
+    -webkit-flex: 0 0 50%
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+    max-width: 50%
+
+
+.pros-and-cons .cons__head 
+    background: #000
+    color: #F1BD00
+    font-weight: 800
+    font-size: 26px
+    padding-left: 30px
+    padding-top: 5px
+    padding-bottom: 6px
+
+
+.pros-and-cons .cons__head span::after 
+    content: url(../img_icons/icons/dislike.svg)
+    margin-left: 6px
+
+
+.pros-and-cons .cons__main 
+    padding-left: 30px
+    margin-top: 20px
+    padding-bottom: 5px
+
+
+.pros-and-cons__list 
+    padding-left: 0
+    list-style: none
+    font-size: 18px
+    font-weight: 300
+    margin-bottom: 0
+
+.articleMore 
+    max-width: 373px
+    width: 100%
+    position: absolute
+    right: 93px
+    margin-top: -186px
+
+
+.articleMore-page 
+    margin-top: 34px
+
+
+.articleMore__inner 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    position: relative
+
+
+.articleMore__img 
+    min-width: 220px
+    width: 220px
+    -webkit-border-radius: 10px 0 0 10px
+    border-radius: 10px 0 0 10px
+    overflow: hidden
+    position: relative
+    margin-right: 20px
+
+
+.articleMore__img::before 
+    content: ""
+    width: 100%
+    height: 130px
+    border-bottom-left-radius: 10px
+    border-top-left-radius: 10px
+    left: 0
+    top: 0
+    position: absolute
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-19.12%, rgba(0, 0, 0, 0.42)), color-stop(124.31%, rgba(0, 0, 0, 0.23)))
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.42) -19.12%, rgba(0, 0, 0, 0.23) 124.31%)
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.42) -19.12%, rgba(0, 0, 0, 0.23) 124.31%)
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.42) -19.12%, rgba(0, 0, 0, 0.23) 124.31%)
+
+
+.articleMore__info 
+    padding-top: 0px
+
+
+.articleMore__label 
+    font-size: 14px
+    color: #fff
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    width: 160px
+    height: 24px
+    margin-bottom: 11px
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    
+.articleMore__label-top 
+    background: #DD5E03
+
+.articleMore__label-recomendation 
+    background: #DD5E03
+
+
+.articleMore__link 
+    font-weight: bold
+    font-size: 14px
+    display: block
+    line-height: 16px
+    color: #000000
+
+
+.articleMore__link::after 
+    content: ""
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+.signature_block 
+    position: relative
+    max-width: 100%
+.fancybox.image 
+    max-width: 100%
+    display: block
+    width: 100%
+    .signature
+        max-width: 1440px
+        display: block
+        // width: 100%
+    .max-width-100
+        width: 100%
+        max-width: 100%
+
+.signature_text 
+    position: absolute
+    left: 10px
+    bottom: 10px
+    color: #fff
+    opacity: 0.7
+    padding: 0 10px
+    background: rgba(0, 0, 0, 0.3)
+    font-weight: 600
+
+
+.articleMain__bottom 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: start
+    -webkit-align-items: flex-start
+    -ms-flex-align: start
+    align-items: flex-start
+    margin-top: 90px
+
+
+.share-wrapper 
+    padding-top: 8px
+
+
+p.share__txt 
+    font-weight: 300
+    font-size: 16px
+    color: #000
+    opacity: .7
+    margin-top: 7px
+    margin-bottom: 26px!important
+
+
+p.share__txt_top 
+    opacity: 1
+    font-size: 18px
+    margin-bottom: 19px
+
+
+.share__list 
+    padding-left: 0
+    list-style: none
+    margin-bottom: 0
+    margin-top: 0
+    margin-left: auto
+    margin-right: auto
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: space-between
+    -webkit-justify-content: space-between
+    -ms-flex-pack: space-between
+    justify-content: space-between
+
+
+.articleMain__info img 
+    max-width: 100%
+    height: auto
+
+
+p.share__txt 
+    font-weight: 300
+    font-size: 16px
+    color: #000
+    opacity: .7
+    margin-top: 7px
+    margin-bottom: 0
+
+
+.rate 
+    padding-top: 8px
+
+
+.rate__top 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: end
+    -webkit-justify-content: flex-end
+    -ms-flex-pack: end
+    justify-content: flex-end
+    font-size: 18px
+    font-weight: 300
+    margin-bottom: 19px
+
+
+.rate__top span 
+    margin-right: 47px
+    padding-top: 5px
+
+
+#reviewStars-input 
+    overflow: hidden
+    *zoom: 1
+    width: 190px
+    position: relative
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-between
+    -webkit-flex-direction: row-reverse
+    -moz-flex-direction: row-reverse
+    -ms-flex-direction: row-reverse
+    -o-flex-direction: row-reverse
+    flex-direction: row-reverse
+    padding-top: 3px
+
+
+.post-ratings 
+    width: 100%
+    opacity: 1
+    /* background-color: #ffffff */
+
+
+.post-ratings img, .post-ratings-loading img, .post-ratings-image img 
+    border: 0
+    padding: 0
+    margin: 0
+
+.post-ratings img, .post-ratings-loading img, .post-ratings-image img
+    width: 30px
+    height: 30px
+
+
+.articleMain__info img 
+    max-width: 100%
+    height: auto
+
+
+.post-ratings-loading 
+    display: none
+    height: 16px
+    text-align: left
+
+
+.rate__bottom 
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: end
+    -webkit-justify-content: flex-end
+    -ms-flex-pack: end
+    justify-content: flex-end
+
+
+.article-like 
+    width: 153px
+    height: 60px
+    background: transparent url(../img_icons/like-bg.png) 0 0 no-repeat
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+
+
+.article-like__like 
+    color: #000
+    padding: 0
+    padding-left: 9px
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) 
+    cursor: pointer
+
+
+.article-like button 
+    font-size: 26px
+    font-weight: 800
+    background: none
+    border: none
+    width: 50%
+    border: none
+    outline: none
+
+
+.article-like__like span::after 
+    content: url(../img_icons/icons/like.svg)
+    margin-left: 6px
+
+
+.article-like__dislike span::after 
+    content: url(../img_icons/icons/dislike.svg)
+    margin-left: 7px
+
+
+.article-review 
+    width: 228px
+    height: 60px
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    background: #F1BD00
+    padding-right: 12px
+    padding-left: 12px
+    margin-left: 30px
+
+
+.articleMain__info img 
+    max-width: 100%
+    height: auto
+
+
+.article-review .txt 
+    font-size: 22px
+    font-weight: 800
+    color: #000
+
+
+.article-review .review-count 
+    font-size: 18px
+    line-height: 1
+    font-weight: 800
+    background: #000
+    -webkit-border-radius: 50%
+    border-radius: 50%
+    color: #F1BD00
+    display: block
+    padding: 5px 8px 3px 8px
+
+.article-like__dislike
+    color: #F1BD00
+    padding: 0
+    padding-right: 7px
+
+
+.article-section
+    margin-top: 3%
+
+.comments
+    margin-bottom: 5%
+
+.form-comments
+    margin-bottom: 30px
+
+.comments__title
+    font-size: 35px
+    font-weight: 800
+    margin-bottom: 35px
+
+.comments-wrap
+    max-width: 704px
+
+.form-group__label
+    display: block
+    font-size: 16px
+    color: #323232
+    margin-bottom: 0
+
+.form_row
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    margin-bottom: 20px
+
+.form-group__input
+    background: rgba(234, 234, 234, 0.3)
+    width: 335px
+    height: 40px
+    padding-left: 14px
+    border: 1px solid #EAEAEA
+    -webkit-border-radius: 3px
+    border-radius: 3px
+
+.form-group__textarea
+    width: 100%
+    height: 176px
+    background: rgba(234, 234, 234, 0.3)
+    padding-left: 14px
+    padding-top: 10px
+    border: 1px solid #EAEAEA
+    -webkit-border-radius: 3px
+    border-radius: 3px
+    resize: none
+
+.comment-form-cookies-consent
+    margin-top: 0
+    margin-bottom: 15px
+
+.comments-form__btn
+    font-weight: 800
+    font-size: 16px
+    color: #000
+    border: none
+    background: #F1BD00
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25)
+    -webkit-border-radius: 5px
+    border-radius: 5px
+    cursor: pointer
+    padding: 7.5px 46.5px
+    margin-top: 21px
+    margin-bottom: 20px
+
+.rating_block
+    margin-top: 70px
+    overflow: hidden
+    position: relative
+
+.rating_block__row
+    position: relative
+    overflow: hidden
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,.3);
+        z-index: 1
+
+.rating_block__row
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    padding: 50px 70px
+    border-radius: 30px
+    position: relative
+    z-index: 4
+
+.rating_block__wrapper
+    position: relative
+    z-index: 20
+
+.rating_block-title
+    font-size: 35px
+    font-weight: 800
+    color: #fff
+    text-align: center
+    margin-bottom: 42px
+
+.rating_block__pull
+    flex-wrap: wrap
+    display: none
+    &.active
+        display: flex
+
+.rating_block__hidest
+    display: none
+    &.active
+        display: block
+
+.pull__items 
+    padding: 10px
+    width: 25%
+    cursor: pointer
+    position: relative
+    &:after
+        content: 'Голосовать'
+        position: absolute
+        color: black
+        text-align: center
+        border-radius: 10px
+        background-color: rgb(255, 193, 7)
+        opacity: 0.9
+        right: 30%
+        top: 40%
+        width: auto
+        padding: 5px 10px
+        opacity: 0
+        transition: all .5s
+    &:hover:after
+        opacity: 1
+
+
+.rating__img
+    padding:  20px
+    width: 100%
+    padding-bottom: 66%
+    max-width: 100%
+    background-size: auto 90%
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 10px
+    background-color: #fff
+    transition: all 0.5s 0s
+
+.pull__title
+    font-size: 1rem
+    transition: all 0.5s 0s
+    margin-top: 0px
+    background-color: rgba(0, 0, 0, 0.2)
+    border-radius: 0px 0 10px 10px
+    padding: 5px 0px
+    z-index: -1
+    text-align: center
+    color: #fff
+    font-weight: 700
+
+.rating_block__btn
+    font-size: 24px
+    font-weight: 700
+    color: #000
+    background: #f1bd00
+    cursor: pointer
+    display: block;
+    width: fit-content
+    margin: 0 auto
+    padding: 5px 20px 5px 20px
+    border-radius: 10px
+    transition: all .5s
+    margin-top: 40px
+    &:hover
+        background: #cda40d
+
+.repost
+    margin-top: 4%
+    flex-direction: column
+    align-items: center
+    display: none
+    &.active
+        display: flex
+
+.hidest-item
+    position: relative
+    margin: 0 auto 12px auto
+    padding: 0
+    display: block
+    width: 90%
+    max-width: 100%
+    flex: unset
+    background-color: rgba(0, 0, 0, .55)
+    border-radius: 10px
+
+
+.hidest__img
+    width: 42px
+    height: 42px
+    position: absolute
+    left: 0
+    top: 0
+    z-index: 6
+    margin-left: -15px
+    border-radius: 50%
+    background-size: auto 90%
+    background-position: center
+    background-repeat: no-repeat
+    background-color: white
+    transition: 0.5s
+    &:hover
+        width: 160px
+        height: 160px
+        border-radius: 20px
+        z-index: 99
+        box-shadow: 0 4px 50px black
+
+.percent
+    overflow: hidden
+    width: auto
+    transition: all 2s 0.5s
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 5
+    border-radius: 30px
+    padding-left: 0
+    min-width: 12%
+    justify-content: space-between
+    align-items: center
+    &.active-wid
+        background: rgba(241, 189, 0, .8)
+
+
+.ratingItem
+    background-color: #fff
+
+.percent-inf
+    color: white
+    line-height: 100%
+    font-size: 18px
+    padding: 12px 0
+    padding-left: 50px
+    z-index: 2
+    white-space: nowrap
+
+.percent-prend
+    color: #f1bd00
+    font-weight: 600
+    position: absolute
+    z-index: 2
+    padding-right: 2%
+    right: 0
+
+.hidest-item
+    transition: all 0.5s
+    &:hover
+        background: #f1bd00
+        .percent-prend
+            color: #000
+        
+.hidest-item.active
+    background: #f1bd00
+    .percent-prend
+        color: #000
+        &:before
+            content: 'Ваш выбор'
+            position: absolute
+            top: -2px
+            left: -134px
+            background: #fff
+            border-radius: 5px
+            color: #f1bd00
+            font-size: 14px
+            font-weight: 500
+            text-transform: uppercase
+            height: 28px
+            padding: 0px 15px
+            opacity: 1 !important
+            transition: all.5s
+            line-height: 28px
+.btn-mob-menu-return
+    display: none
+
+.active-scroll
+    font-size: 20px
+    font-weight: 700
+    font-style: normal
+    position: absolute
+    top: 130%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+
+@import "media" // Всегда в конце
