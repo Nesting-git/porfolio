@@ -1,0 +1,1077 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+
+// Пользовательские стили
+
+body 
+    padding: 25px
+
+.container
+    max-width: 1170px
+    margin: 0 auto
+    // position: relative
+    padding: 0 15px
+
+.body__wrapper 
+    border: 1px solid #f3f3f3
+    position: relative
+    overflow: hidden
+
+.d-block 
+    display: block
+
+.d-flex 
+    display: flex
+
+.align-it-center 
+    align-items: center
+
+.jus-con-cent
+    justify-content: center
+
+a 
+    text-decoration: none
+    transition: 0.3s
+    color: #001d26
+    display: inline-block
+    outline: none!important
+    &:hover
+        color: #51bcd6
+    
+.header__top
+    // position: relative
+    display: flex
+    align-items: center
+    padding: 18rem/$var 0
+    justify-content: space-between
+    
+
+.header-top__left,
+.header-top__right-left
+    width: 62%
+    position: relative 
+
+.header-top__left
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        height: 2px
+        width: 100%
+        background-color: #51bcd6;
+        bottom: -18px
+        left: 0
+    &.active
+        &:before
+            background-color: #000
+
+.header__logo
+    max-width: 138px
+    max-height: 27px
+
+.header__sity-ul,
+.header__sity-submenu
+    list-style: none
+    padding-left: 0
+
+.header__sity-ul
+    margin-left: 55rem/$var
+    padding-right: 30rem/$var
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        background: url(../img-icons/arrow-menu.svg) no-repeat center
+        right: 0
+        top: 7px
+        transform: rotate(90deg)
+        transition: 0.3s
+    cursor: pointer    
+
+.header__sity-submenu 
+    position: absolute
+    top: 30rem/$var
+    border: 1px solid #f3f3f3
+    background-color: #fff
+    padding: 10px
+    width: max-content
+    box-shadow: 0 0 3px -1px rgba(0,0,0,0.5)
+    opacity: 0
+    visibility: hidden
+    transition: 0.3s
+    z-index: 10
+.header__sity-submenu-li
+    line-height: 20px
+
+.header__sity-ul:hover 
+    &:before
+        transform: rotate(0deg)
+    .header__sity-submenu 
+        opacity: 1
+        visibility: visible
+
+.header__bottom
+    background-color: #f3f3f3
+    position: relative
+
+.block-select
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 13px
+        top: 50%
+        left: -4%
+        transform: translate(-50%, -50%)
+        background: #000
+    &:before
+        content: ''
+        position: absolute
+        right: 20%
+        top: 50%
+        width: 10px
+        height: 10px
+        background: url(../img-icons/arrow-product.svg) no-repeat center
+        background-size: contain
+        transform: translate(-50%, -50%) rotate(90deg)
+
+.search_select
+    cursor: pointer
+    border: none
+    outline: none
+    background: transparent
+    height: 100%
+    max-width: 170px
+    -webkit-appearance: none
+    padding-right: 15px
+    overflow: hidden
+    width: 170px
+
+.main-menu
+    padding: 0
+    margin: 0
+    list-style: none
+        
+.main-menu__link 
+    display: block
+    text-transform: uppercase
+    font-weight: 800
+    padding: 15px 1vmax
+    font-size: 1rem
+    color: #001d26
+
+.header-top__right
+    width: 35%
+    right: 0
+    margin-bottom: -6.28462rem
+    justify-content: space-between
+    z-index: 2
+
+.main-menu__li
+    &:first-child
+        .main-menu__link
+            padding-left: 0
+
+.menu-tovare__items
+    flex-direction: column
+    align-items: center
+    transition: 0.3s
+    // cursor: pointer
+    &:hover
+        .menu-tovare__text
+            color: #51bcd6   
+        .menu-tovare__icons
+            background-image: url(../img-icons/icons-tovare-hov-1.png)
+        .menu-tovare__icons-search
+            background-image: url(../img-icons/icons-tovare-hov-2.png) 
+        .menu-tovare__icons-communication
+            background-image: url(../img-icons/icons-tovare-hov-3.png) 
+        .menu-tovare__icons-basket
+            background-image: url(../img-icons/icons-tovare-hov-4.png) 
+        &:after
+            width: 100%
+
+.menu-tovare__text
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        top: -58%
+        left: 0
+        height: 2px
+        background-color: #51bcd6
+        width: 0
+        transition: 0.3s
+
+.menu-tovare__items
+    &:hover 
+        .menu-tovare__text
+            &:after
+                width: 100%
+
+.menu-tovare__icons
+    width: 17rem/$var
+    height: 17rem/$var
+    cursor: pointer
+    transition: 0.3s
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: 0 0
+.menu-tovare__icons
+    background-image: url(../img-icons/icons-tovare-1.png) 
+
+.menu-tovare__icons-search
+    background-image: url(../img-icons/icons-tovare-2.png) 
+
+.menu-tovare__icons-communication
+    background-image: url(../img-icons/icons-tovare-3.png) 
+
+.menu-tovare__icons-basket
+    background-image: url(../img-icons/icons-tovare-4.png) 
+
+.menu-tovare__text
+    margin-top: 45rem/$var
+    text-transform: uppercase
+    font-weight: 800
+    letter-spacing: 0.78px
+    padding-bottom: 15px
+    cursor: pointer
+    transition: 0.3s
+
+.burger_menu-mob
+    position: relative
+    width: 17rem/$var
+    height: 17rem/$var
+    cursor: pointer
+    margin-right: 20rem/$var
+    display: none
+    min-width: 20px
+    &:after,
+    &:before
+        content: ''
+        position: absolute
+        width: 100%
+        top: 0
+        left: 0
+        height: 3px
+        background-color: #51bcd6
+        transition: 0.3s
+    &:before
+        top: 100%
+    span
+        display: block
+        width: 100%
+        position: absolute
+        top: 50%
+        height: 3px
+        background-color: #51bcd6
+        transition: 0.3s
+    &.active
+        &:after,
+        &:before,
+        span
+            background-color: #333
+
+.slider-mane
+    position: relative
+    .container
+        position: relative
+
+.slider-mane__items
+    background-color: #54bdd7
+    background-size: contain
+    background-repeat: no-repeat
+
+.btn
+    color: #51bcd6
+    text-transform: uppercase
+    font-weight: 700
+    box-shadow: 0 1px 4px rgba(139, 139, 139, 0.5)
+    background-color: #ffffff
+    border-radius: 4px
+    padding: 1.5rem 3.60769rem
+    margin-top: 30rem/$var
+    transition: 0.3s
+    cursor: pointer
+    font-size: 15rem/$var
+    &:hover
+        color: #333
+
+
+
+.slider-mane__items
+    padding: 80rem/$var
+
+.slider-mane__title
+    text-shadow: 0 1px 4px rgba(131, 165, 174, 0.5)
+    font-size: 33rem/$var
+    font-weight: 700
+    text-transform: uppercase
+    width: fit-content
+    position: relative
+    span
+        display: block
+        width: 60rem/$var
+        height: 60rem/$var
+        background-color: transparent
+        background-repeat: no-repeat
+        background-size: contain
+        position: absolute
+        top: -16px
+        right: 2px
+               
+
+.name-lider-1
+    background-position-x: right
+    
+
+.slider-mane
+    .slick-track
+        display: flex
+    .slick-list
+        overflow: hidden
+
+.slider-mane__subtitle
+    text-shadow: 0 1px 4px rgba(131, 165, 174, 0.5)
+    color: #fff
+    font-weight: 400
+    font-size: 23rem/$var
+    margin-top: 40rem/$var
+    padding-left: 80rem/$var
+    position: relative
+    span
+        position: absolute
+        width: 56rem/$var
+        height: 56rem/$var
+        left: 0
+        top: 0
+        background-position: center
+        background-size: cover
+        background-color: transparent
+
+.submenu-tovar
+    background-color: #f3f3f3
+    // box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.5)
+    position: absolute
+    z-index: 3
+    width: 100%
+
+.submenu-tovar__items
+    flex-direction: column
+    align-items: center
+
+.submenu-tovar__img
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        max-width: 100%
+        height: auto
+
+.submenu-tovar__title
+    font-weight: 600
+    color: #001d26
+    text-align: center
+    padding-top: 20rem/$var
+    width: 100%
+
+.section-product__col
+    width: 50%
+    padding: 20rem/$var 0
+    position: relative
+
+.section-product__right
+    border-left: 1px solid #f3f3f3
+    padding-left: 1rem
+
+.section-product__items-img
+    max-width: 260rem/$var
+    max-height: 100rem/$var
+    margin-left: 15rem/$var
+    img
+        display: block
+        width: 100%
+        height: auto
+        max-width: 100%
+
+.submenu-tovar__tovar
+    padding-bottom: 45rem/$var
+    .js-submenu-tovar-slick
+        overflow: hidden
+    .container 
+        position: relative
+    .slick-track
+        display: flex
+    .slick-arrow    
+        background: url(../img-icons/arrow-slick.png) no-repeat 0 0
+        background-size: contain!important
+        &:before
+            display: none
+    .slick-prev
+        left: -60rem/$var
+    .slick-next
+        background: url(../img-icons/arrow-slick-next.png) no-repeat 0 0
+        right: -60rem/$var
+
+.search
+    width: 100%
+
+.search__row
+    max-width: 80%
+    margin: 0 auto
+
+.search-form_imput
+    display: block
+    border-radius: 4px
+    background-color: #ffffff
+    border: none
+    outline: none
+    box-shadow: 0 1px 4px rgba(139, 139, 139, 0.5)
+    padding-left: 1.92308rem
+    height: 100%
+    width: 100%
+    padding-right: 160rem/$var
+
+.search-form-hei
+    height: 50rem/$var
+    margin: 0
+
+.search-form__input-block
+    width: 70%
+    display: flex
+    margin: 0
+    position: relative
+
+.search-form__block-btn
+    width: 20%
+
+.search__btn
+    width: 100%
+    margin-left: 30rem/$var
+    font-weight: 700
+
+.submenu-contacts__title
+    width: 100%
+    padding: 30rem/$var
+    color: #001d26
+    font-weight: 400
+    text-align: center
+    border: 1px solid #dedede
+    font-weight: 600
+
+.submenu-contacts__row
+    justify-content: space-around
+    padding-top: 50rem/$var
+
+.submenu-tovar__contacts
+    padding-bottom: 45rem/$var
+
+.search
+    padding-bottom: 45rem/$var
+    padding-top: 45rem/$var
+
+.search__prim
+    display: inline-block
+    color: #b6b6b5
+    font-weight: 400
+    font-size: 12px
+    padding-left: 25rem/$var
+
+.basket,
+.submenu-tovar__contacts,
+.search,
+.submenu-tovar__tovar
+    background-color: #f3f3f3
+    position: absolute
+    left: 0
+    top: 125px
+    width: 100%
+    opacity: 0
+    transition: 0.3s
+    visibility: hidden
+
+.basket
+    width: 100%
+    padding: 50rem/$var
+    flex-direction: column
+    .container
+        width: 100%
+
+.basket__info__top
+    width: 100%
+
+.basket__col-2
+    flex: 0 0 16.6666%
+    flex-direction: column
+
+.basket__info-text
+    font-size: 12px
+    color: #b6b6b5
+    text-align: left
+
+.row-product
+    background-color: #fff
+    margin-top: 20rem/$var
+    padding: 2px 0
+
+.basket-price
+    color: #51bcd6
+    font-size: 17rem/$var
+    font-weight: 700
+
+.basket-calck 
+    display: flex
+    align-items: center
+
+.basket-calck-btn
+    display: block
+    width: 22rem/$var
+    height: 22rem/$var
+    border-radius: 4px
+    background-color: #e9e9e9!important
+    outline: none
+    border: none
+    background-size: 50%
+    transition: 0.3s
+    cursor: pointer
+    &:hover
+        background-color: #51bcd6!important
+    &.debag
+        opacity: 0.4
+    
+.basket-calck-add
+    background: url(../img-icons/add.svg) no-repeat center
+    background-size: 50%
+
+.basket-calck-minus
+    background: url(../img-icons/minus.svg) no-repeat center
+    background-size: 50%
+    
+.basket__pad-top
+    padding-top: 20rem/$var
+
+.basket-calck-number
+    border: none
+    outline: none
+    font-size: 17rem/$var
+    color: #001d26
+    min-width: 50rem/$var
+    max-width: 50rem/$var
+    text-align: center
+    font-weight: 700
+    background-color: transparent!important
+
+.basket__pad-top__arrow
+    position: relative
+    .close-tover
+        position: absolute
+        width: 22px
+        height: 22px
+        background: #dddddd url(../img-icons/remove-symbol.svg) no-repeat center
+        background-size: 50%
+        transition: 0.3s
+        cursor: pointer
+        right: 20px
+        top: 25px
+        &:hover
+            background-color: #51bcd6!important
+
+.basket__items
+    font-size: 17rem/$var
+    text-transform: uppercase
+    font-weight: 700
+    color: #001d26
+    display: block
+
+.submenu__tel
+    display: block
+    font-size: 23rem/$var
+    font-weight: 700
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        width: 20rem/$var
+        height: 20rem/$var
+        background: url(../img-icons/icons-tovare-3.png) no-repeat center
+        background-size: contain
+        left: 20rem/$var
+        top: 50%
+        transform: translate(-50%, -50%)
+
+.submenu__tel,
+.info-mob
+    padding-left: 70rem/$var
+
+.info-mob
+    color: #8b8b8b
+    padding-top: 2rem/$var
+
+.slick-slide
+    outline: none
+
+.section-product__tile
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 17rem/$var
+    position: relative
+
+.block-arow
+    position: relative
+    padding-left: 35rem/$var
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        top: 5px
+        width: 10px
+        height: 10px
+        background: url(../img-icons/arrow-product.svg)  no-repeat center 
+        background-size: contain
+        
+
+.section-product__left
+    padding-right: 115rem/$var
+
+.section-product__subtitle
+    color: #8b8b8b
+
+.section-product__price
+    padding-top: 12rem/$var
+    text-transform: uppercase
+    font-size: 17rem/$var
+    font-weight: 700
+
+.product_price
+    text-decoration: line-through
+    color: #8b8b8b
+
+.product_action-price
+    color: #51bcd6
+    padding-left: 10rem/$var
+
+.bnt-buy
+    display: block
+    font-weight: 700
+    text-transform: uppercase
+    background: #e8c72e url(../img-icons/arrow-product.svg) no-repeat 90% 50%
+    background-size: 10px 10px
+    padding: 0.49231rem 3.38462rem 0.49231rem 2.15385rem
+    position: absolute
+    letter-spacing: 1px
+    left: 66%
+    top: 75px
+    &:hover
+       background-color: #ffd200
+       color: #333
+
+.left-bol 
+    left: 77%
+
+.popular-goods
+    background-color: #f3f3f3
+    padding: 55rem/$var 140rem/$var
+    .container  
+        position: relative
+    
+.popular-goods__dots
+    padding-top: 45rem/$var
+
+.popular-goods__section
+    background-color: #ffffff
+
+.popular-goods__title
+    text-transform: uppercase
+    font-size: 23rem/$var
+    text-align: center
+    font-weight: 600
+
+.popular-goods__block-title
+    padding: 25rem/$var 0
+
+.popular-goods__items
+    width: 100%
+    padding: 25rem/$var
+    border: 1px solid #f3f3f3
+    background-color: #ffffff
+    
+.popular-goods__img
+    max-width: 245px
+    max-height: 245px
+    height: 245px
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        max-width: 100%
+        height: auto
+        display: block
+
+.popular-goods__product-title   
+    font-size: 19rem/$var
+    font-weight: 700
+    text-align: center
+    display: block
+
+.popular-goods__product-subtitle
+    text-align: center
+    color: #8b8b8b
+    font-weight: 400
+
+.popular-goods__price
+    font-size: 17rem/$var
+    font-weight: 700
+    color: #51bcd6
+    text-align: center
+
+.popular-goods__line
+    display: block
+    height: 2px
+    background-color: #001d26
+    max-width: 165px
+    margin: 25rem/$var auto
+    margin-top: 12rem/$var
+
+.js-slider,
+.js-slider-prod,
+    .slick-track
+        display: flex
+    .slick-list
+        overflow: hidden
+    .slick-arrow
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        font-size: 0
+        border: none
+        outline: none  
+        width: 25rem/$var
+        height: 25rem/$var
+        background: url(../img-icons/arrow-slick.png) no-repeat 0 0
+        background-size: contain
+        transition: 0.3s
+        &:before
+            display: none
+    .slick-prev
+        left: -50rem/$var       
+    .slick-next
+        left: calc(100% + 50px) 
+        background: url(../img-icons/arrow-slick-next.png) no-repeat 0 0
+
+.js-slider
+    .slick-slide > div
+        height: 100%
+        .popular-goods__items
+            height: 100%
+
+.slick-dotted.slick-slider
+    margin-bottom: 0
+
+.slick-dots,
+.dots-name
+    padding: 0
+    margin: 0
+    position: relative
+    bottom: 0
+    li 
+        width: auto
+        height: auto
+        button
+            display: block
+            width: 68px
+            height: 2px
+            background-color: #51bcd6
+            opacity: 0.5
+            padding: 0
+            &:before
+                display: none
+        &.slick-active
+            button
+                background-color: #51bcd6
+                opacity: 1
+
+.dots-name
+    position: absolute!important
+    top: 98%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    bottom: -80rem/$var
+    li 
+        button
+            background-color: #ffffff
+        opacity: 0.5       
+        &.slick-active
+            button
+                background-color: #ffffff
+                opacity: 1             
+
+
+.brand
+    background-color: #fff
+    padding: 25rem/$var
+
+.brand__title   
+    font-size: 17rem/$var
+    text-transform: uppercase
+    letter-spacing: 3.4rem/$var
+    font-weight: 600
+    text-align: center
+    position: relative
+
+.brand__line
+    display: block
+    max-width: 165rem/$var
+    height: 2px
+    background-color: #001d26
+    margin: 25rem/$var auto
+    margin-bottom: 35rem/$var
+
+.brand__items
+    flex: 1 1 15.66666%
+    padding: 0 2%
+    img
+        display: block
+        max-width: 100%
+        height: auto
+
+.servises
+    background-color: #fff
+    padding-top: 75rem/$var
+    padding-bottom: 50rem/$var
+
+.servises__items
+    flex: 1 0 33.33333%
+
+.servises__img
+    justify-content: center
+    height: 100px
+    img
+        height: fit-content
+
+
+.servises__title
+    font-weight: 600
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 2.6px
+    text-align: center
+    display: block
+    padding-top: 25rem/$var
+
+.mailing
+    background-color: #51bcd6
+    padding: 45rem/$var
+
+.mailing__text
+    width: 40%
+.mailing__block-form
+    width: 60%
+    position: relative
+
+.mailing__title
+    color: #ffffff
+    font-size: 17rem/$var
+    text-transform: uppercase
+    letter-spacing: 3.4px
+    font-weight: 600
+
+.mailing__subtitle
+    color: #ffffff
+    
+.mailing__form
+    width: 100%
+    
+.mailing__form span
+    height: 50px
+    display: block
+
+.mailing__email
+    display: block
+    border-radius: 4px
+    background-color: #ffffff
+    border: none
+    outline: none
+    box-shadow: 0 1px 4px rgba(139, 139, 139, 0.5)
+    padding-left: 25rem/$var
+    height: 100%
+    width: 100%
+
+.mailing_btn
+    border: none
+    outline: none  
+    background-color: #e8c72e
+    height: 100%
+    margin-top: 0
+    color: #001d26
+    padding: 1.5rem 1.60769rem
+    &:hover
+        color: #fff
+
+.mailing-wid
+    width: 72%
+    margin-right: 30rem/$var
+
+.footer__top
+    padding: 70rem/$var 0
+    background-color: #f3f3f3
+    
+.footer__items
+    flex: 0 0 25%
+
+.footer_ul-page
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+        padding: 10rem/$var 0
+    a
+        transition: 0.3s
+        color: #51bcd6
+        &:hover
+            color: #333
+
+.page-wont
+     a
+        font-weight: 600
+        text-transform: uppercase
+        letter-spacing: 0.78px
+        color: #001d26
+        position: relative
+        &:hover
+            color: #51bcd6
+
+.title_pag-cat
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 0.78px
+    color: #001d26!important
+    padding-left: 0!important
+    &:before
+        display: none
+    &:hover
+        color: #51bcd6!important
+
+.li-mod
+    a
+        padding-left: 20rem/$var
+        position: relative
+        &:before
+            content: '+'
+            position: absolute
+            font-size: 16px
+            color: #333
+            left: 0
+            top: -3px
+
+.ul-pad-top
+    padding-top: 37rem/$var
+
+.footer__bottom
+    background-color: #fff
+    padding: 35rem/$var
+
+.footer__bottom-left
+    width: 62%
+    color: #001d26
+    text-transform: uppercase
+    padding-bottom: 45rem/$var
+    border-bottom: 2px solid #001d26
+
+.footer__block-cosial
+    width: 38%
+    justify-content: space-around
+
+.social
+    display: block
+    width: 22rem/$var
+    height: 22rem/$var
+    background-repeat: no-repeat
+    background-size: auto
+    background-position: center
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        width: 45rem/$var
+        height: 45rem/$var
+        border-radius: 100%
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border: 1px solid #333
+        opacity: 0
+        transition: 0.3s
+    &:hover
+        &:after
+            opacity: 1
+
+.social-fb
+    background-image: url(../img-icons/social-1.svg)
+.social-vk
+    background-image: url(../img-icons/social-2.svg)
+.social-wat
+    background-image: url(../img-icons/social-3.svg)
+.social-vib
+    background-image: url(../img-icons/social-4.png)
+
+.menu-tovare__items:hover
+    & > div
+       visibility: visible
+       opacity: 1
+
+.opac
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0,0,0,0.5)
+    display: none
+    z-index: 40
+
+body.active
+    .opac 
+        display: block
+    .podpis
+        display: block
+
+.podpis
+    position: fixed
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    padding: 30px
+    background: #fff
+    z-index: 50
+    font-size: 2rem
+    color: #333
+    text-align: center
+    display: none
+    i
+        position: absolute
+        top: 10px
+        right: 10px
+        display: block
+        width: 15px
+        height: 15px
+        background: url(../img-icons/delete.svg) no-repeat center
+        background-size: contain
+        cursor: pointer
+
+@import "media" // Всегда в конце

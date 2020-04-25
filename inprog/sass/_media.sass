@@ -1,0 +1,437 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1380px)
+	.container
+		max-width: 1100px
+	.slider-mane__items 
+    	padding: 4.15385rem 1rem
+	.slider-mane__title
+		font-size: 2.23846rem
+	.submenu-tovar__tovar .slick-prev 
+    	left: -0.61538rem
+	.submenu-tovar__tovar .slick-next
+		right: -0.61538rem
+	.popular-goods
+		padding: 4.23077rem 5.76923rem
+	.block-arow
+		padding-left: 1.29231rem
+		padding-right: 2.84615rem
+	.section-product__price,
+	.section-product__tile
+		font-size: 1rem
+	.js-slider .slick-prev,
+	.js-slider-prod .slick-prev
+		left: -0.84615rem
+	.js-slider .slick-next,
+	.js-slider-prod .slick-next
+		left: calc(100% + 20px)
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.dots-name 
+		top: 100%
+	.popular-goods
+    	padding: 4.23077rem 2.76923rem
+	.section-product__price
+		flex-direction: column
+		align-items: flex-start
+		.product_action-price
+			padding-left: 0
+	.popular-goods__product-subtitle
+		height: 60px
+	.popular-goods__product-title
+		font-size: 1rem
+	.submenu__tel
+		font-size: 1.1rem
+	.submenu-tovar__tovar
+		.container
+			max-width: 900px
+	.slider-mane__items
+		background-size: 140% 100%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.btn
+		padding: 1rem 1.60769rem
+	.footer__items
+		flex: 0 0 50%
+	.footer__top
+		.container
+			flex-wrap: wrap
+	.left-bol
+		left: 55%
+	.mailing__row
+		flex-direction: column
+	.mailing__block-form
+		padding-top: 30px
+	.mailing__text
+		width: 100%
+		text-align: center
+	.mailing__block-form
+		width: 85%
+	.section-product__left
+		padding-right: 0.8rem
+	.bnt-buy
+		left: 55%
+	.slider-mane__subtitle
+		margin-top: 1rem
+	.slick-dots li button, .dots-name li button
+		width: 50px
+	.brand__row 
+		justify-content: space-between
+	.servises__title
+		letter-spacing: normal
+		br
+			display: none
+	.servises__items
+		padding: 0 2%
+	.servises
+		padding: 3rem 0
+	.servises__img img
+		max-width: 100%
+	.submenu-tovar__tovar
+		.container
+			max-width: 768px
+	.submenu-tovar__tovar .slick-prev
+		left: 0
+	.submenu-tovar__tovar .slick-next
+		right: 0
+	.main-menu__link
+		font-size: 0.8rem
+	.menu-tovare__text
+		font-size: 0.8rem
+	.basket, .submenu-tovar__contacts, .search, .submenu-tovar__tovar
+		top: 122px
+	.basket__items
+		font-size: 1.1rem
+	.basket-price
+		font-size: 1rem
+	.basket__pad-top__arrow .close-tover
+		right: 5px
+	.basket
+		padding: 1rem
+	.search__row
+		width: 100%
+		max-width: 100%
+	.search-form__input-block
+		width: 75%
+	.section-product__col
+		width: fit-content
+	.section-product .row
+		justify-content: center
+	.slider-mane__title 
+    	font-size: 1.43846rem
+	.slider-mane__title span
+		top: -36px
+		right: 0px
+	.slider-mane__subtitle
+		font-size: 1.2rem
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.mailing__block-form
+		width: 100%
+	.mailing__form
+		flex-direction: column
+		align-items: center
+	.mailing-widbtn
+		margin-top: 20px
+	.mailing__form span 
+		height: 40px
+	.slick-dots li button, .dots-name li button
+		width: 20px
+	.section-product
+		.row
+			flex-wrap: wrap
+		.section-product__col
+			width: fit-content
+	.popular-goods
+		padding: 2.23077rem 2.76923rem
+	.popular-goods__dots 
+    	padding-top: 1.46154rem
+	.brand__row
+		flex-wrap: wrap
+	.brand__items
+		flex: 0 0 20%
+		margin-bottom: 20px
+	.section-product__right
+		border: none
+	.section-product__items-img
+    	margin-left: 20px
+	body
+		padding: 10px
+	.brand__row
+		justify-content: center
+	.mailing
+		padding: 1rem
+	.mailing-wid
+		width: 100%
+		max-width: 90%
+		margin: 0 auto
+	.block-arow
+		padding-right: 0
+	.header__sity-ul
+		margin-left: 1rem
+	.burger_menu-mob
+		display: block
+	.header__bottom
+		height: 44px
+	.header-top__right-left
+		position: absolute
+		left: 15px
+		top: 44px
+		height: 100%
+		z-index: 20
+		text-align: left
+		max-width: 300px
+		width: 100%
+		background: #fff
+	.nav
+		box-shadow: 3px 8px 7px 2px rgba(0,0,0,0.3)
+	.main-menu__li
+		width: 100%
+	.main-menu__li:first-child .main-menu__link
+		padding-left: 0.6rem
+	.main-menu
+		flex-direction: column
+		padding: 15px
+		align-items: flex-start
+		background: #fff
+		min-width: 250px
+	.header-top__right-left
+		opacity: 0
+		visibility: hidden
+		transition: 0.3s
+	.header-top__right-left.active
+		opacity: 1
+		visibility: visible
+	.header-top__left, .header-top__right-left
+		width: 33%
+	.header-top__right
+		width: 60%
+		margin-bottom: -5.78462rem
+	.submenu-tovar__items
+		padding: 0 10px
+		text-align: center
+	.img-responsive
+		min-width: 50px
+	.search-form-hei
+		height: 2.94615rem
+	.search
+		padding-bottom: 2.06154rem
+		padding-top: 1.86154rem
+	.submenu__tel
+		padding-left: 3.3rem
+	.submenu__tel-items
+		width: 50%
+		margin-bottom: 15px
+	.submenu-contacts__row
+		flex-wrap: wrap
+		padding-top: 1.6rem
+	.submenu-tovar__contacts
+		padding-bottom: 1.4rem
+	.header-top__right
+		justify-content: flex-end
+	.menu-tovare 
+		margin-left: 15px
+	.header-top__left:before
+		min-width: 200px
+	.basket
+		padding: 15px 0
+	.row-product img
+		max-width: 50px
+	.basket__items
+		font-size: 0.8rem
+	.basket__pad-top
+		padding-top: 0
+		text-align: center
+	.basket__items
+		& + div
+			font-size: 0.6rem
+	.basket-calck-btn
+		width: 1.09231rem
+		height: 1.09231rem
+	.basket-calck-number
+		min-width: 2.24615rem
+		max-width: 1.94615rem
+		font-size: 0.8rem
+	.basket-price
+		font-size: 0.8rem
+	.basket__pad-top__arrow .close-tover
+		width: 15px
+		height: 15px
+		top: 0px
+	.row-product
+		align-items: center
+	.basket-calck-btn
+		width: 20px
+		height: 20px
+	.mob-pos
+		padding-bottom: 5px
+	
+@media only screen and (max-width : 560px)
+	.footer__items
+		flex: 0 0 100%
+	.popular-goods__img
+		display: flex
+		justify-content: center
+	.popular-goods__img
+		max-width: 100%
+	.brand__items 
+    	flex: 0 0 25%
+	.brand__title
+		font-size: 1.1rem
+	.servises__items
+		flex: 0 0 50%
+		margin-bottom: 20px
+	.servises__row
+		flex-wrap: wrap
+		justify-content: center
+	.popular-goods__title
+		font-size: 1.3rem
+	.row-product
+		flex-direction: column
+	.row-product img
+		max-width: 100px
+	.basket__items
+		font-size: 1.2rem
+	.basket__items + div
+		font-size: 1rem
+	.basket-price
+		font-size: 1rem
+	.basket__pad-top__arrow 
+		position: unset
+	.row-product
+		position: relative
+	.basket__pad-top__arrow .close-tover
+		width: 20px
+		height: 20px
+		top: 15px
+		right: 15px
+	.basket__col-2
+		padding-bottom: 20px
+	.row-product
+		padding-top: 20px
+	.basket__info__top
+		display: none
+	.social:after
+		width: 2rem
+		height: 2rem
+	.social
+		font-size: 50%
+	.footer__block-cosial
+		width: 90%
+	.header-top__left
+		width: 100%
+	.header-top__right
+		width: 100%
+		position: absolute
+		top: 105px
+		left: 0
+		justify-content: space-around
+	.header__bottom
+		height: 130px
+	.header-top__right-left
+		top: 0
+	.submenu__tel-items
+		width: fit-content
+	.submenu-contacts__row
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.basket, .submenu-tovar__contacts, .search, .submenu-tovar__tovar
+		top: 100px
+		width: 101%
+		left: -1px
+	.form_search  > div
+		flex-direction: column
+	.search__btn
+		margin-left: 0
+		margin-top: 30px
+	.search-form__input-block
+		width: 100%
+	.search__prim
+		display: block
+		margin-top: -36px
+	.search
+		padding-bottom: 5rem
+	.search_select
+		max-width: 130px 
+	.block-select:before
+		right: 8%
+	.search-form__block-btn
+		width: 40%
+	.slider-mane__items
+		padding-top: 1.5rem
+		padding-bottom: 3.5rem
+	.btn
+		padding: 5px 1.5rem
+	.slider-mane__title span
+		width: 2.61538rem
+    	height: 2.61538rem
+		top: -10px
+	.slider-mane__subtitle span
+		width: 2.3rem
+		height: 2.3rem
+	.slider-mane__subtitle
+		padding-left: 3.15rem
+	.header__sity
+		margin-left: 25%
+	.img-responsive
+		min-width: 80px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.footer__bottom
+		.container
+			flex-direction: column-reverse
+			align-items: center
+			text-align: center
+		.footer__bottom-left,
+		.footer__bottom-right
+			width: 100%
+		.footer__bottom-left
+			padding-bottom: 1rem
+			padding-top: 1rem
+	.ul-pad-top
+		padding-top: 0
+	.brand__items 
+    	flex: 0 0 30%
+	.servises__items
+		flex: 0 0 100%
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
