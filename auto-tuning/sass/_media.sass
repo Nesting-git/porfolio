@@ -1,0 +1,695 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+	.container 
+		max-width: 1124px
+	.mobile-tel
+		font-size: 1.1rem
+	.mobile-link
+		font-size: 0.8rem
+	.menu-pages__link
+		font-size: 0.9rem
+	.mein-menu__link
+		font-size: 0.8rem
+	.header-search
+		width: 40%
+	.header-icon-prod
+		width: 13%
+	.footer-mob-link
+		font-size: 1.1rem
+	.fot-wrapper-btn
+		flex-direction: column
+		align-items: flex-start
+	.footer-mail
+		margin-left: 22px
+		margin-top: 10px
+	.prilod-footer
+		margin-top: 10px
+	.categories-tov-price
+		font-size: 1.128rem
+	.footer:after
+		width: 39.5%
+	.card-slick-items
+		height: 88px
+	.wrapper-row_information
+		flex-direction: column
+	.wrapper-row_information--left
+		max-width: 100%
+		flex: 0 0 100%
+		margin-bottom: 40px
+	.wrapper-row_information--right
+		flex: 0 0 100%
+		max-width: 100%
+		padding-left: 0
+	.deliver-card-wrapper .characteristic-what
+		max-width: 100%
+	.filter-input-price
+		margin: 0 2%
+	.page-catalog__filter
+		padding: 10px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.categories__slider .slick-arrow, .brands .slick-arrow
+		width: 6px
+		height: 33px
+	.main-slider__arrow
+		margin-top: 1rem
+	.container 
+		max-width: 992px
+	.categories__slider 
+		.slick-arrow
+			top: 110%
+		.slick-prev
+			left: 40px
+		.slick-next
+			left: calc(100% - 40px)
+	.brands .slick-arrow
+		top: 140%
+		font-size: 0
+		border: none
+		outline: none
+		padding: 0
+		margin: 0
+		width: 45px
+		height: 15px
+		cursor: pointer
+		transition: 0.4s
+		&.slick-prev
+			background: url(../img/icons/arrow-left.svg) 50% 50%/contain no-repeat
+			left: 40px!important
+		&.slick-next
+			background: url(../img/icons/arrow-right.svg) 50% 50%/contain no-repeat
+			left: calc(100% - 40px);
+	.popular-categories__item:nth-child(3n+3)
+		margin-right: 2.5%
+	.popular-categories__item
+		flex: 1 0 46%
+	.mein-menu__li
+		padding-right: 1.9%
+	.contacts-footer
+		font-size: 1.2rem
+	.main-submenu-li a, .submenu-sub__li a
+		padding: 10px 35px
+	.mein-menu__submenu, .submenu-sub
+		max-width: 340px
+	.menu-pages_li
+		padding: 0 0.5rem
+	.submenu-sub
+		a
+			padding: 10px 0
+	.burger-cat-scroll
+		font-size: 0.7rem
+	.mobile-tel
+		font-size: 1rem
+	.categories-padding
+		padding-top: 5rem!important
+	.section-blog
+		.section-blog__item
+			max-width: 245px
+			margin: 0 auto
+	.site-title-cat
+		padding-bottom: 1.5rem
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	.mein-menu__link
+		font-size: 0.7rem
+	.mein-menu__li
+		padding-right: 0
+	.mein-menu__li:before
+		display: none
+	.main-slider_title
+		font-size: 2rem
+	.footer__left
+		flex-wrap: wrap
+	.footer-list__ul
+		margin-bottom: 20px
+		margin-right: 10px
+	.header-mobile
+		margin-left: 3%
+	.header-icon-rad
+		width: 2.92857rem
+		height: 2.92857rem
+		background-size: 50%
+	.main-submenu-li:before, .submenu-sub__li:before
+	    width: calc(100% - 60px)
+	.mobile-link
+		margin-left: 1.68571rem
+		font-size: 0.7rem
+	.basket__close 
+		top: 31%
+		left: 98%
+	.basket__price--price
+		font-size: 0.9rem
+	.decor-row
+		flex-wrap: wrap
+		flex-direction: column
+	.decor-col
+		flex: 0 0 100%
+		margin: 0
+		max-width: 100%
+		margin-bottom: 20px
+	.checkout-form__info span
+		left: -200px
+		bottom: 115%
+	.wrapper-last-step
+		flex: 0 0 100%
+	.decor-product__to-fixed
+		display: none
+	.wrapper__article__main
+		flex: 1 0 100%
+		margin-bottom: 30px
+	.wrapper__article
+		flex-direction: column
+	.information-categories
+		flex-wrap: wrap
+	.information-categories__bnt
+		width: 50%
+	.mob-wrap-last
+		display: block
+		margin-left: 5%
+	.page-catalog__product
+		width: 100%
+		padding-left: 0
+		max-width: 100%
+	.page-catalog__items
+		flex: 1 0 31%
+	.sidebar-category
+		margin-top: 20px
+	.page-catalog__sidebar
+		position: fixed
+		z-index: 222222222
+		top: 0
+		left: 0
+		height: 100%
+		width: 285px
+		padding-bottom: 30px
+		box-shadow: 0 0 2px 2px rgba(0,0,0,0.5)
+		padding-left: 20px
+		padding-top: 40px
+		background: #F6F6F6
+		left: -100%
+		overflow-y: auto
+	.page-catalog__sidebar.active
+		left: 0
+	.btn-mob-filter
+		&:hover
+			color: #ffffff
+			background: $colOrange
+	.page-catalog__sidebar .filter-close
+		display: block
+	.burger-cat-scroll
+		div
+			display: none
+		span
+			width: 20px
+	.header__center--row
+		justify-content: space-around
+	.header-mobile
+		margin-left: 0
+	.header-search
+		margin-left: 0
+	.mobile-tel
+		font-size: 0.8rem
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.categor-cart
+		flex: 0 0 31.7%
+	.cat-row
+		justify-content: flex-start
+	.wrapper__contacts
+		flex-direction: column-reverse
+	.wrapper__contacts__right
+		padding-left: 0
+		flex: 0 0 100%
+	.wrapper__contacts__right
+		flex: 0 0 100%
+	.card__row
+		flex-direction: column
+	.card-col
+		flex: 0 0 100%
+	.card_right
+		max-width: 80%
+		margin: 0 auto
+	.card_left
+		margin-bottom: 40px
+	.wrapper-characteristic
+		max-width: 100%
+	.information-categories__bnt
+		padding: 15px 30px 
+		font-size: 12rem/$var
+	.page-catalog__items:nth-child(3n+3)
+		margin-right: 3%
+	.page-catalog__items:nth-child(2n+2)
+		margin-right: 0
+	.page-catalog__items
+		flex: 1 0 48%
+	.page-wrapper
+		padding-bottom: 0
+	.categories-padding
+		padding-top: 2rem!important
+	
+	/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.mein-menu__list
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		& > .mein-menu__li
+			width: 85%
+			.icon-menu-arow
+				right: -30px
+	.header__bottom
+		max-width: 400px
+		min-width: 360px
+		width: 50%
+		z-index: 10
+	.margin-fot-list
+		width: 100%
+	.footer:after
+		width: 50%
+	.footer__left,
+	.footer__right
+		flex: 0 0 50%
+	.main-slider__item
+		background-position: left
+	.categories-paddin-top-bot
+		padding: 1.8rem 0
+	.categories-padding
+		padding: 1.8rem 0
+	.page-text .page-text__col
+		flex: 0 0 100%
+	.page-text__row
+		flex-wrap: wrap
+	.site-title-cat
+		font-size: 1.7rem
+	.section-blog__row
+		flex-wrap: wrap
+		.section-blog__item
+			flex: 1 1 45%
+			margin-bottom: 30px
+	.main-slider_title
+		font-size: 1.4rem
+	.basket__head
+		display: none
+	.basket__product
+		margin-bottom: 10px
+		.row
+			flex-direction: column
+			.basket-col-1,
+			.basket-col-3,
+			.basket-col-2
+				flex: 0 0 100%
+			.basket__info--product,
+			.basket__code
+				text-align: center
+			.basket-col
+				margin-bottom: 10px
+			.basket__info--info
+				max-width: 100%
+	.basket__close
+		top: 10%
+		left: 96%
+	.basket__footer--row
+		flex-direction: column
+		align-items: center
+	.basket-prev-link
+		width: 100%
+	.categor-cart
+		flex: 0 0 48.4%
+	.reviews-form
+		.max-100
+			flex-direction: column
+			.form-block-input
+				width: 100%
+				margin-right: 0
+				margin-left: 0
+	.reviewsForm-wrap-left,
+	.reviewsForm-wrap-right
+		width: 100%
+		max-width: 100%
+	.jus-spn-bet.mt-30
+		flex-direction: column
+	.reviewsForm-wrap-right
+		margin-top: 30px
+		justify-content: center
+	.price0origin
+		font-size: 1.3rem
+	.price-underline
+		font-size: 0.9rem
+	.form-check
+		flex-direction: column
+	.pagination__link
+		padding: 2px 8px
+	.mob-wrap-fil
+		flex-direction: column
+		align-items: flex-start
+	.mob-wrap-last
+		margin-left: 0
+	.mob-wrap-fil-first
+		width: 100%
+		margin-bottom: 40px
+	.crumbs__link
+		font-size: 12px
+	.header
+		.header__top
+			display: none!important
+	.header__center
+		padding: 0.5rem 0
+	.dop-menu-mob
+		padding-top: 30px
+		.block-mobil
+			flex-direction: column-reverse
+		.menu-pages
+			flex-direction: column
+	.mein-menu__li
+		width: 100%
+		padding: 5px 0
+	.header__bottom
+		display: block!important
+		padding: 50px 10px
+		padding-top: 70px
+		position: fixed
+		left: -100%
+		top: 0
+		z-index: 222222222222
+		height: 100%
+		overflow-y: auto
+		transition: 0.5s
+		& > .container
+			border-bottom: 1px solid #ffffff
+			padding-bottom: 20px
+		&.active
+			left: 0
+	.logo-site
+		display: none!important
+	.burger-cat-scroll
+		display: flex!important
+	.filter-close-menu
+		display: block
+	.languages.active
+		color: #fff
+	.menu-pages_li
+		padding: 0
+		width: 100%
+	.header__top-menu-left
+		width: 100%
+	.menu-pages_li:after
+		display: none
+	.header
+		.header-icon-rad
+			box-shadow: none
+	.menu-pages
+		margin-top: 15px
+	.mein-menu__submenu
+		visibility: visible!important
+		height: auto!important
+		opacity: 1!important
+		padding: 10px 0!important
+		position: relative
+		background: transparent
+		color: #fff
+		box-shadow: none
+		margin-left: 20px
+	.main-submenu-link
+		color: #fff
+	.main-submenu-li a, .submenu-sub__li a
+		padding: 2px 
+		font-size: 0.7rem
+		color: #fff
+	.icon-menu-arow
+		right: -30px!important
+		transform: translateX(0px)!important
+	.header-icon-rad .empty
+		font-size: 0.6rem
+		width: 1.07143rem
+		height: 1.07143rem
+		line-height: 1.17143rem
+	.submenu-sub
+		background: transparent
+		box-shadow: none
+		padding: 0
+		position: relative
+		right: 0
+		margin-left: 20px
+	.mein-menu__submenu
+		display: none
+		padding-right: 0
+		margin-right: 0
+	.icon-menu-arow
+		height: 28px
+	.mein-menu__li .mein-menu__submenu
+		width: 93%
+	.mein-menu__li.active
+		.mein-menu__submenu
+			display: block
+		& > .icon-menu-arow
+			transform: rotate(90deg)!important
+			background: url(../img/icons/menu--hover-arrow.svg) 50% 50%/auto no-repeat
+		& > .mein-menu__link
+			color: $colOrange
+	.main-submenu-li.active
+		.submenu-sub
+			display: block
+		& > .icon-menu-arow
+			background: url(../img/icons/menu--hover-arrow.svg) 50% 50%/auto no-repeat
+			transform: rotate(90deg)!important
+		& > .main-submenu-link
+			color: $colOrange
+	.mein-menu__li > .icon-menu-arow
+    	display: block
+	.mobile-search
+		display: block
+		padding: 0
+		margin: 0
+		border: 0
+		width: 30px
+		height: 30px
+		outline: none
+		background-color: transparent
+		i
+			font-size: 20px
+	.form-search__row
+		height: 30px
+	.inputSearch
+		padding: 0 10px
+	.inputSearch
+		height: 30px
+	.header-search
+		width: auto
+	.header
+		.header-icon-rad 
+			width: 30px
+			height: 30px
+			background-size: 80%
+	.header-icon-prod
+		margin-left: 0
+	.header.fixed .header-icon-rad .empty
+		top: -5px
+		right: -5px
+	.header-icon-prod
+		width: 13%
+	.pos-left .submenu-sub
+		right: 0
+	.mob-colum
+		flex-direction: column
+	.poput_basket-form .form-block-input
+		width: 70%
+	.header__center
+		.header-search
+			display: none
+	.form-search
+		margin-top: 30px
+		.inputSearch
+			height: 40px
+	.header.fixed .header__center
+		padding: 10px 0
+	.mobile-link
+		display: none
+	.mobactive
+		display: block
+		margin-left: 0
+		margin-top: 15px
+	.titleCatalog-top-mob
+		color: #ffffff
+		margin: 10px 0
+	.categories
+		.slick-arrow
+			display: none
+	.popop_backet
+		max-width: 360px
+	.popop_backet-wrapper-btn
+		flex-direction: column
+	.categories-btn
+		margin-bottom: 15px!important
+		display: block
+	.popop_backet .popop_backet-wrapper-btn a
+		width: 60%
+		text-align: center
+	.filter-close
+		display: block
+	.basket__product .row
+		max-width: 70%
+		margin: 0 auto
+	.basket__close
+		left: 70%
+	.popular-categories__catalog
+		flex-wrap: wrap-reverse
+		justify-content: center
+		.popular-categories__item
+			flex: 0 0  48%
+			margin-bottom: 20px
+			padding: 5px 0
+			&:first-child
+				margin-bottom: 0
+		.img-responsive
+			max-height: 60px
+	.page-catalog__sorting
+		margin-bottom: 20px
+	.section-blog__item.categor-cart
+		max-width: 245px
+	.page-catalog
+		.row.cat-row
+			justify-content: center
+		.categor-cart
+			margin: 15px 1.5%!important
+	.main-slider__item
+		height: 280px
+
+@media only screen and (max-width : 670px)
+	.text-categ-pop
+		width: 70%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 550px)
+	.footer__row
+		flex-wrap: wrap
+	.footer__right
+		flex: 0 0 100%
+		padding-left: 0
+	.footer:after
+		width: 100%
+		height: 34%
+	.footer-mob-link
+		width: 100%
+	.popular-categories__item
+		flex: 0 0 100%
+	.popop_backet
+		display: none!important
+	.main-slider_title
+		color: #fff!important
+	.main-slider__sub-title
+		color: #fff
+	.main-slider__opas-slider
+		display: block
+		background: rgba(0,0,0,0.4)
+	.footer__left, .footer__right
+		flex: 0 0 100%
+	.footer__left
+		.margin-fot-list
+			height: 35px
+			overflow: hidden
+			border-bottom: 1px solid #fff
+			margin-bottom: 15px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				background: url(../img/icons/arrow-nez.svg) 50% 50%/ 40% no-repeat;
+				right: 0
+				top: -2px
+				transform: rotate(-90deg)
+				transition: 0.4s
+				height: 30px
+				width: 30px
+			&.active
+				&:before
+					transform: rotate(0deg)
+				height: auto
+	.footer:after
+		display: none
+	.basket__close
+		left: 80%
+	.popular-categories__catalog
+		flex-direction: column
+		.popular-categories__item
+			margin-bottom: 20px
+			margin-right: 0
+			&:last-child
+				margin-bottom: 0
+			&:first-child
+				margin-bottom: 20px!important
+	.card_right
+		max-width: 100%
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.section-blog__item
+			flex: 1 1 100%!important
+	.categories__slider .slick-arrow
+		display: none!important
+	.categor-cart
+		flex: 0 0 100%
+	.card-col-order
+		flex-wrap: wrap
+		.btn-order-tov
+			width: 50%
+			max-width: 220px
+		.buy-in-one-click
+			width: 50%
+			margin-top: 20px
+		.header-icon-rad
+			margin-top: 20px
+	.page-catalog__items
+		flex: 1 0 100%
+	.form-search
+		.inputSearch
+			height: 30px
+	.header-icon-prod
+		width: 16%
+
+@media only screen and (max-width : 400px)
+	.card-slick-items
+		height: 65px
+	.deliver-card-wrapper .wrapper-characteristic__items
+		font-size: 12px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
