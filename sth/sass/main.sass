@@ -1,0 +1,2047 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+// ------------------header------------------------------
+.body__wrapepr 
+    color: $grey-light
+    position: relative
+    overflow-x: hidden
+
+section
+    background-color: #f2f2f2
+    font-size: 18px
+
+.container 
+    max-width: 1170px!important
+
+.header
+    background-color: $ligh-gray
+    padding: 2.14rem 0
+
+.header__logo 
+    padding-top: 2.14rem
+
+.header__main-menu
+    padding-top: 3rem
+    
+.header__body
+    position: relative
+
+.nav 
+    padding-left: 1rem
+
+.nav__items 
+    padding: 0.96rem
+     
+.nav__items > a
+    transition: color 0.3s
+    white-space: nowrap
+    
+
+.nav__items:hover > a
+    color: $light-green
+
+
+.nav__items a
+    color: $white
+    font-weight: 800
+    font-size: 1.43rem
+
+
+.submenu__li a:hover
+    transition: color 0.3s
+    color: $light-green
+
+.submenu__li
+    line-height: 36px
+
+.submenu
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 200px
+    position: absolute
+    padding: 20px
+    background-color: #333333
+    left: 22%
+    right: 0
+    z-index: 5
+    opacity: 1
+    height: 0
+    visibility: hidden
+
+
+.submenu__li
+    width: 33.3333%
+
+
+.header__contacts
+    text-align: right 
+
+.header_tel
+    font-size: 1.7rem
+    color: $grey
+    transition: color 0.3s
+
+.header_tel:hover
+    color: $light-green
+
+
+.header_adress
+    color: $grey
+    font-size: 1.42rem
+    font-weight: 300
+    padding: 0.5rem 0 1.1rem 0
+
+.header__translate a,
+.header__translate span
+    font-size: 1.42rem
+    color: $white
+    
+
+.translate 
+    color: $white
+    padding: 0 2px
+    transition: 0.3s
+    &:hover
+        color: $light-green
+
+.translate-active
+    font-weight: 700
+
+.menu-burger-mobile
+    display: none
+    cursor: pointer
+    .burger-menu
+        width: 30px
+        height: 20px
+        position: relative
+        &:after,
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            height: 2px
+            background-color: #fff
+            width: 100%
+            transition: 0.5s
+            opacity: 1
+        &:before
+            top: 100%
+        span
+            display: block
+            &:before,
+            &:after
+                content: ''
+                position: absolute
+                top: 50%
+                left: 0
+                height: 2px
+                background-color: #fff
+                width: 100%
+                transition: 0.5s         
+    &.active
+        .burger-menu
+            &:before,
+            &:after
+                opacity: 0
+                background-color: $light-green
+            span
+                &:before
+                    transform: rotate(-45deg)
+                    background-color: $light-green
+                &:after
+                    transform: rotate(45deg)
+                    background-color: $light-green
+                    
+    
+// ------------------headers------------------------------
+
+.headers
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 100% 64%
+    position: relative
+    background-color: #000
+
+.headers-title 
+    color: $white
+    font-weight: 800
+    text-transform: uppercase
+    text-align: center
+    font-size: 8.57rem
+    margin: 0
+
+.headers__title
+    padding-top: 8rem
+    position: relative
+    z-index: 2
+
+.headers__pasity-half
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: calc(100% - 110px)
+    opacity: 0.5
+    background: $black
+
+.headers-padding-bottom
+    padding-bottom: 12.45rem
+
+.headers__block-left,
+.headers__block-right
+    position: relative
+    z-index: 2
+
+.headers__li
+    position: relative
+    color: $white
+    font-size: 1.71rem
+    font-weight: 800
+    padding: 1rem 0 0.6rem 2.5rem
+
+.headers__li:first-child:after
+    top: 0.557rem;
+
+.headers__li:first-child 
+    padding-top: 0
+
+.headers__li:after
+    content: ''
+    position: absolute
+    width: 1.07rem
+    height: 1.07rem
+    background: $light-green
+    left: 0
+    top: 1.557rem
+    border-radius: 100%
+
+.headers__block-btn
+    padding-top: 2.86rem
+    width: fit-content
+
+.btn 
+    font-size: 1.857rem
+    text-transform: uppercase
+    color: $white
+    padding: 1.52rem 3.7rem
+    background: $light-green
+    border-radius: 3rem
+    text-align: center
+    font-weight: 800
+    transition:  0.4s
+    -webkit-box-shadow: 3px 5px 46px 1px #44da10
+    box-shadow: 3px 5px 46px 1px #44da10
+    max-width: 360px
+    
+.btn:hover 
+    -webkit-box-shadow: 3px 5px 60px 9px #44da10
+    box-shadow: 3px 5px 60px 9px #44da10
+
+.headers_subtitle 
+    color: $white
+    font-size: 4.43rem
+    font-weight: 800
+    text-transform: uppercase
+    padding-left: 0.44rem
+    position: relative
+
+.headers_subtitle:after
+    content: ''
+    position: absolute
+    left: -1.78rem
+    top: 12px
+    height: 85%
+    width: 0.57rem
+    background: $light-green
+    border-radius: 2.14rem
+
+.headers__block-dim
+    position: absolute
+    max-width: 125px
+    max-height: 340px
+    background: url(../img/img-dim.png) no-repeat center
+    background-size: 100% 100%
+    width: 8.92rem
+    height: 24.28rem
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(265%, -25%)
+    opacity: 0.5
+    z-index: 2
+
+// ------------------automation------------------------------
+.automation
+    padding-bottom: 6.42rem
+    position: relative
+    font-size: 18px
+
+.automation__paddig-top
+    padding-top: 4.7rem
+
+.site-title
+    text-align: center
+    color: $ligh-gray
+    font-size: 2.85rem
+    font-weight: 800
+    margin: 0
+
+.site_subtitle
+    font-size: 1.71rem
+    text-align: center
+
+.automation_subtitle-padding 
+    padding: 2.14rem 0
+
+.automation_text 
+    text-align: center
+    line-height: 1.71rem
+
+.row-items-padding-top 
+    padding-top: 5rem 
+
+.items_circle
+    max-width: 128px
+    max-height: 128px
+    width: 128px
+    height: 128px
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    background-position: center
+    font-size: 2.57rem
+    color: $light-green
+
+.items_circle span
+    padding-right: 1rem
+
+.items_circle-1
+    background-image: url(../img/icons/icons-circle-1.png)
+
+.items_circle-2
+    background-image: url(../img/icons/icons-circle-2.png)
+
+.items_circle-3
+    background-image: url(../img/icons/icons-circle-3.png)
+
+.items_circle-4
+    background-image: url(../img/icons/icons-circle-4.png)
+
+.items_text 
+    text-align: center
+    padding-top: 1.42rem
+
+
+// ------------------free-order------------------------------
+.free-order
+    padding-top: 2.5rem
+    padding-bottom: 7.85rem
+    background: #000 url(../img/bg-free-order.png) no-repeat left bottom
+
+
+.free-order_title
+    color: $white
+    font-size: 2.57rem
+
+.free-order_form
+    padding-top: 1.42rem 
+
+.form-text-input 
+    position: relative
+    font-size: 1.28rem
+    color: $white
+    border: none
+    outline: none  
+    background: transparent
+    border-bottom: 1px solid #aaa
+    font-weight: 300
+    font-family: Gilroy, Arial, Helvetica, sans-serif
+    padding: 1rem 1rem 1rem 0
+    margin-top: 1rem
+    width: 100%
+    transition: 0.3s 
+
+.requeired
+    position: relative
+    &:before
+        content: '*'
+        font-size: 25px
+        left: -16px
+        top: -11px
+        color: #ea8300
+        position: absolute
+
+.form-text-input:focus 
+    border-color: #fff
+
+.form-text-input:focus::-webkit-input-placeholder
+    opacity: 1
+
+.form-text-input:focus::-moz-placeholder
+    opacity: 1
+
+.form-text-input:focus:-moz-placeholder
+    opacity: 1
+
+.form-text-input:focus:-ms-input-placeholder
+    opacity: 1
+
+.form-text-input::-webkit-input-placeholder
+    color: $white
+    opacity: 0.8
+    transition: 0.3s
+.form-text-input::-moz-placeholder
+    color: $white
+    opacity: 0.8
+    transition: 0.3s
+.form-text-input:-moz-placeholder
+    color: $white
+    opacity: 0.8
+    transition: 0.3s
+.form-text-input:-ms-input-placeholder
+    color: $white
+    opacity: 0.8
+    transition: 0.3s
+
+.form-btn
+    width: 100%
+    display: block
+    border-radius: 3rem
+    border: 1px solid $light-green
+    color: $light-green
+    text-transform: uppercase
+    text-align: center
+    padding: 1.42rem 4.2rem
+    transition: 0.4s
+    cursor: pointer
+    background: transparent
+    font-size: 1.85rem
+    font-weight: 300
+    font-family: Gilroy, Arial, Helvetica, sans-serif
+    outline: none!important
+
+.form-btn:hover
+    -webkit-box-shadow: 0px 0px 19px 0px #44da10
+    box-shadow: 0px 0px 19px 0px #44da10
+    background-color: $light-green
+    color: #fff
+
+// ------------------awork-marketing------------------------------
+
+.awork-marketing
+    padding-top: 5rem
+    padding-bottom: 5.71rem
+    background: url(../img/bg-awork-marketing.png) no-repeat 100% 7.14rem
+    background-size: 100% 100%
+  
+.awork-marketing-padding
+    padding-top: 1.42rem 
+
+.awork-marketing_text
+    font-size: 1.28rem
+    line-height: 1.71rem
+    text-align: center
+    padding-top: 2.42rem
+
+.awork-marketing_row-items
+    background: rgba(255,255,255, 0.7)
+    margin-top: 35rem/$var
+    padding-bottom: 15rem/$var
+
+.awork_items
+    position: relative
+    padding-left: 65rem/$var
+    font-size: 18rem/$var
+    padding-top: 40rem/$var
+    padding-bottom: 40rem/$var
+    line-height: 1.71rem
+
+.awork_items-title
+    font-size: 24rem/$var
+    padding-bottom: 15rem/$var
+    position: relative
+    position: relative
+
+.awork_items:before
+    content: ''
+    position: absolute
+    width: 45rem/$var
+    height: 45rem/$var
+    background: url(../img/icons/icons-tick-inside-circle.png) no-repeat
+    background-size: cover
+    left: 7rem/$var
+    top: 27rem/$var
+
+    
+// ------------------areas------------------------------
+.areas 
+    padding-top: 50rem/$var
+
+.areas-row-pad-top
+    padding-top: 30rem/$var
+    padding-bottom: 10rem/$var
+
+.areas-items
+    background-color: $white
+    padding: 23rem/$var 15rem/$var 26rem/$var 15rem/$var
+    height: 100%
+    text-align: center
+    margin: 0 -8px
+
+.row_areas-items
+    margin-bottom: 13rem/$var
+
+.areas__img
+    position: relative
+    img 
+        max-width: 100%
+        height: auto
+        width: 100%
+
+.areas_top-text
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    color: $white
+    font-weight: 800
+    font-size: 18rem/$var
+
+.areas-text
+    font-size: 16.7rem/$var
+    padding-top: 20rem/$var
+    line-height: 24px
+
+.areas_areas-items
+    padding: 18rem/$var 0 20rem/$var 0
+    font-size: 16rem/$var
+    font-weight: 800
+    color: $light-green
+
+
+// ------------------consultation------------------------------
+.consultation
+    background: $black
+    padding-top: 50rem/$var
+    padding-bottom: 5.08571rem
+    background-image: url(../img/bg-consultation.png)
+    background-repeat: no-repeat
+    background-repeat: no-repeat
+    background-position: 13.2% -210%
+
+.consultation_text
+    font-weight: 800
+    color: $white
+    font-size: 24rem/$var
+    line-height: 36rem/$var
+    max-width: 309px
+
+// ------------------technology------------------------------
+
+.technology
+    position: relative
+    padding-top: 60rem/$var
+    padding-bottom: 230rem/$var
+    background: url(../img/bg-technology.png) no-repeat center
+    background-size: cover
+
+.technology_row-padding-top
+    position: relative
+    padding-top: 25rem/$var
+    z-index: 2
+
+.technology__items
+    position: relative
+    padding-left: 80rem/$var
+    padding-top: 35rem/$var
+    padding-bottom: 35rem/$var
+    line-height: 24px
+
+.technology__items:after
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    background-repeat: no-repeat
+    width: 70rem/$var
+    height: 100rem/$var
+
+.technology__items-1:after
+    background-image: url(../img/icons/icons-technology-1.png)
+    transform: translate(0, -58%)
+
+.technology__items-2:after
+    background-image: url(../img/icons/icons-technology-2.png)
+    transform: translate(0, -27%)
+
+.technology__items-3:after
+    background-image: url(../img/icons/icons-technology-3.png)
+    transform: translate(0, -58%)
+
+.technology__items-4:after
+    background-image: url(../img/icons/icons-technology-4.png)
+    transform: translate(0, -34%)
+
+.technology__baner
+    background-color: $light-green
+    color: $white
+    text-align: center
+    padding: 25rem/$var 0 
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    z-index: 2
+
+.baner_sub-text
+    font-weight: 800
+    padding-bottom: 6rem/$var
+    text-transform: uppercase
+    b
+        font-size: 20px
+
+.aerosol__left,
+.aerosol__right
+    position: relative
+    line-height: 24px
+    padding-left: 90rem/$var
+
+.aerosol
+    padding-top: 100rem/$var
+    max-width: 490px
+
+.aerosol__left:after,
+.aerosol__right:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-115%, -50%)
+    width: 72rem/$var
+    height: 72rem/$var
+    border-radius: 100%
+    background-color: $white
+
+.aerosol__right:after
+    width: 10px
+    height: 10px
+    transform: translate(-800%, -50%)
+
+.technology_dim
+    position: absolute
+    max-width: 400px
+    max-height: 400px
+    width: 400rem/$var 
+    height: 400rem/$var 
+    background: url(../img/img-dim-tehnology.png) no-repeat center
+    background-size: 100% 100%
+    bottom: 95px
+    left: 53%
+
+// ------------------equipment------------------------------
+
+.equipment
+    padding-top: 60rem/$var
+    padding-bottom: 50rem/$var
+
+.equipment__slider
+    padding-top: 60rem/$var
+
+.equipment__items
+    padding: 10px 0
+
+.equipment_img
+    max-height: 270px
+    min-height: 270px
+
+.equipment__items_img
+    max-width: 100%
+    height: auto
+    height: fit-content
+
+.equipment_model d-block
+    padding-top: 20rem/14$var
+    
+.equipment__block-items
+    height: 100%
+    max-width: 100%
+    width: 100%
+    outline: none
+
+.equipment_model
+    padding-top: 1rem
+    text-align: center
+    text-transform: uppercase   
+    font-size: 24rem/$var
+    color: $grey-light
+
+.equipment__characteristic-ul
+    line-height: 24px
+
+.label_color-radio
+    margin-right: 10px
+    cursor: pointer
+    input[type="radio"]
+        display: none
+        &:checked + i
+            border: 1px solid $light-green
+    i
+        display: block
+        width: 32rem/$var
+        height: 32rem/$var
+        border: 1px solid #a7a7a7
+
+.btn-tovare
+    max-width: 360px
+    font-size: 26rem/$var
+    display: block
+    border-radius: 30px
+    border: 2px solid $light-green
+    background-color: $white
+    color: $light-green
+    text-align: center
+    line-height: 24px
+    padding: 15rem/$var
+    width: 100%
+    text-transform: uppercase
+    transition: 0.4s
+    margin: 0 auto
+    &:hover
+        background-color: $light-green
+        color: $white
+        font-weight: 800
+
+.equipment-btn
+    margin-top: 25rem/$var
+
+.slick-slide
+    outline: none!important
+
+.equipment_slick
+    position: relative
+    overflow: hidden
+    .slick-track
+        width: 100%
+        display: flex
+    .slick-slide,
+    .slick-list
+        width: 100%!important
+    .slick-arrow
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+        font-size: 0
+        width: 23rem/$var
+        height: 75rem/$var
+        background: url(../img/icons/icons-scli-arrowc.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border: none
+        outline: none
+        cursor: pointer
+    .slick-prev
+        left: 1.5%
+        transform: translate(-50%, -100%)
+    .slick-next
+         transform: translate(-120%, -100%)
+         left: 100%
+         background: url(../img/icons/icons-scli-arrowc-next.png)
+
+
+// ------------------benefits------------------------------
+    
+.benefits
+    padding-top: 50rem/$var
+    padding-bottom: 40rem/$var
+
+.benefits-item
+    padding-top: 70rem/$var
+
+.benefit__img
+    max-width: 100%
+    height: auto
+
+.benefits__text
+    padding-top: 15rem/$var
+    text-align: center
+    line-height: 24px
+
+.benefits-item
+    height: 100%
+
+    
+// ------------------consultation-rozrahunok------------------------------
+
+.consultation-rozrahunok
+    background-image: url(../img/bg-consultation-rozrahunok.png)
+    background-position: center
+    background-position-y: -260px
+
+
+// ------------------ready-solution------------------------------
+
+.ready-solution
+    padding-top: 50rem/$var
+    padding-bottom: 40rem/$var
+    background-color: $white
+
+.ready-row-p-top
+    padding-top: 2rem
+
+.ready__items-title
+    font-size: 48rem/$var
+    font-weight: 300
+    text-align: center
+    margin: 0
+
+.ready_text
+    line-height: 24px
+    padding-top: 35rem/$var
+
+.ready-col,
+.ready-items
+    height: 100%
+
+.ready-btn
+    margin-top: 45rem/$var
+    &:hover
+        background-color: $light-green
+        color: $white
+        font-weight: 800
+
+
+// ------------------action------------------------------
+
+.action
+    padding: 50rem/$var 0
+    background-repeat: no-repeat
+    background-image: url(../img/bg-action.png)
+    color: $white
+    background-position-x: right
+
+.action-bg-news
+    background-image: url(../img/bg-action-news.png)
+
+.action_text-bol
+    font-size: 24rem/$var
+    line-height: 30px
+    font-weight: 800
+
+.action_light-top-text
+    font-size: 24rem/$var
+    line-height: 30px
+
+.action_title
+    font-size: 36rem/$var
+    color: #ff8e00
+    font-weight: 800
+    text-transform: uppercase
+    padding: 20px 0
+
+.action_light-text
+    line-height: 24px
+
+.action_text-bol-bottom
+    padding-top: 5px
+
+.btn-action
+    min-width: 360px
+    border-radius: 30px
+    padding: 1.07143rem
+    box-sizing: border-box
+    text-align: center
+    color: #ff8e00
+    -webkit-box-shadow: 0px 0px 13px -5px #ff8e00
+    box-shadow: 0px 0px 13px -5px #ff8e00
+    transition: 0.3s
+    width: fit-content
+    font-size: 26rem/$var
+    border: 1px solid #ff8e00
+    &:hover
+        background-color: #ff8e00
+        color: #fff
+        box-shadow: 0px 0px 19px 0px #ff8e00
+        -webkit-box-shadow: 0px 0px 19px 0px #ff8e00
+
+.btn-action-m-top
+    margin: 35rem/$var
+
+
+.aromarketing
+    padding: 45rem/$var 0 35rem/$var
+    line-height: 24px
+
+.aromarketing_subtitle
+    text-align: center
+    line-height: 24px
+    padding-top: 30rem/$var
+
+.aromarketing_subtitle_bottom
+    padding-top: 30rem/$var
+
+.aromarketing_items
+    padding-left: 95rem/$var
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        left: 15px
+        top: 0
+        background-position: center
+        background-repeat: no-repeat
+        width: 60rem/$var
+        height: 70rem/$var
+        background-size: contain
+
+.aromarketing_items-1:after
+    background-image: url(../img/icons/icons-aromarketing-1.png)
+
+.aromarketing_items-2:after
+    background-image: url(../img/icons/icons-aromarketing-2.png)
+
+.aromarketing_items-3:after
+    background-image: url(../img/icons/icons-aromarketing-3.png)
+
+.aromarketing_items-4:after
+    background-image: url(../img/icons/icons-aromarketing-4.png)
+
+
+.aromarketing_row
+    padding-top: 30rem/$var
+
+.aromarketing_items_title
+    font-size: 24rem/$var
+
+.aromarketing_items_text
+    padding-top: 10px
+
+// ------------------consultation-aromo------------------------------
+
+.consultation-aromo
+    background: #000 url(../img/bg-consultation-aromo.png) no-repeat
+    background-size: contain
+    padding: 55rem/$var 0 60rem/$var
+    background-position: 28% 0
+
+.consultation-aromo_title
+    color: #fff
+    font-weight: 800
+    text-align: center
+    line-height: 36px
+    font-size: 24rem/$var
+
+.consultation-aromo-btn
+    margin-top: 65rem/$var
+
+.consultation-aromo_form
+    margin-top: 0.8rem
+
+// ------------------portfolio------------------------------
+.portfolio
+    padding-top: 75rem/$var
+    background-color: #fff
+    padding-bottom: 80rem/$var
+    position: relative
+
+.portfolio__img
+    max-width: 425px
+    img
+        width: 100%
+        height: auto
+    
+.portfolio_row-top
+    padding-top: 60rem/$var
+    display: flex!important
+    outline: none
+    position: relative
+
+.portfolio-title
+    text-transform: uppercase
+    color: $grey-light
+    font-size: 24rem/$var
+    font-weight: 800
+
+.portfolio-info,
+    line-height: 24px
+
+.portfolio-sub-title,
+.portfolio-text-center,
+    padding-top: 25rem/$var
+
+.portfolio-text-bottom
+    color: $light-green
+    font-weight: 800
+    text-transform: uppercase
+    padding-top: 35rem/$var
+
+.portfolio_submenu-div
+    .slick-slide
+        padding: 10px
+    text-transform: uppercase
+    line-height: 24px
+    font-size: 24rem/$var
+    margin: 0
+    padding-top: 35rem/$var
+    padding-left: 20rem/$var
+    padding-right: 20rem/$var
+    transition: 0.3s
+    .items-submenu
+        cursor: pointer
+        text-align: center
+        &:hover
+            color: $light-green
+
+
+.portfolio__slick
+    position: relative
+    .slick-track
+        display: flex
+    .slick-list
+        position: relative
+        z-index: 2
+    .slick-arrow 
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        z-index: 3
+        font-size: 0
+        width: 1.64286rem
+        height: 5.35714rem
+        background: url(../img/icons/icons-scli-arrowc.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border: none
+        outline: none
+        cursor: pointer
+    .slick-prev 
+        left: -1.5%
+        transform: translate(-50%, -15%)
+    .slick-next 
+        transform: translate(-120%, -10%)
+        left: 106%
+        background: url(../img/icons/icons-scli-arrowc-next.png)
+
+.portfolio_submenu
+    .slick-track
+        display: flex
+        justify-content: space-between
+    .slick-list
+        padding: 0!important
+    .slick-slide
+        width: fit-content!important
+        outline: none
+    .slick-current
+        .items-submenu
+            color: $light-green
+            font-weight: 800
+
+    
+// ------------------reviews------------------------------
+
+.reviews
+    padding-top: 70rem/$var
+    padding-bottom: 75rem/$var
+  
+.reviews__block-items
+    padding-top: 50rem/$var
+    position: relative
+    overflow: hidden
+    .row
+        display: flex!important
+    .slick-track
+        display: flex
+    .slick-list
+        width: 100%!important
+    .reviews-col
+        max-width: 100%
+    .slick-arrow
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+        font-size: 0
+        width: 23rem/$var
+        height: 75rem/$var
+        background: url(../img/icons/icons-scli-arrowc.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border: none
+        outline: none
+        cursor: pointer
+    .slick-prev
+        left: 1.5%
+        transform: translate(-70%, -211%) 
+    .slick-next
+        transform: translate(-100%, -211%)
+        left: 100%
+        background: url(../img/icons/icons-scli-arrowc-next.png)
+
+.reviews_items
+    text-align: center
+
+.reviews_block-img
+    max-width: 180px
+    max-height: 180px
+    border-radius: 100%
+    overflow: hidden
+    background-color: rgba(0,0,0,0.3)
+    img
+        width: 100%
+        height: auto
+        max-width: 100%
+
+.reviews_name
+    text-transform: uppercase
+    font-size: 24rem/$var
+    padding-top: 25rem/$var
+
+.reviews_subname
+    padding-top: 10rem/$var
+
+.sub-footer-date_text
+    padding-bottom: 20px
+    a
+        transition: 0.3s
+        color: #c9c9c9
+        &:hover
+            color: $light-green
+
+.sub-footer-date
+    color: #fff
+    font-weight: 800
+    padding-bottom: 10px
+    
+
+.reviews_text
+    padding-top: 25rem/$var
+
+
+// ------------------sub-footer------------------------------
+.sub-footer
+    padding: 55rem/$var 0 45rem/$var 0
+    background-color: $ligh-gray
+    color: #c9c9c9
+    font-size: 1rem
+
+.sub-footer_social
+    padding-left: 125rem/$var
+    padding-top: 20rem/$var
+
+.social-link
+    width: 30px
+    height: 30px
+    transition: 0.3s
+
+.sub-footer_ul
+    margin: 0
+    li
+        display: flex
+        padding-bottom: 10px
+    a
+        color: #c9c9c9
+        text-decoration: underline
+        transition: 0.3s
+        &:hover
+            color: $light-green
+
+.sub-footer_ul_mob
+    a
+        text-decoration: none
+
+.social-link-fb
+    background: url(../img/icons/icon-fb.png) no-repeat center
+    background-size: contain
+    &:hover
+        background: url(../img/icons/icon-fb-hover.png) no-repeat center
+        background-size: contain
+
+.sub-footer__tile
+    color: #fff
+    font-weight: 800
+    font-size: 24px
+    padding-bottom: 20px
+
+.social-link-in
+    margin-left: 15px
+    background: url(../img/icons/icon-in.png) no-repeat center
+    background-size: contain
+    &:hover
+        background: url(../img/icons/icon-in-hov.png) no-repeat center
+        background-size: contain
+
+// ------------------footer------------------------------
+
+.footer
+    background-color: #000
+    text-align: center
+    padding: 50rem/$var 0
+
+.opasit-mob
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 3
+    background-color: rgba(0,0,0,0.5)
+    display: none
+
+body.mobmenu
+    .opasit-mob
+        display: block
+
+
+// ------------------page design------------------------------------------------------------
+
+
+// ------------------page-headers------------------------------
+
+.page-headers
+    background: #000 url('../img/bg-page-headers.png') no-repeat
+    padding: 70rem/$var 0
+    background-position: 107% 76%
+
+.page-headers_text
+    font-size: 48rem/$var
+    color: #fff
+    font-weight: 800
+    text-align: left
+
+// ------------------block-links------------------------------
+
+.block-links
+    padding: 20rem/$var 0
+
+.page-link
+    margin: 0
+    font-size: 24rem/$var
+    span 
+        padding: 0 10px
+    a
+        color: #000000
+        transition: 0.3s
+    a.active
+        font-weight: 800
+        color: $light-green
+    a:hover
+        color: $light-green
+        
+// ------------------design-categoru------------------------------
+
+.pad-categor
+    margin: 15px 0
+
+.design-categoru
+    padding-bottom: 20rem/$var
+    
+.design-categoru__items
+    background-color: #fff
+    padding-bottom: 30px
+    img
+        max-width: 100%
+        width: 100%
+        height: auto
+
+.design__items_text
+    padding: 60rem/$var  50rem/$var
+    padding-bottom: 30rem/$var
+    font-weight: 800
+    line-height: 28px
+    font-size: 24rem/$var
+    a
+        transition: 0.3s
+        color: #333
+        &:hover
+            color: $light-green
+
+.design__items_date
+    padding: 0 50rem/$var
+
+
+// ------------------mailing-list------------------------------
+
+.mailing-list
+    background-image: none
+
+.mailing-list_text
+    padding-top: 1.5rem
+    color: #fff
+    font-size: 24rem/$var
+
+
+// ------------------page-post------------------------------
+
+.page-post
+    background-color: #fff
+    line-height: 24px
+    padding-bottom: 30px
+    p
+        padding: 10px 0
+        margin: 0
+    img
+        display: inline
+    ol
+        list-style: decimal
+    h2,h3
+        text-transform: uppercase
+        font-weight: 300
+        margin: 0
+        padding: 20px 0
+        line-height: 30px
+    ol,ul
+        padding-left: 15px  
+    ul
+        li
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                width: 10px
+                height: 10px
+                background-color: $light-green
+                left: -19px
+                top: 7px
+                border-radius: 100%
+.page-post-link
+    background-color: #fff
+
+// ------------------page-catalogA1------------------------------
+
+// ------------------page-category-headers------------------------
+
+.page-category-headers
+    padding: 65rem/$var 0 25rem/$var
+    color: #fff
+    font-size: 48rem/$var
+    font-weight: 800
+    background: #000 url(../img/bg-catalog.png) no-repeat
+    background-position: 37% 26%
+    .categoty-text_right
+        color: $light-green
+
+.catalog-tovare
+    padding-top: 50rem/$var
+    padding-bottom: 50rem/$var
+
+.tovare-img_slick
+    img
+        max-width: 100%
+        height: auto
+
+.tovare__slick
+    padding-top: 35rem/$var
+
+.pad-riht
+    padding-right: 20px
+
+.catalog-tovare_text-opis
+    line-height: 24px
+    padding-top: 36px
+
+.row-dop-info
+    padding-top: 6.08571rem
+
+.dop-info_items
+    position: relative
+    padding-left: 80rem/$var
+    line-height: 28px
+    max-width: 240px
+    &:after
+        content: ''
+        position: absolute
+        background-repeat: no-repeat
+        background-size: contain
+        left: 0
+        top: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        background-repeat: no-repeat
+        width: 46px
+        height: 70px
+
+.dop-info_items_1:after
+    background-image: url(../img/icons/icons-technology-1.png)
+    left: 42px
+    top: 30%
+
+.dop-info_items_2:after
+    background-image: url(../img/icons/icons-technology-4.png)
+    left: 42px
+    top: 68%
+
+.dop-info_items_3:after
+    background-image: url(../img/icons/icons-dopinfo-3.png)
+    left: 60px
+    top: 46%
+
+.tovare__slick_img
+    width: 70px!important
+    max-width: 70px
+    max-height: 50px
+    height: 50px
+    img
+        max-width: 100%
+        width: 100%
+        max-height: 100%
+        height: 100%
+
+.tovare-img_slick
+    .slick-track
+        display: flex
+    .slick-slide
+        z-index: 2!important
+
+.tovare__slick
+    position: relative
+    .slick-track
+        display: flex
+    .slick-list
+        overflow: hidden
+        padding: 0!important
+        margin: 0!important
+        margin-right: 10px!important
+        margin-left: 14px!important
+    .slick-slide
+        margin: 0 6px
+        width: 82px!important
+    .slick-arrow
+        position: absolute
+        top: 85%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+        font-size: 0
+        width: 23rem/$var
+        height: 2.35714rem
+        background: url(../img/icons/icons-scli-arrowc.png)
+        background-repeat: no-repeat
+        background-size: contain
+        border: none
+        outline: none
+        cursor: pointer
+    .slick-prev
+        left: 0.5%
+        transform: translate(-50%, -100%)
+    .slick-next
+         transform: translate(10%, -100%)
+         left: 98%
+         background-image: url(../img/icons/icons-scli-arrowc-next.png)
+
+
+.block-links 
+    position: relative
+
+.tovare_items_info
+    text-align: center
+    font-size: 24px
+    line-height: 24px
+    padding-top: 20px    
+
+.tovare_items_btn
+    margin-top: 25px
+
+.bg-white
+    background-color: #fff
+
+.order-block-form
+    padding-bottom: 3rem
+    background-image: none
+    .mailing-list_text
+        color: #ffffff
+        font-size: 24rem/$var
+
+.other-goods
+    padding: 65rem/$var 0 20rem/$var 0
+
+.other-goods_slick
+    padding-top: 48rem/$var
+    position: relative
+
+.other-goods__items 
+    position: relative
+    background-color: #000
+    img
+        opacity: 72%
+        max-width: 100%
+        width: 100%
+        max-height: 215px
+
+.goods__items_text
+    position: absolute
+    font-weight: 800
+    color: #ffffff
+    top: 50%
+    left: 50%
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+
+.other-goods_slick
+    .slick-track
+        display: flex
+        justify-content: space-between
+    .slick-slide
+        margin: 10px
+    .slick-list 
+        overflow: hidden
+    .slick-arrow
+        position: absolute
+        top: 70%
+        left: 50%
+        margin-right: -50%
+        transform: translate(-50%, -50%)
+        z-index: 2
+        font-size: 0
+        width: 23rem/$var
+        height: 75rem/$var
+        background: url(../img/icons/icons-scli-arrowc.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border: none
+        outline: none
+        cursor: pointer
+    .slick-prev
+        left: -1.5%
+        transform: translate(-50%, -100%)
+    .slick-next
+         transform: translate(10%, -100%)
+         left: 100%
+         background-image: url(../img/icons/icons-scli-arrowc-next.png)
+
+        
+// ------------------page-catalog------------------------------
+
+// ------------------page-category-header------------
+
+.page-category-header
+    padding: 65rem/$var 0 110rem/$var 0
+    background: #000 url(../img/bg-catalog-header.png) no-repeat
+    background-position: center
+
+.ategory-header__title
+    font-size: 48rem/$var
+    color: #ffffff
+    font-weight: 800
+    padding-bottom: 30rem/$var
+
+.ategory-header_text
+    font-size: 24rem/$var
+    line-height: 24px
+    padding-bottom: 45rem/$var
+    color: #fff
+
+// ------------------category-equipment--------------
+.category-equipment
+    padding-top: 0
+    .equipment__slider
+        padding-top: 0
+    .equipment__block-items
+        margin-top: 45rem/$var
+
+// ------------------section-seo--------------
+.section-seo
+    padding: 45rem/$var 0
+
+.section-seo__seo-text
+    text-align: justify
+    overflow: hidden
+    transition: height 0.3s
+    line-height: 24px
+    padding-top: 35rem/$var
+
+.seo-text_next
+    transition: color 0.3s
+    font-weight: 800
+    display: inline
+    color: #666
+    text-decoration: underline
+    margin-left: 10px
+    cursor: pointer
+    &:hover
+        color: $light-green
+    
+// ------------------section-questions--------------
+
+.section-questions
+    padding-top: 50rem/$var
+
+.block-questions_items
+    padding-top: 45rem/$var
+
+.questions_items
+    text-align: center
+    border-bottom: 2px solid #fff
+    &:last-child
+        border: none
+
+.questions_items-top
+    padding: 18rem/$var 10px
+    background-color: $light-green
+    color: #fff
+    font-weight: 800
+    cursor: pointer
+
+.questions_items-bottom
+    line-height: 24px
+    visibility: hidden
+    height: 0 
+    padding: 0
+    transition: 0.3s
+    opacity: 0
+
+.questions_items.active
+    .questions_items-bottom
+        visibility: visible
+        height: max-content
+        padding: 15px 0
+        opacity: 1
+
+
+// ------------------benefits--------------
+
+.ty-bisnes
+    padding-top: 40rem/$var
+    padding-bottom: 70rem/$var
+    background-color: #fff
+
+.benefits
+    padding-top: 40rem/$var
+    padding-bottom: 70rem/$var
+    
+    
+.benefits_row
+    padding-top: 50rem/$var
+
+.benefits_items
+    line-height: 24px
+    
+.benefits_title
+    padding-top: 45rem/$var
+    font-size: 24px
+
+.benefits_text
+    padding-top: 35rem/$var
+
+.benefits__img
+    height: 168px
+    img
+        height: auto
+
+// ------------------scents--------------
+
+.scents
+    padding: 40rem/$var 0
+    background-color: #fff
+
+.scents__img
+    max-height: 110px
+    width: 100%
+    max-width: 360px
+    margin: 0 auto
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        max-width: 100%
+        height: auto
+
+.scents__items
+    margin-top: 45rem/$var
+    color: #666
+    
+.scents__items
+    text-align: center
+
+.scents__title
+    font-weight: 800
+    padding-top: 30rem/$var
+
+.scents__text
+    padding-top: 10px
+
+.what-section
+    padding-top: 50rem/$var
+    text-align: center
+    p
+        line-height: 24px
+
+.what-p-top
+    padding-top: 15px
+
+.what__baner
+    padding: 28rem/$var 0
+    background-color: $light-green
+    color: #fff
+    font-weight: 800
+    font-size: 24px
+
+.ty-bisnes
+    padding-bottom: 50rem/$var
+    text-align: center
+
+.ty-bisnes__img
+    max-height: 310px
+    width: 100%
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+        width: 100%
+        max-height: 310px
+
+.ty-bisnes_text
+    padding-top: 15px
+    font-weight: 800
+    line-height: 24px
+
+.ty-bisnes_items
+    margin-top: 35px
+
+.work-done
+    padding: 45rem/$var 0
+    background: #000 url(../img/bg-workdone.png) no-repeat
+    background-position-x: 83%
+
+.work-done_title
+    color: #ffffff
+    font-weight: 800
+    font-size: 40rem/$var
+
+.work-done_ul
+    padding-top: 30px
+    margin: 0
+    color: #ffffff
+    line-height: 52px
+    font-size: 24px
+    li
+        position: relative
+        padding-left: 60rem/$var
+        i
+            display: block
+            width: 44px
+            height: 44px
+            font-weight: 800
+            text-align: center
+            background-color: #000
+            border-radius: 100%
+            border: 2px solid $light-green
+            box-shadow: 0 0 18px 6px rgba(68,218,16,0.58)
+            line-height: 37px
+            padding-right: 2px
+            position: absolute
+            left: 0
+            font-style: normal
+
+.work-done-btn
+    box-shadow: 3px 5px 39px 0px #44da10
+    -webkit-box-shadow: 3px 5px 39px 0px #44da10
+
+.work-done_right
+    width: 100%
+    
+.work-done_right_title
+    font-size: 24px
+    color: #ffffff
+    font-weight: 800
+    padding-bottom: 15px
+    text-align: center
+
+.d-bottom
+    display: flex
+    align-items: flex-end
+
+
+.the-way
+    padding-top: 40rem/$var
+    padding-bottom: 80rem/$var
+    background: #f4f4f4 url(../img/bg-the-way.png) no-repeat left
+
+.the-way_title
+    font-size: 40rem/$var
+    font-weight: 800
+    line-height: 48px
+    color: #333
+
+.the-way_ul
+    padding-top: 20px
+    li
+        text-decoration: underline
+        color: #333
+        font-size: 18px
+        line-height: 30px
+        padding: 0
+        padding-left: 2.5rem
+        &:after
+            top: 0.557rem
+    a
+        color: #333!important
+        text-decoration: underline
+        transition: 0.3s
+        &:hover
+            color: $light-green
+
+.pad-left
+    margin-left: -50px
+
+.page-aromarketing-header
+    padding: 70rem/$var 0
+    background: #000 url(../img/bg-aromarket.png) no-repeat
+    background-position: 100% -177px
+    background-size: cover
+
+.btn-aromarketing
+    max-width: 460px!important
+
+.aromarketing_title
+    color: #ffffff
+    font-weight: 800
+    font-size: 48rem/$var
+
+.god-macet
+    padding: 50rem/$var 0
+    background-color: #fff
+
+.god-macet_title
+    text-align: center
+    text-transform: uppercase
+    font-size: 24px
+
+.god-macet__items
+    padding-top: 40rem/$var
+
+.god-macet_items
+    position: relative
+    padding-bottom: 50px
+
+.got-items_text
+    padding-left: 30px
+
+.bg-none
+    background-image: none!important
+
+.white-popup 
+    position: relative
+    background: #FFF
+    padding: 20px
+    width: auto
+    max-width: 942px
+    margin: 20px auto
+
+.popup-site
+    padding: 40px 6.7vmax
+
+.popup-site
+    .free-order_form
+        padding-top: 0
+    .form-text-input::-webkit-input-placeholder
+        color: #666
+        opacity: 0.8
+        transition: 0.3s
+    .form-text-input::-moz-placeholder
+        color: #666
+        opacity: 0.8
+        transition: 0.3s
+    .form-text-input:-moz-placeholder
+        color: #666
+        opacity: 0.8
+        transition: 0.3s
+    .form-text-input:-ms-input-placeholder
+        color: #666
+        opacity: 0.8
+        transition: 0.3s
+    .form-btn
+        width: fit-content
+        margin-top: 30px
+    .mob-form
+        justify-content: center!important
+        padding: 15px
+    .form-text-input:focus
+        border-color: #333
+    .form-text-input
+        color: #666
+
+.popup-site
+    .mfp-close
+        top: 50px
+        right: 40px
+        font-size: 0
+        background: url(../img/icons/closes.png) no-repeat center
+        cursor: pointer
+
+.popup-site__title
+    font-size: 24px
+    font-weight: 800
+    color: #333
+    text-align: center
+
+.popup-site__text
+    padding-top: 15px
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+
+
+/*pagination site*/
+
+.pagination-site
+    padding: 50px 0
+
+.pagination-site__ul
+    list-style: none
+
+.pagination-site__btn,
+.pagination-site__li
+    margin: 0 28px
+    cursor: pointer
+.pagination-site__li
+    transition: 0.3s
+    font-size: 20px
+    font-weight: 800
+    color: #666
+    &.active
+        color: $light-green
+    &:hover
+        color: $light-green
+
+.pagination-site__btn
+    width: 30px
+    height: 30px
+    border-radius: 100%
+    background-color: #8b8b8b
+    transition: 0.3s
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 50%
+    background-image: url(../img/icons/icon-bnt-pagination-right.svg)
+    margin: 0 20px
+    &:hover
+        background-color: $light-green
+
+.pagination-site_btn-right
+    transform: rotate(180deg)
+
+/*contacts*/
+
+.page-headers_contacts
+    background-image: url(../img/bg-contacts.png)
+    
+.consultation_contact
+    background-image: url(../img/bg-consultation-contact.png)
+    background-position: 100%
+
+.contact-section__left
+    width: 100%
+    height: 100%
+    margin-left: -15px
+    img
+        max-width: 100%
+        width: 100%
+.contact-section__right
+    margin-right: -15px
+
+.contact-section__title
+    font-size: 36px
+
+.headers__ul_contacts
+    .headers__li 
+        padding-bottom: 0.8rem
+        padding-top: 0
+        &:after
+            top: 0.657rem
+        a
+            font-size: 24px
+            font-weight: 800
+            color: #666666
+            transition: 0.3s
+            &:hover
+                color: $light-green
+
+.the-way_ul
+    a
+        transition: 0.3s
+        &:hover
+           color: $light-green!important
+        
+
+.contact-section__text
+    max-width: 650px
+    line-height: 24px
+    font-size: 18px    
+    padding-bottom: 10px
+.max-w
+    max-width: 650px
+    padding-bottom: 5px
+
+.mob-contacts
+    padding-bottom: 5px
+    a   
+        color: #666
+
+.d--none-js
+    display: none
+
+.bg-col-btn
+    background-color: #6cc54d
+    color: #fff
+    font-weight: 800
+    &:hover
+        background-color: #fff
+        color: #6cc54d
+
+.pt-arom 
+    padding-top: 20px
+
+
+
+
+// animation
+
+.items_circle
+    background-size: 0
+    color: transparent
+    i
+        font-style: normal
+
+.items_text
+    position: relative
+    top: -50px
+    opacity: 0
+
+.automation.active
+    .items_circle
+        background-size: 100%
+        -webkit-transition: all 0.4s ease 0s
+        -moz-transition: all 0.4s ease 0s
+        -ms-transition: all 0.4s ease 0s
+        -o-transition: all 0.4s ease 0s
+        transition: all 0.4s ease 0s
+        transition-delay: 
+    .items_text
+        -webkit-transition: all 0.6s ease 0.4s
+        -moz-transition: all 0.6s ease 0.4s
+        -ms-transition: all 0.6s ease 0.4s
+        -o-transition: all 0.6s ease 0.4s
+        transition: all 0.6s ease 0.4s
+        top: 0
+        opacity: 1
+
+
+@import "media" // Всегда в конце
