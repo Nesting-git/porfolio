@@ -1,0 +1,1665 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+.container
+    max-width: 1620px
+    margin: 0 auto
+    padding: 0 30px
+
+.row
+    display: flex
+
+.transition 
+    transition: 0.4s
+
+.montserrat
+    font-family: 'Montserrat', sans-serif
+
+.body__wrapper
+    background: #eaeaea
+
+
+// шапка сайта
+.header
+    background: $bg-header
+    height: 60px
+    display: flex
+    align-items: center
+    box-shadow: 0 4px 12px rgba(17,13,43,.2)
+    z-index: 200
+    .container
+        width: 100%
+    &.header-fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+
+
+.header__row
+    align-items: center
+
+.header__logo
+    position: relative
+    padding: 16px 0
+    &:before
+        content: ''
+        position: absolute
+        top: -1px
+        left: 125%
+        height: 100%
+        width: 10px
+        background: $main-col
+        webkit-transform: skewX(-30deg)
+        transform: skewX(-30deg)
+
+.logo-site
+    display: flex
+    max-width: 200px
+    min-width: 200px
+    width: 100%
+    img
+        height: auto
+        max-width: 100%
+        width: 100%
+        max-height: 28.88px
+
+.header__wrapp-main-menu 
+    margin-left: 95px
+
+.main-menu 
+    list-style: none
+    margin: 0
+    padding: 0
+    list-style: none
+    display: flex
+    align-items: center
+.main-menu__list
+    color: #fff
+    @extend .transition
+    &:hover
+        color: $main-col
+
+.main-menu__item
+    position: relative
+
+.main-menu__list
+    display: inline-flex
+    font-weight: 600
+    padding: 20px 10px
+
+.sub-menu-block
+    position: absolute
+    top: 100%
+    left: 0
+    background: #fff
+    padding: 0 20px 15px 0
+    box-shadow: 0 0 20px rgba(17,13,43,.16)
+    width: max-content
+    transition: 0.4s
+    opacity: 0
+    transform: translateY(20px)
+    visibility: hidden
+    z-index: 30
+    &:before
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        top: -8px
+        left: 30px
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
+        border-bottom: 8px solid #fff
+
+.btn-sub-menu
+    display: none
+
+.burger-menu
+    display: none
+    margin-top: -3px
+
+body.fixed
+    overflow: hidden
+    
+.sub-menu
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+        margin-top: 8px
+        padding: 0 15px
+
+.sub-menu__link
+    color: $col-purple
+    font-size: 16px
+    position: relative
+    @extend .transition
+    padding-bottom: 1px
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 0
+        height: 1px 
+        background: $main-col
+        @extend .transition
+    &:hover
+        &:after
+            width: 100%
+
+
+.progress
+    position: absolute
+    left: 0
+    bottom: -5px
+    width: 100%
+    height: 5px
+    
+.progress__bar
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 0
+    background: $main-col
+
+
+.header-search
+    position: relative
+    margin-left: auto
+
+.search__wrapp
+    display: flex
+    align-items: center
+    position: relative
+
+.search__wrapp-input
+    padding: 0
+    background: $main-col
+    border-radius: 20px 0 0 20px
+    @extend .transition
+    width: 0
+    overflow: hidden
+    position: relative
+    position: absolute
+    right: 20px
+
+.form_search__search
+    height: 32px
+    outline: none
+    border: none
+    background: #fff
+    min-width: 100%
+    padding: 7px 10px 7px 20px
+    position: relative
+    z-index: 30
+    border-radius: 20px
+    vertical-align: middle
+    font-size: 14px
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    &::placeholder
+        opacity: 0.8
+        font-family: 'Montserrat', sans-serif
+
+
+.search__content 
+    border-radius: 50%
+    overflow: hidden
+
+.search-btn
+    color: #fff
+    background: $main-col
+    cursor: pointer
+    z-index: 30
+    position: relative
+    padding: 0
+        
+.search-btn,
+.header-user__link
+    min-width: 40px
+    min-height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    opacity: 0.8
+    border: none
+    outline: none
+    @extend .transition
+    &:hover
+        opacity: 1
+
+.header-search
+    &.active
+        .search__wrapp-input
+            padding: 4px 20px 4px 4px
+            width: 360px
+        .search-btn
+            transition: 1s
+            opacity: 1
+
+.header-user
+    margin-left: 15px
+    position: relative
+
+.header-user__link
+    background: #30c330
+    color: #fff
+
+.header-user__hover
+    left: auto
+    right: 0
+    a
+        color: #25213f
+        position: relative
+        padding-bottom: 1px; 
+   
+    &:before
+        left: 80%
+
+.header-user:hover
+    .header-user__hover
+        ransition-delay: 0.5s
+        opacity: 1
+        visibility: visible
+
+.section-main-swiper
+    padding-top: 60px
+
+.swiper-items 
+    min-height: 400px
+    max-height: 400px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: relative
+    flex-direction: column
+    background-size: cover
+
+.slide-opas
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0,0,0,.4)
+    z-index: 5
+
+.main-slider-title,
+.main-slider-sub-title
+    position: relative
+    color: #fff
+    z-index: 10
+    max-width: 80%
+
+.main-slider-title
+    font-size: 38px
+    font-weight: 600
+
+.main-slider-sub-title
+    color: #fff
+    font-size: 18px
+    margin-top: 15px
+    padding-bottom: 30px
+
+.main-slider-link
+    position: absolute
+    display: block
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 10
+
+.swiper-container
+    z-index: auto
+
+.section-main-swiper 
+    .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet
+        background: #fff
+    .swiper-button-next,
+    .swiper-button-prev
+        width: 60px
+        height: 60px
+        font-size: 20px
+        color: #fff
+        border-radius: 50%
+        transform: translateY(-50%)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        @extend .transition
+        &:after
+            font-size: 40px!important
+            @extend .transition
+        &:hover
+            background: rgba(0,0,0,.4)
+            &:after
+                color: $main-col
+    .swiper-button-next
+        &:after
+            padding-left: 2px
+    .swiper-button-prev
+        &:after
+            padding-right: 2px
+
+.category-slider
+    margin-top: 40px
+    
+.category__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.title-site
+    font-size: 35px
+    color: $main-col-tel
+    font-family: 'Montserrat', sans-serif
+    font-weight: 700
+    padding: 0
+    margin: 0
+
+.all-categories
+    font-family: 'Montserrat', sans-serif
+    color: $main-col-tel
+    @extend .transition
+    font-weight: 600
+    position: absolute
+    padding-bottom: 7px
+    position: relative
+    display: inline-block
+
+.all-categories__arrow
+    position: absolute
+    width: 40%
+    height: 2px
+    background: $main-col
+    left: 0
+    bottom: 0
+    @extend .transition
+    &:before
+        content: ''
+        position: absolute
+        width: 8px
+        height: 8px
+        right: -1px
+        border: 2px solid $main-col
+        transform: rotate(45deg)
+        border-bottom-width: 0
+        border-left-width: 0
+        transform-origin: top right
+        top: 1px
+
+.all-categories
+    &:hover
+        color: $main-col
+        .all-categories__arrow
+            width: 100%
+
+.category-slide-items
+    border-radius: 5px
+    overflow: hidden
+    background: #000
+    padding-bottom: 10px
+    position: relative
+    @extend .transition
+    &:hover
+        transform: scale(0.99)
+
+    
+.category-slider__row
+    margin: 0 -20px
+    margin-top: 30px
+
+.category-slider__slider
+    padding-top: 30px
+    position: relative
+    padding: 0 20px
+    overflow: hidden
+.category-slider__row
+    position: relative
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+        height: 105%
+        width: 25px
+        top: -5px
+        background: #eaeaea
+        z-index: 2
+    &:before
+        left: -5px
+    &:after
+        right: -5px
+
+.swiper-category-button
+    width: 50px
+    height: 50px
+    background: $main-col
+    border-radius: 50%
+    color: #fff
+    opacity: 0.8
+    @extend .transition
+    toP: 30%
+    &.swiper-button-prev
+        left: 3px
+        &:after
+            padding-right: 2px
+    &.swiper-button-next
+        right: 3px
+        &:after
+            padding-left: 2px
+    &:after
+        font-size: 25px!important
+    &:hover
+        opacity: 1
+        
+.category-slide-img
+    position: relative
+    img
+        width: 100%
+    &:before
+        content: ''
+        position: absolute
+        left: 0
+        bottom: 0
+        box-shadow: 5px -5px 55px 75px rgba(0, 0, 0, 1)
+        width: 100%
+
+.article-item
+    position: absolute
+    width: fit-content
+    padding: 4px 10px
+    left: 10px
+    top: 10px
+    border-radius: 5px
+    @extend .montserrat
+    font-weight: 500
+
+.category-slide-info
+    position: relative
+    z-index: 22
+    padding: 10px
+    margin-top: -40px
+
+.category-slide__link
+    @extend .montserrat
+    color: #fff
+    text-decoration: none
+    font-weight: 500
+
+
+.category-slide__text-content
+    color: #fff
+    font-weight: 300
+    font-family: 'Roboto', sans-serif
+    font-size: 13px
+    margin-top: 15px
+    display: block
+
+.category-slide-autor
+    display: flex
+    align-items: center
+
+.category-slide-wrapp-autor
+    display: flex
+    justify-content: space-between
+    padding: 0 10px
+    margin-top: 10px
+    align-items: center
+
+.category-img-autor 
+    border-radius: 50%
+    overflow: hidden
+    width: 20px
+    height: 20px
+
+.category-name-autor
+    color: #fff
+    margin-left: 10px
+    font-size:  13px
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+
+.category-slide-views
+    padding-top: 5px
+    display: flex
+    align-items: center
+    color: #fff
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 13px
+    span
+        margin-left: 10px
+
+.link-category
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 40
+
+
+.page-wrapp-subscription
+    margin-top: 50px
+    padding-bottom: 50px
+
+.page-wrapp-subscription__row
+    display: flex
+    justify-content: center
+
+.btn-site
+    display: inline-flex
+    border: none
+    outline: none
+    cursor: pointer
+    background: $main-col
+    color: #fff
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    border-radius: 20px
+    padding: 10px 40px
+    align-items: center
+    text-align: center
+    @extend .transition
+    opacity: 0.8
+    position: relative
+    z-index: 10
+    &:hover
+        opacity: 1
+
+.animation-pulse-bnt
+    &:before
+        content: ''
+        position: absolute
+        border: 1px solid $main-col
+        top: -10px 
+        right: -10px
+        bottom: -10px
+        left: -10px
+        border-radius: 30px
+        animation: pulse 2s linear infinite
+
+@keyframes pulse
+    0% 
+        transform: scale(0)
+        opacity: 0
+    50% 
+        opacity: 1
+    100%
+        transform: scale(1.2)
+        opacity: 0
+
+// page category
+.category
+    margin-top: 30px
+    padding-bottom: 30px
+
+.category__row
+    display: flex
+    flex-wrap: wrap
+    margin-right: -15px
+    margin-top: 30px
+
+.category-items
+    flex: 0 0 calc(20% - 15px)
+    margin-right: 15px
+    margin-bottom: 15px
+
+.bread-crumbs__row
+    padding-top: 20px
+
+.page-wrapp-title
+    margin-top: 30px
+
+.bread
+    padding: 0
+    margin: 0
+    list-style: none
+    display: flex
+    align-items: center
+    color: $main-col-tel
+    font-size: 14px
+    flex-wrap: wrap
+    li
+        padding: 0 10px
+        position: relative
+        &:first-child
+            padding-left: 0
+        &:before
+            content: '/'
+            position: absolute
+            top: 49%
+            right: -3px
+            transform: translatey(-50%)
+            font-size: 20px
+            color: $main-col
+            font-weight: 700
+        &:last-child
+            &:before
+                display: none
+    a
+        color: $main-col-tel
+        @extend .transition
+        &:hover
+            color: $main-col
+        
+// pagination
+.row__pagination
+    margin-top: 50px
+    
+.pagination_ul
+    display: flex
+    align-items: center
+    padding: 0
+    margin: 0
+    font-weight: 700
+    @extend .montserrat
+    color: $main-col-tel
+    list-style: none
+    li
+        margin: 0 15px
+        &.active
+            color: $main-col
+        &:first-child
+            margin-left: 0
+    a
+        @extend .transition
+        &:hover
+            color: $main-col
+    span
+        opacity: 0.8
+        pointer-events: none
+
+.no-pagination
+    opacity: 0.5
+    pointer-events: none
+
+// seo
+.section-seo
+    margin-top: 70px
+    padding-bottom: 20px
+    position: relative
+    &.no-open
+        .seo-content
+            position: relative
+            max-height: 500px       
+            &:before
+                content: ''
+                position: absolute
+                left: 0
+                bottom: 0
+                right: 0
+                box-shadow: 2px -17px 20px 40px rgb(234, 234, 234)
+    .container
+        max-width: 1200px
+
+.seo-content
+    // overflow-y: auto
+    overflow: hidden
+    margin: 0 auto
+    padding-right: 20px
+
+.seo-content::-moz-scrollbar,
+.seo-content::-webkit-scrollbar
+    width: 8px
+    background: $main-col-tel
+    border-radius: 5px
+
+.seo-content::-webkit-scrollbar-thumb,
+.seo-content::-moz-scrollbar-thumb
+    background: $main-col
+    border-radius: 5px
+
+.section-seo_top
+    margin-bottom: 20px
+
+.section-seo__wrapp-btn
+    margin-top: 20px
+    display: flex
+    justify-content: flex-end
+.section-seo__btn
+    border: none
+    outline: none
+    background: transparent
+    cursor: pointer
+    @extend .transition
+    font-weight: 600
+    font-size: 14px
+    color: $main-col-tel
+    &:hover
+        color: $main-col
+
+.body-page
+    padding-top: 60px
+
+.body-page__item
+    margin-top: 40px
+    
+.site-text
+    font-size: 20px
+    margin: 0
+    font-family: 'Roboto', sans-serif
+
+.wrapp-messenger
+    margin-top: 25px
+
+.wrapp-messenger__item
+    margin-bottom: 15px
+
+.messenger-items
+    @extend .transition
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    color: $main-col-tel
+    display: flex
+    align-items: center
+    i
+        font-size: 22px
+        margin-right: 15px
+    &:hover
+        color: $main-col
+
+.content-internal
+    font-family: 'Roboto', sans-serif
+    margin-top: 30px
+    line-height: 1.7
+    img
+        display: block
+        max-width: 100%
+    a
+        color: $main-col-tel
+        @extend .transition
+        color: $main-col
+    ul
+        list-style: none
+        padding-left: 20px
+        li
+            position: relative
+            &:before
+                content: ''
+                position: absolute
+                width: 7px
+                height: 7px
+                border-radius: 50%
+                background: $main-col
+                top: 55%
+                transform: translateY(-50%)
+                left: -20px
+    ol
+        list-style: none
+        counter-reset: list
+        padding-left: 20px
+        li
+            position: relative
+            &:before
+                counter-increment: list
+                content: counter(list) ". "
+                position: absolute
+                left: -20px
+                top: 50%
+                transform: translateY(-50%)
+                color: $main-col
+                font-weight: 500
+
+//page-article
+.section-article-head__cover
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    padding: 265px 0 47px 0
+    position: relative
+    max-height: 400px
+    .article-item
+        z-index: 20
+        left: 25px    
+
+.section-article-head__wrap
+    position: relative
+    z-index: 20
+    margin-left: 25px
+
+.article-header
+    position: relative
+    max-width: 87%
+    margin-left: 25px
+    i
+        position: absolute
+        top: 3px
+        left: -25px
+        height: 100%
+        width: 4px
+        background: $main-col
+
+.article-title
+    margin: 0
+    padding: 0
+    font-size: 38px
+    font-family: 'Montserrat', sans-serif
+    color: #fff
+
+.row-articles
+    margin-top: 1%
+    display: flex
+    position: relative
+
+.row-articles__content
+    width: 80%
+    padding-right: 10px
+
+.row-articles_article
+    width: 20%
+    padding-left: 10px
+    padding-bottom: 30px
+
+.wrapp__article-popular
+    display: flex
+    flex-direction: column
+
+.header-popular-title
+    font-size: 24px
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    margin-bottom: 15px
+
+.article-items
+    margin-bottom: 15px
+
+.article__date
+    font-family: 'Roboto', sans-serif
+    font-weight: 500
+    font-size: 12px
+    margin-right: 20px
+    opacity: 0.8
+    color: #fff
+    i
+        margin-right: 15px
+
+.article_time
+    display: flex
+    align-items: center
+
+.info-article
+    display: flex
+    align-items: flex-end
+    justify-content: flex-end
+    margin-right: 20px
+    padding-top: 10px
+
+.popup-dop-row
+    margin-top: 20px
+
+.entrance-through
+    display: flex
+    align-self: center
+    width: 100%
+    border-radius: 5px
+    margin-top: 8px
+    padding: 8px 10px
+    span
+        margin-left: 15px
+
+.entrance-gmail
+    background: #3367d6
+    color: #fff
+    i
+        font-size: 20px
+
+.dop-title-popup
+    display: block
+    color: #281f55
+    font-size: 14px
+
+.article__view
+    .category-slide-views
+        color: $main-col-tel
+        font-weight: 500
+        padding-top: 0
+        opacity: 0.8
+        color: #fff
+
+.dop-slider
+    margin-top: 0
+    
+.article-autor
+    margin-top: 80px
+    padding-bottom: 20px
+
+
+
+.article__wrapp
+    display: flex
+
+.autor__article--img
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    overflow: hidden
+    img
+        width: 100%
+        max-width: 100%
+        display: block
+
+.article__informatio
+    padding-left: 40px
+
+.article__autor-information
+    font-family: 'Roboto', sans-serif
+    line-height: 1.7
+    opacity: 0.6
+    
+.title-info-autor
+    margin: 0
+    font-size: 20px
+
+.article-autor-line-bot
+    padding-bottom: 20px
+    border-bottom: 1px solid rgba(0,0,0,0.2)        
+
+a
+    outline: none
+
+.rating-area 
+	width: fit-content
+
+.rating-area:not(:checked) > input 
+	display: none
+
+.rating-area:not(:checked) > label 
+	float: right
+	width: 30px
+	padding: 0
+	cursor: pointer
+	font-size: 30px
+	line-height: 24px
+	color: lightgrey
+	text-shadow: 1px 1px #bbb
+    transition: 0.4s
+
+.rating-area:not(:checked) > label:before 
+	content: '★'
+
+.rating-area > input:checked ~ label 
+	color: gold
+	text-shadow: 1px 1px #c60
+    transition: 0.4s
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label 
+	color: gold
+    transition: 0.4s
+
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label 
+	color: gold
+	text-shadow: 1px 1px goldenrod
+    transition: 0.4s
+
+.rate-area > label:active 
+	position: relative
+
+.title-rating
+    margin-right: 20px
+    font-size: 16px
+    opacity: 0.8
+    font-family: 'Montserrat', sans-serif
+    color: $main-col
+    font-weight: 500
+    line-height: 24px
+
+.rating-content
+    display: flex
+    align-items: center
+    padding-top: 20px
+
+.rating-result 
+    margin-left: 15px
+
+.rating-result span 
+	padding: 0
+	font-size: 20px
+	line-height: 1
+	color: lightgrey
+	text-shadow: 1px 1px #bbb
+
+.rating-result > span:before 
+	content: '★'
+
+.rating-result > span.active 
+	color: gold
+	text-shadow: 1px 1px #c60
+
+.title-site_center
+    text-align: center
+
+// регистрация .form-input .form-row
+.page-registration
+    margin-top: 40px
+    padding-bottom: 50px
+
+.page-registration__row
+    display: flex
+    justify-content: center
+
+.avatar__btn
+    margin-top: 20px    
+
+.avatar__img
+    width: 110px
+    height: 110px
+    border-radius: 50%
+    margin: 0 auto
+    margin-top: 10px
+    overflow: hidden
+    position: relative
+    img
+        width: 100%
+        display: block
+
+.add-avatar
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    cursor: pointer
+    
+.registration__information
+    min-width: 340px
+    margin-top: 20px
+
+.form-row-btn
+    margin-top: 15px
+
+// страница поиска
+
+.page-search
+    margin-top: 30px
+    
+.form-search__row
+    display: flex
+
+.page-search__input
+    display: block
+    width: 100%
+    height: 40px
+    border: 1px solid #d7dee0
+    font-size: 14px
+    line-height: 1
+    padding: 0 15px
+    background: #fff
+    outline: none
+
+.search__select-wrap
+    position: relative
+    i
+        position: absolute
+        right: 10px
+        top: 43%
+        transform: translateY(-50%)
+        line-height: 0
+        &:before
+            line-height: 0
+    
+.search-select
+    display: block
+    min-width: 200px
+    height: 40px
+    background: #fff
+    outline: none
+    font-size: 13px
+    border: 1px solid #d7dee0
+    border-left-width: 0
+    border-right-width: 0
+    padding: 0 35px 0 15px
+
+select
+    -weblit-appearance: none
+    -moz-appearance: none
+    appearance: none
+
+.page-search__btn
+    border: none
+    outline: none
+    min-width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0
+    cursor: pointer
+    background: $main-col-tel
+    color: #fff
+
+.page-search__item
+    margin-top: 30px
+
+.page-search__items
+    display: flex
+    margin-bottom: 15px
+    position: relative
+    &:last-child
+        margin-bottom: 0
+
+.page-search__items--img
+    position: relative
+    border-radius: 5px
+    overflow: hidden
+    min-width: 300px
+    max-width: 300px
+    img
+        width: 100%
+        max-width: 100%
+        border-radius: 5px
+
+.page-search__items--title
+    @extend .montserrat
+    font-size: 18px
+    font-weight: 500
+
+.page-search__items--info
+    margin-top: 15px
+
+.page-search__items--autor
+    .category-slide-wrapp-autor
+        padding-left: 0
+        padding-right: 0
+    .category-name-autor,
+    .category-slide-views
+        color: $main-col-tel
+        font-size: 14px
+        font-weight: 500
+    
+
+.page-search__items--content
+    padding-left: 30px
+
+.page-search__items--link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+
+.footer
+    // margin-top: 50px
+    background: $bg-footer
+    padding: 30px 0 20px 0
+    color: #fff
+
+.footer-about
+    flex: 0 0 35%
+    padding: 20px
+    padding-bottom: 0
+    padding-top: 0
+    margin-right: 5%
+
+.h3-site
+    margin: 0
+    padding: 0
+    font-size: 18px
+    font-weight: 400
+    color: #fff
+    
+a.h3-site
+    @extend .transition
+    &:hover
+        color: $main-col
+
+
+.dop_wrapp
+    flex: 1 0 50%
+    display: flex
+    height: fit-content
+
+
+.footer__about-text
+    font-size: 12px
+    max-height: 200px
+    overflow-y: auto
+    margin-top: 10px
+    padding-right: 20px
+
+.footer__about-text::-webkit-scrollbar,
+    width: 3px
+
+.footer__about-text::-webkit-scrollbar-button,
+    width: 0
+
+.footer__about-text::-webkit-scrollbar-track,
+    background: #52545f
+    border-radius: 10px
+
+.footer__about-text::-webkit-scrollbar-track-piece,
+    background: #52545f
+    
+.footer__about-text::-webkit-scrollbar-thumb,
+    background: #fff
+    width: 3px
+    border-radius: 10px
+
+.footer__items-same
+    flex: 0 1 25%
+    padding: 0 20px
+    display: flex
+    flex-direction: column
+
+.footer__menu
+    list-style: none
+    padding-left: 0
+    li
+        margin-bottom: 15px
+    a
+        color: #fff
+        @extend .transition
+        &:hover
+            color: $main-col
+    
+.footer_bottom
+    align-items: center
+    justify-content: space-between
+    padding-top: 20px
+    border-top: 1px solid rgba(255,255,255, 0.5)
+    margin-top: 30px
+
+.footer_bottom--left
+    font-size: 14px
+    display: flex
+    align-items: center
+
+.footer__logo
+    margin-right: 20px
+
+.wrapp-social
+    display: flex
+    align-items: center
+
+.social-link
+    margin: 0 5px
+    width: 30px
+    height: 30px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    font-size: 18px
+    color: #fff
+    opacity: 0.8
+    @extend .transition
+    &:hover
+        opacity: 1
+    &:last-child
+        margin-right: 0
+    
+.scroll-top
+    display: block
+    width: 50px
+    height: 50px
+    border: none
+    outline: none
+    position: fixed
+    right: 40px
+    bottom: 50px
+    background: $main-col
+    border-radius: 50%
+    cursor: pointer
+    opacity: 0.8
+    z-index: 35
+    @extend .transition
+    &:hover
+        opacity: 1
+    &:before
+        content: ''
+        position: absolute
+        width: 15px
+        height: 15px
+        border: 3px solid #fff
+        top: calc(50% + 4px)
+        left: 50%
+        transform: translate(-50%, -50%) rotate(-45deg)
+        border-left-width: 0 
+        border-bottom-width: 0
+
+.opas
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0,0,0,0.5)
+    z-index: 200
+
+.close-menu
+    display: block
+    position: absolute
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    top: 15px
+    right: 15px
+    display: none
+    &:after,
+    &:before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 75%
+        height: 2px
+        background: #111
+    &:after
+        transform: translate(-50%, -50%) rotate(-45deg)
+    &:before
+        transform: translate(-50%, -50%) rotate(45deg)
+
+// popup
+.popup-page
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0,0,0,0.5)
+    z-index: 500
+    display: flex
+    align-items: center
+    justify-content: center
+    display: none
+    opacity: 0
+
+.max-width-460
+    max-width: 460px
+    width: 90%
+    position: relative
+
+.popup-close
+    position: absolute
+    display: block
+    width: 25px
+    height: 25px
+    top: -40px
+    right: -40px
+    background: #fff
+    border-radius: 50%
+    cursor: pointer
+    &:before,
+    &:after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        width: 75%
+        height: 2px
+        background: #111
+        @extend .transition
+    &:hover
+        &:before,
+        &:after
+            background: $main-col
+    &:before
+        transform: translate(-50%, -50%) rotate(-45deg)
+    &:after
+        transform: translate(-50%, -50%) rotate(45deg)
+
+.popup-wrapp
+    background: #fff
+    padding: 30px 20px
+
+.popup-style
+    border-radius: 0 30px 0 30px
+
+.popup-title 
+    font-size: 24px
+    color: $main-col-tel
+    text-align: center
+    font-weight: 600
+    margin-bottom: 15px
+
+.popup-form-row,
+.form-row
+    margin-bottom: 15px
+    
+
+.popup-input,
+.form-input
+    width: 100%
+    height: 35px
+    border-radius: 5px
+    border: 1px solid #c1c1c1
+    padding: 0 10px
+    outline: none
+    @extend .transition
+    &:focus
+        border-color: #281f55
+
+.icon-required
+    position: relative
+    &:before
+        content: '*'
+        position: absolute
+        color: red
+        font-size: 20px
+        top: 5px
+        right: 10px
+
+.popup-row-btn,
+.form-row-btn
+    display: flex
+    align-items: center
+    justify-content: center
+
+.popup-row-dop-btn
+    margin-bottom: 15px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    a
+        color: $main-col-tel
+        font-size: 14px
+
+.cookie-page
+    position: fixed
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 100
+    padding: 20px
+    color: #fff
+    text-align: center
+    font-family: 'Roboto', sans-serif
+    background: $main-col-tel
+    border-radius: 7px 7px 0 0
+    font-size: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.close-cookie
+    border-radius: 5px
+    color: #fff
+    display: block
+    padding: 5px 15px
+    font-size: 12px
+    margin-left: 20px
+    cursor: pointer
+    background: #04bd00
+    @extend .transition
+
+// reviews
+.reviews
+    margin-top: 20px
+    margin-bottom: 80px
+
+.title-reviews
+    font-size: 24px
+
+.reviews__row
+    margin-top: 20px
+
+.form-reviews__row
+    margin-bottom: 20px
+
+.form-reviews__row_flex-end
+    display: flex
+    justify-content: flex-end
+
+.form-reviews__textarea
+    resize: none
+    width: 100%
+    display: block
+    border-radius: 5px
+    padding: 10px 15px
+    min-height: 150px
+    outline: none
+    border: 1px solid #c1c1c1
+    transition: 0.4s
+    &:focus
+        border-color: #281f55
+
+.container-max-800
+    max-width: 800px
+    margin: 0 auto
+
+.reviews__row_comment
+    margin-top: 60px
+
+.comment-item
+    margin-bottom: 40px
+
+.comment__main
+    display: flex
+
+.comment__item_img
+    min-width: 50px
+    min-height: 50px
+    max-width: 50px
+    max-height: 50px
+    border-radius: 50%
+    overflow: hidden
+    img
+        display: block
+        width: 100%
+
+.comment__item_content
+    margin-left: 20px
+
+.comment__item_name
+    font-family: 'Montserrat', sans-serif
+    font-weight: 600
+    font-size: 14px
+    margin-right: 20px
+
+.comment__item_top
+    display: flex
+    align-items: center
+
+.comment_icon
+    margin-left: auto
+    i
+        opacity: 0.6
+
+.comment__item_data
+    font-size: 13px
+
+.comment__item_text
+    margin-top: 15px
+
+.comment__main_answer
+    margin-left: 70px
+    margin-top: 40px    
+
+.reviews--authorization
+    font-size: 20px
+    color: $main-col
+    font-family: 'Roboto', sans-serif
+    display: flex
+    align-items: baseline
+    span
+        margin-right: 20px
+    a
+        position: relative
+        transition: 0.4s
+        &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -3px
+            width: 60%
+            border-bottom: 2px dotted $main-col
+            transition: 0.4s
+
+.page-error
+    padding: 4vw 0
+
+.page-error__title
+    font-size: 245px
+    font-weight: 900
+    @extend .montserrat
+
+.page-error__subtitle
+    font-size: 48px
+    @extend .montserrat
+    text-align: center
+    margin-top: 2vw
+    
+.page-error__row
+    display: flex
+    justify-content: center
+    margin-top: 2vw
+
+.page-error__info-text
+    margin-top: 1vw
+    @extend .montserrat
+    font-size: 20px
+    text-align: center
+    
+
+.page-error__title--senter
+    text-align: center
+
+.error-text
+    color: red
+    padding-bottom: 5px
+    padding-left: 10px
+    font-size: 12px
+
+input.error 
+    border: 1px solid red
+
+#hellopreloader>p
+    display: none
+
+#hellopreloader_preload
+    display: block
+    position: fixed
+    z-index: 99999
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    min-width: 1000px
+    background: #fff url(../img/icons/ball-triangle.svg) center center no-repeat
+    background-size: 123px
+
+.hellopreloader_none
+    display: none!important
+    #hellopreloader_preload
+        display: none!important
+
+.none
+    display: none
+
+@import "media" // Всегда в конце

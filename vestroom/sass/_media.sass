@@ -1,0 +1,549 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1600px) 
+	.swiper-items
+		max-height: 300px
+		min-height: 300px
+	.section-article-head__cover
+		padding: 155px 0 15px 0
+	.article-items
+		.category-slide__link
+			font-size: 12px
+		.article-item
+			font-size: 12px
+	.section-article-head
+		max-height: 300px
+	.page-error__title
+		font-size: 200px
+
+@media only screen and (max-width : 1300px)
+	.header__logo:before
+		left: 108%
+	.header__wrapp-main-menu
+		margin-left: 42px
+	.header-search,
+	.search__wrapp
+		position: inherit
+	.search__wrapp-input
+		top: 60px
+		border-radius: 0
+		right: 0
+	.header-search.active .search__wrapp-input
+		width: 100%
+	.category-items
+		flex: 0 0 calc(25% - 15px)
+	
+	
+	
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.title-site,
+	.main-slider-title
+		font-size: 28px
+	.main-menu__list
+		font-size: 14px
+	.search-btn, .header-user__link
+		min-width: 30px
+		min-height: 30px
+		i
+			font-size: 14px
+	.header
+		height: 40px
+	.header__logo:before
+		height: 100%
+		left: 114%
+	.section-main-swiper
+		padding-top: 39px
+	.swiper-category-button
+		width: 40px
+		height: 40px
+	.swiper-category-button:after
+		font-size: 20px!important
+	.scroll-top
+		width: 40px
+		height: 40px
+		right: 20px
+		bottom: 45px
+	.logo-site
+		max-width: 150px
+		min-width: 150px
+		img
+			max-height: 21.66px
+	.search__wrapp-input
+		top: 40px
+	.main-menu__list
+		padding: 12px 8px
+	.header__logo
+		padding: 10px 0
+	.body-page
+		padding-top: 40px
+	.article-title
+		font-size: 28px
+	.page-error__title
+		font-size: 180px
+
+@media only screen and (max-width : 1024px)
+	.header__wrapp-main-menu
+		position: fixed
+		left: -100%
+		top: 0
+		background: #ffffff
+		height: 100%
+		margin-left: 0
+		max-width: 360px
+		width: 100%
+		padding-bottom: 40px
+		padding-top: 60px
+		z-index: 300
+		transition: 0.4s
+		&.open
+			left: 0
+			overflow-y: auto
+	.main-menu__list
+		color: #281f55
+	.close-menu
+		display: block
+	.main-menu
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.main-menu__item
+		padding-left: 20px
+		border-bottom: 1px solid #dccfcf
+		width: 100%
+		position: relative
+	.main-menu__list
+		font-size: 16px
+		padding: 7px 0
+	.btn-sub-menu
+		height: 35px
+		width: 55px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		position: absolute
+		right: 0
+		top: 0
+	.burger-menu
+		display: block
+		width: 25px
+		height: 14px
+		position: relative
+		margin-left: 50px
+		cursor: pointer
+		span:before,
+		&:before,
+		&:after
+			content: ''
+			position: absolute
+			width: 100%
+			height: 3px
+			background: #fff
+			left: 0
+			top: 0
+			border-radius: 5px
+		&:before
+			top: 50%
+		&:after
+			top: 100%
+	.header-main-menu-nav
+		.sub-menu-block
+			position: relative
+			opacity: 1
+			background: transparent
+			padding-bottom: 15px
+			visibility: visible
+			box-shadow: none
+			transform: translateY(0px)
+			display: none
+			&:before
+				display: none
+	.main-menu__item
+		&.open
+			.btn-sub-menu
+				i
+					transform: rotate(90deg)
+			.sub-menu-block
+				display: block
+	.swiper-items
+		max-height: 250px
+		min-height: 250px
+	.title-site, .main-slider-title
+		font-size: 22px
+	.main-slider-sub-title
+		font-size: 16px
+	.section-main-swiper .swiper-button-next, .section-main-swiper .swiper-button-prev
+		width: 50px
+		height: 50px
+		&:after
+			font-size: 35px!important
+	.header-user__hover
+		display: none!important
+	.category-items
+		flex: 0 0 calc(33.333% - 15px)
+	.section-seo
+		margin-top: 0
+	.section-article-head__cover
+		padding-top: 133px
+	.article-title
+		font-size: 22px
+	.row-articles
+		flex-direction: column
+	.row-articles__content
+		width: 100%
+	.row-articles_article
+		margin-top: 30px
+		width: 100%
+		padding-left: 0
+		padding-bottom: 0
+	.row-articles__content
+		padding-right: 0
+	.article-row-item
+		display: flex
+		flex-wrap: wrap
+		margin-right: -15px
+	.article-items
+		flex: 0 0 calc(25% - 15px) 
+		margin-right: 15px
+	.page-error__title
+		font-size: 120px
+	.page-error__subtitle
+		font-size: 36px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	a
+		cursor: none
+	.footer-about
+		margin-right: 1%
+	.dop_wrapp
+		flex-wrap: wrap
+	.footer__items-same
+		flex: 0 1 50%
+	.article-items
+		flex: 0 0 calc(33.3333% - 15px) 
+		margin-right: 15px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.footer__items-same
+		margin-bottom: 15px
+	.all-categories
+		padding-bottom: 0
+		i
+			display: none
+	.category-slider__row
+		margin-top: 20px
+	.article-item
+		font-size: 12px
+	.category-slide__link
+		line-height: 1
+	.cookie-page
+		padding: 5px
+		font-size: 12px
+	.all-categories
+		font-size: 14px
+	.header.header-fixed
+		top: -1px
+	.pagination_ul li
+		margin: 0 8px
+	.category
+		padding-bottom: 0
+	.site-text
+		font-size: 16px
+	.body-page
+		padding-top: 39px
+	.content-internal
+		margin-top: 10px
+	.page-wrapp-subscription
+		margin-top: 30px
+		padding-bottom: 30px
+	.autor__article--img
+		width: 80px
+		height: 80px
+	.article-autor
+		margin-top: 40px
+	.article__informatio
+		padding-left: 20px
+	.comment__item_img
+		min-width: 35px
+		max-width: 35px
+		min-height: 35px
+		max-height: 35px
+		width: 35px
+		height: 35px
+	.comment__item_content
+		margin-left: 10px
+	.comment__main_answer
+		margin-left: 45px
+	.comment-item
+		margin-bottom: 30px
+	.comment__item_content
+		padding-top: 10px
+	.reviews--authorization
+		font-size: 16px
+	.page-error__title
+		font-size: 90px
+	.page-error__subtitle
+		font-size: 24px
+	.page-error__info-text
+		font-size: 16px
+	.page-registration
+		padding-bottom: 30px
+		margin-top: 10px
+	.page-search__input
+		height: 30px
+	.search-select
+		height: 30px
+	.page-search__btn
+		height: 30px
+		min-width: 30px
+	.page-search__items--img
+		max-width: 150px
+		min-width: 150px
+
+@media only screen and (max-width : 640px)
+	.category-items
+		flex: 0 0 calc(50% - 15px)
+	.pagination_ul a
+		font-size: 14px
+	.section-seo_top
+		margin-bottom: 5px
+	.article-items
+		flex: 0 0 calc(50% - 15px) 
+		margin-right: 15px
+			
+
+@media only screen and (max-width : 600px)
+	.footer__row
+		flex-direction: column-reverse			
+	.footer__items-same
+		.footer__menu
+			display: none
+		.h3-site
+			position: relative
+			color: #fff!important
+			&:before
+				content: ''
+				position: absolute
+				width: 10px
+				height: 10px
+				border: 2px solid #fff
+				right: 0
+				top: 6px
+				border-left-width: 0
+				border-top-width: 0
+				transform: rotate(-45deg)
+				transition: 0.4s
+		&.active
+			.h3-site
+				&:before
+					transform: rotate(45deg)
+	.reviews--authorization
+		flex-wrap: wrap
+		a
+			margin-top: 10px
+
+	.footer-about
+		padding-top: 30px
+	.footer_bottom
+		flex-direction: column
+	.footer_bottom--right
+		padding-top: 10px
+	.main-slider-sub-title
+		display: none
+	.main-slider-title
+		padding-bottom: 30px
+	.swiper-items
+		max-height: 200px
+		min-height: 200px
+	.section-main-swiper .swiper-button-next, .section-main-swiper .swiper-button-prev
+		width: 40px
+		height: 40px
+		&:after
+			font-size: 25px!important
+	.title-site, .main-slider-title
+		font-size: 20px
+	.main-slider-title
+		max-width: 65%
+	.header__logo:before
+		display: none
+	.burger-menu
+		margin-left: 20px
+	.container
+		padding: 0 20px
+	.category-slider__row:before, .category-slider__row:after
+		width: 20px
+	.category-slider__row:before
+		left: 0
+	.category-slider__row:after
+		right: 0
+	.popup-close
+		right: 0
+	.section-article-head__cover
+		padding-top: 100px
+	.bread-crumbs__row
+		padding-top: 15px
+	.article-title
+		font-size: 20px
+	.comment__item_name
+		font-size: 12px
+	.comment__item_data
+		font-size: 12px
+	.comment__item_text
+		font-size: 13px
+	.comment__main_answer
+		margin-top: 20px
+	.comment-item
+		margin-bottom: 20px
+	.reviews
+		margin-bottom: 40px
+	.comment__item_name
+		margin-right: 10px
+	.reviews__row_comment
+		margin-top: 30px
+	.form-reviews__textarea
+		min-height: 100px
+	.btn-site
+		padding: 5px 15px
+	.page-error__title
+		font-size: 48px
+	.page-error__subtitle
+		font-size: 16px
+		padding-top: 4vw
+	.page-error__info-text
+		font-size: 14px
+		padding-top: 4vw
+	.page-error
+		padding: 8vw 0
+	.page-error__row
+		padding-top: 4vw
+	.btn-site
+		font-size: 14px
+	.search-select
+		max-width: 30px
+		min-width: 30px
+		padding: 0 15px 0 25px
+	.page-search__btn
+		min-width: 40px
+	.search__select-wrap i
+		right: 38%
+		top: 39%
+	
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.footer__items-same
+		flex: 1 1 100%
+	.logo-site
+		max-width: 130px
+		min-width: 130px
+		img
+			max-height: 18.77px
+	.all-categories
+		font-size: 12px
+	.search-btn,
+	.header-user__link
+		background: transparent
+		width: 20px
+		height: 20px
+	.header-user
+		margin-left: 5px
+	.autor__article--img
+		width: 40px
+		height: 40px
+	.rating-content
+		flex-direction: column
+	.title-rating
+		margin-right: 0
+		justify-content: center
+	.article__date
+		margin-right: auto
+	.mob_comment__item_top
+		display: flex
+		flex-direction: column
+	.page-search__items
+		flex-direction: column
+		align-items: center
+	.page-search__items--img
+		max-width: 300px
+	.page-search__items--content
+		padding-left: 0
+		margin-top: 15px
+		max-width: 300px
+	
+
+@media only screen and (max-width : 420px) 
+	.category-items
+		flex: 0 0 calc(100% - 15px)
+	.section-article-head__cover
+		padding-top: 60px
+	.info-article
+		margin-right: 10px
+	.rating-result span
+		font-size: 15px
+	.rating-result
+		margin-left: 10px
+	.page-registration__row
+		form
+			width: 100%
+	.registration__information
+		min-width: auto
+		width: 100%
+	
+
+@media only screen and (max-width : 400px) 
+	.swiper-items
+		max-height: 160px
+		min-height: 160px
+	.title-site, .main-slider-title
+		font-size: 16px
+	.main-slider-title
+		max-width: 60%
+	.article-title
+		font-size: 16px
+		
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 360px)
+	.article-items
+		flex: 0 0 100%
+		margin-right: 0
+	.article-row-item
+		margin-right: 0
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1025px)
+	.main-menu__item
+    &:hover
+        .sub-menu-block
+            visibility: visible
+            opacity: 1
+            transform: translateY(0)
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
