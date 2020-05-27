@@ -1,0 +1,2503 @@
+<head>
+    <title>Конструктор</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+
+<header class="header fixed shved__header">
+    <div class="container">
+        <div class="header__top">
+            <nav class="header__top-menu">
+                <ul>
+                    <li><a href="#" class="js-btn-anchor" data-btn-auchor="reviews">отзывы</a></li>
+                    <li><a href="#" class="js-btn-anchor" data-btn-auchor="delivery">доставка/оплата </a></li>
+                    <li><a href="#">установка</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__center">
+            <div class="header__logo">
+                <a href="#" class="header__logo_link">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__need">
+                <div class="header__need_top">Нужна шведская стенка?</div>
+                <div class="header__need_bottom">100% Вы на нужном сайте</div>
+            </div>
+            <div class="header__questions">
+                <div class="header__questions_top"><span>Есть вопросы?</span> звоните с 8:00 до 23:00 ежедневно </div>
+                <div class="header__questions_bot">
+                    <a href="tel:375293905562" class="header__questions_phone">+375 29 <span>390 55 62</span></a>
+                    <a href="popup-0" class="new-btn header__questions_btn js-btn-popup">Заказать звонок</a>
+                </div>
+            </div>
+            <div class="header__basket">
+                <a href="#" class="header__basket_link">
+                    <svg class="svg-icon">
+                        <use xlink:href="img/icons/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="header__basket_col">
+                        <span>9</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="header__bot_menu bot_menu">
+            <div class="bot_menu__item bot_menu__item_const">
+                <a href="#" class="bot_menu__link">
+                    <span class="bot_menu__icon">
+                        <img src="img/bot-menu-1.svg" alt="img">
+                    </span>
+                    <span class="bot_menu__text">онлайн конструктор</span>
+                </a>
+                <!-- чтобы показать нужно убрать класс none -->
+                <div class="menu-dop-info none">
+                    <i class="menu-dop-info_close">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/icons/sprite.svg#closes"></use>
+                        </svg>
+                    </i>
+                    <div class="menu-dop-info_title">Кликни сюда!</div>
+                    <p class="menu-dop-info_text">Чтобы подобрать индивидуальную шведскую стенку</p>
+                </div>
+            </div>
+            <div class="bot_menu__item">
+                <a href="menu-1" class="bot_menu__link js-btn-menu">
+                    <span class="bot_menu__icon">
+                        <img src="img/bot-menu-2.svg" alt="img">
+                    </span>
+                    <span class="bot_menu__text">готовые комплекты</span>
+                </a>
+            </div>
+            <div class="bot_menu__item">
+                <a href="menu-2" class="bot_menu__link js-btn-menu">
+                    <span class="bot_menu__icon">
+                        <img src="img/bot-menu-3.svg" alt="img">
+                    </span>
+                    <span class="bot_menu__text">спорттовары,
+                        аксессуары</span>
+                </a>
+            </div>
+            <div class="bot_menu__item">
+                <a href="#" class="bot_menu__link">
+                    <span class="bot_menu__icon">
+                        <img src="img/bot-menu-4.svg" alt="img">
+                    </span>
+                    <span class="bot_menu__text">рассрочка</span>
+                </a>
+            </div>
+            <div class="bot_menu__item bot_menu__item_action">
+                <a href="#" class="bot_menu__link js-btn-anchor" data-btn-auchor="action">
+                    <span class="bot_menu__icon">
+                        <img src="img/bot-menu-5.svg" alt="img">
+                    </span>
+                    <span class="bot_menu__text">акция</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header__opens-menu">
+            <div class="header-shved-submenu js-shved-submenu shved-submenu" data-id-menu="menu-1">
+                <div class="d-flex">
+                    <div class="shved-submenu__col shved-submenu__wall">
+                        <div class="shved-submenu__title">Шведские стенки</div>
+                        <div class="shved-submenu__col_scroll">
+                            <div class="shved-submenu__item">
+                                <ul class="ul-sum-memu sum-memu-1">
+                                    <li><a href="#">Стандарт</a></li>
+                                    <li><a href="#">Усиленные</a></li>
+                                    <li><a href="#">Овальные</a></li>
+                                    <li><a href="#">В распор</a></li>
+                                    <li><a href="#">Вукоход + сетка</a></li>
+                                    <li><a href="#">Детские</a></li>
+                                </ul>
+
+                                <ul class="ul-sum-memu sum-memu-2">
+                                    <li><a href="#">недорогие</a></li>
+                                    <li><a href="#">Элитные</a></li>
+                                    <li><a href="#">Профессональные</a></li>
+                                    <li><a href="#">Для спортзала</a></li>
+                                    <li><a href="#">Металические</a></li>
+                                    <li><a href="#">Деревянные</a></li>
+                                    <li><a href="#">недорогие</a></li>
+                                    <li><a href="#">Элитные</a></li>
+                                    <li><a href="#">Профессональные</a></li>
+                                    <li><a href="#">Для спортзала</a></li>
+                                    <li><a href="#">Металические</a></li>
+                                    <li><a href="#">Деревянные</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="shved-submenu__item">
+                                <ul class="ul-sum-memu sum-memu-3">
+                                    <li><a href="#">С турником</a></li>
+                                    <li><a href="#">С рухоходом</a></li>
+                                    <li><a href="#">С брусьями</a></li>
+                                    <li><a href="#">С качелями</a></li>
+                                    <li><a href="#">С сеткой</a></li>
+                                    <li><a href="#">С штангой</a></li>
+                                    <li><a href="#">Оборудование для шведских стенок</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shved-submenu__col shved-submenu__kits">
+                        <div class="shved-submenu__title">Игровые комплексы</div>
+                        <div class="shved-submenu__col_scroll">
+                            <div class="shved-submenu__item">
+                                <ul class="ul-sum-memu sum-memu-1">
+                                    <li><a href="#">Для дома</a></li>
+                                    <li><a href="#">Для улицы</a></li>
+                                    <li><a href="#">С кроватью</a></li>
+                                    <li><a href="#">Напольные</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-shved-submenu js-shved-submenu shved-submenu submenu-accessories" data-id-menu="menu-2">
+                <div class="submenu-accessories__wrapper">
+                    <div class="submenu-accessories__wrap_item-1">
+                        <div class="shved-submenu__item submenu-accessories__item">
+                            <ul class="ul-sum-memu">
+                                <li>
+                                    <a href="#" class="active js-btn-sub" data-id-block="0">Тренажёры</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="1">Шведские стенки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="2">Тяжёлая атлетика</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="3">Crossfit и fitness</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="4">Единоборства</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="5">Товары для детей</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="6">Пол</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="7">Крепления</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub" data-id-block="8">Экипировка</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="submenu-accessories__wrap_item submenu-accessories__wrap_item-2">
+                        <div class="submenu-accessories__sub-item js-it-block active" data-it-block="0">
+                            <ul class="accessories__sub-menu">
+                                <li>
+                                    <a href="#" class="js-btn-sub-item active" data-id-block="0">Маски</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="1">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="2">Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item " data-id-block="3">Крюки, зацепы,
+                                        лямки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="4">Гравитационные ботинки</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="5">Боевой молот</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="6">Покрышка</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="7">Хайлетсы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="8">Паралетсы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="9">Фитнес браслет</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="10">Степ-платформы</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="11">Ролик для пресса</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="12">Тумбы для прыжков
+                                        (плиобоксы)</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="13">Петли TRX и аналоги</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="14">тяжелители</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="submenu-accessories__sub-item js-it-block" data-it-block="1">
+                            <ul class="accessories__sub-menu">
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="0">Маски</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="1">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item active" data-id-block="2">Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="3">Крюки, зацепы,
+                                        лямки</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="submenu-accessories__sub-item js-it-block" data-it-block="2">
+                            <ul class="accessories__sub-menu">
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="0">Маски</a>
+                                </li>
+                                <li><a href="#" class="js-btn-sub-item active" data-id-block="1">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="2">Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item " data-id-block="3">Крюки, зацепы,
+                                        лямки</a></li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="4">Маски</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="5">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="6">Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="js-btn-sub-item" data-id-block="7">Крюки, зацепы, лямки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="submenu-accessories__wrap_item submenu-accessories__wrap_item-3">
+                        <div class="submenu-accessories__sub-item js-sub-block active" data-it-block="0">
+                            <ul class="accessories__sub-menu">
+                                <li>
+                                    <a href="#">Маски</a>
+                                </li>
+                                <li>
+                                    <a href="#">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#">Крюки, зацепы, лямки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Гравитационные ботинки</a>
+                                </li>
+                                <li>
+                                    <a href="#">Боевой молот</a>
+                                </li>
+                                <li>
+                                    <a href="#">Покрышка</a>
+                                </li>
+                                <li>
+                                    <a href="#">Хайлетсы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Паралетсы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фитнес браслет</a>
+                                </li>
+                                <li>
+                                    <a href="#">Степ-платформы</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ролик для пресса</a>
+                                </li>
+                                <li>
+                                    <a href="#">Тумбы для прыжков (плиобоксы)</a>
+                                </li>
+                                <li>
+                                    <a href="#">Петли TRX и аналоги</a>
+                                </li>
+                                <li>
+                                    <a href="#"">тяжелители</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class=" submenu-accessories__sub-item js-sub-block" data-it-block="1">
+                                        <ul class="accessories__sub-menu">
+                                            <li>
+                                                <a href="#">Маски</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Парашюты для бега</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Петли Береша</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Крюки, зацепы, лямки</a>
+                                            </li>
+                                        </ul>
+                        </div>
+
+                        <div class="submenu-accessories__sub-item js-sub-block" data-it-block="2">
+                            <ul class="accessories__sub-menu">
+                                <li>
+                                    <a href="#">Маски</a>
+                                </li>
+                                <li>
+                                    <a href="#">Парашюты для бега</a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>Петли Береша</a>
+                                </li>
+                                <li>
+                                    <a href="#">Крюки, зацепы, лямки</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="header-mobile">
+    <div class="container">
+        <div class="header-mobile__row">
+            <div class="header__logo">
+                <a href="#" class="header__logo_link">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="header__questions_bot">
+                <a href="tel:375293905562" class="header__questions_phone">+375 29 <span>390 55 62</span></a>
+                <a href="popup-0" class="new-btn header__questions_btn js-btn-popup">Заказать звонок</a>
+            </div>
+        </div>
+        <div class="header-mobile__row_bot">
+            <div class="header-mobile__item_link">
+                <a href="#">Онлайн конструктор</a>
+            </div>
+            <div class="header-mobile__item_rigth">
+                <div class="header__basket">
+                    <a href="#" class="header__basket_link">
+                        <svg class="svg-icon">
+                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                        </svg>
+                        <span class="header__basket_col">
+                            <span>9</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="mobile-burger js-btn-m-menu">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu js-mobile-menu">
+        <span class="close-mob-menu js-close-mob-menu">
+            <svg class="svg-icon">
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="mobile-menu__content">
+            <div class="mobile-menu__top_menu">
+                <ul class="menu-mobile">
+                    <li class="menu-mobile__item">
+                        <a href="#" class="bot_menu__link">
+                            <span class="bot_menu__icon">
+                                <img src="img/bot-menu-1.svg" alt="img">
+                            </span>
+                            <span class="bot_menu__text">онлайн конструктор</span>
+                        </a>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="bot_menu__link js-mob-menu">
+                            <i class="icon-sub-menu"></i>
+                            <span class="bot_menu__icon">
+                                <img src="img/bot-menu-2.svg" alt="img">
+                            </span>
+                            <span class="bot_menu__text">готовые комплекты</span>
+                        </a>
+                        <div class="menu-mobile__sub-menu">
+                            <div class="sub-menu-cat">
+                                <div class="menu-mobile__title">Шведские стенки</div>
+                                <ul class="menu-mobile__submenu">
+                                    <li><a href="#">Стандарт</a></li>
+                                    <li><a href="#">Усиленные</a>
+                                    </li>
+                                    <li><a href="#">Овальные</a></li>
+                                    <li><a href="#">В распор</a></li>
+                                    <li><a href="#">Рукоход + сетка</a></li>
+                                    <li><a href="#">Детские</a></li>
+                                </ul>
+                                <ul class="menu-mobile__submenu">
+                                    <li><a href="#">Недорогие</a></li>
+                                    <li><a href="#">Элитные</a></li>
+                                    <li><a href="#">Для спортзала</a></li>
+                                    <li><a href="#">Металические</a></li>
+                                    <li><a href="#">Деревянные</a></li>
+                                </ul>
+                                <ul class="menu-mobile__submenu bef-one">
+                                    <li><a href="#">Оборудование дял шведских стенок</a></li>
+                                    <li><a href="#">С турником</a></li>
+                                    <li><a href="#">С брусьями</a></li>
+                                    <li><a href="#">С камьей</a></li>
+                                </ul>
+                            </div>
+                            <div class="sub-menu-cat">
+                                <div class="menu-mobile__title">Игровые комплексы</div>
+                                <ul class="menu-mobile__submenu bef-one">
+                                    <li><a href="#">Оборудование для шведских стенок</a></li>
+                                    <li><a href="#">С турником</a>
+                                    </li>
+                                    <li><a href="#">С брусьями</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-mobile__item">
+                        <a href="#" class="bot_menu__link js-mob-menu">
+                            <i class="icon-sub-menu"></i>
+                            <span class="bot_menu__icon">
+                                <img src="img/bot-menu-3.svg" alt="img">
+                            </span>
+                            <span class="bot_menu__text">спорттовары,
+                                аксессуары</span>
+                        </a>
+                        <div class="menu-mobile__sub-menu">
+                            <div class="sub-menu-cat">
+                                <ul class="menu-mobile__submenu bef-one">
+                                    <li class="sub-accessories js-sub-accessories">
+                                        <a href="#" class="js-bnt-accessories">
+                                            <i class="icon-sub-menu"></i>
+                                            Тренажёры</a>
+
+                                        <ul class="sub-accessories_ul">
+                                            <li class="sub-accessories js-sub-accessories">
+                                                <a href="#" class="js-bnt-accessories">
+                                                    <i class="icon-sub-menu"></i>
+                                                    Маски</a>
+                                                <ul class="sub-accessories_ul js-sub-accessories">
+                                                    <li><a href="#">Тест Маски</a></li>
+                                                    <li><a href="#">Парашюты для бега</a></li>
+                                                    <li><a href="#">Петли Береша</a></li>
+                                                    <li><a href="#">Фитнес браслет</a></li>
+                                                    <li><a href="#">Тяжелители</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-accessories js-sub-accessories">
+                                                <a href="#" class="js-bnt-accessories">
+                                                    <i class="icon-sub-menu"></i>
+                                                    Маски</a>
+                                                <ul class="sub-accessories_ul js-sub-accessories">
+                                                    <li><a href="#">Тест2 Маски</a></li>
+                                                    <li><a href="#">Парашюты для бега</a></li>
+                                                    <li><a href="#">Петли Береша</a></li>
+                                                    <li><a href="#">Фитнес браслет</a></li>
+                                                    <li><a href="#">Тяжелители</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Петли Береша</a></li>
+                                            <li><a href="#">Фитнес браслет</a></li>
+                                            <li><a href="#">Тяжелители</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-accessories js-sub-accessories">
+                                        <a href="#" class="js-bnt-accessories">
+                                            <i class="icon-sub-menu"></i>
+                                            Шведские стенки</a>
+                                        <ul class="sub-accessories_ul">
+                                            <li class="sub-accessories js-sub-accessories">
+                                                <a href="#" class="js-bnt-accessories">
+                                                    <i class="icon-sub-menu"></i>
+                                                    Маски</a>
+                                                <ul class="sub-accessories_ul js-sub-accessories">
+                                                    <li><a href="#">Тест Маски</a></li>
+                                                    <li><a href="#">Парашюты для бега</a></li>
+                                                    <li><a href="#">Петли Береша</a></li>
+                                                    <li><a href="#">Фитнес браслет</a></li>
+                                                    <li><a href="#">Тяжелители</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Парашюты для бега</a></li>
+                                            <li><a href="#">Петли Береша</a></li>
+                                            <li><a href="#">Фитнес браслет</a></li>
+                                            <li><a href="#">Тяжелители</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-accessories js-sub-accessories">
+                                        <a href="#" class="js-bnt-accessories">
+                                            <i class="icon-sub-menu"></i>
+                                            Тяжёлая атлетика</a>
+                                        <ul class="sub-accessories_ul">
+                                            <li><a href="#">Маски</a></li>
+                                            <li><a href="#">Парашюты для бега</a></li>
+                                            <li><a href="#">Петли Береша</a></li>
+                                            <li><a href="#">Фитнес браслет</a></li>
+                                            <li><a href="#">Тяжелители</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Crossfit и fitness</a>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Единоборства</a>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Товары для детей</a>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Пол</a>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Крепления</a>
+                                    </li>
+                                    <li class="sub-accessories">
+                                        <a href="#">Экипировка</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__bot_menu">
+                <ul class="menu-mob-bot">
+                    <li class="menu-mob-bot__item">
+                        <a href="#" class="bot_menu__link js-btn-anchor" data-btn-auchor="action">
+                            <span class="bot_menu__icon">
+                                <img src="img/bot-menu-5.svg" alt="img">
+                            </span>
+                            <span class="bot_menu__text">акция</span>
+                        </a>
+                    </li>
+                    <li class="menu-mob-bot__item">
+                        <a href="#" class="js-btn-anchor menu-mob-bot__link" data-btn-auchor="reviews">отзывы</a>
+                    </li>
+                    <li class="menu-mob-bot__item">
+                        <a href="#" class="js-btn-anchor menu-mob-bot__link" data-btn-auchor="delivery">доставка/оплата
+                        </a>
+                    </li>
+                    <li class="menu-mob-bot__item">
+                        <a href="#" class="menu-mob-bot__link">установка</a>
+                    </li>
+                    <li class="menu-mob-bot__item">
+                        <a href="#" class="menu-mob-bot__link">контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__contact mobile-cont">
+                <div class="mobile-cont__time">C 8:00 до 23:00 ежедневно</div>
+                <a href="tel:375293905562" class="mobile-cont__phone">+375 29 <span>390 55 62</span></a>
+                <div class="mobile-cont__info">Есть вопросы? <span>ЗВОНИТЕ</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+        <div class="wrapper__content">
+
+            <section class="section__promo shved__promo-top">
+                <div class="container">
+                    <div class="crumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><span>Шведская стенка для детей от 1 года</span></li>
+                        </ul>
+                    </div>
+                    <!-- убрать класс none -->
+                    <div class="shved__zagol-type-1 none">
+                        <h1 class="title-type-1">Шведская стенка для детей от 1 года</h1>
+                        <p class="subtitle-type-3">Детские спортивные комплексы для самых маленьких с качелями,
+                            лестницами и мягким покрытием</p>
+                    </div>
+
+                    <div class="shved__zagol shved__zagol-type-2 none">
+                        <h1 class="title-type-1 text-left">Шведская стенка для детей от 1 года</h1>
+                        <p class="subtitle-type-3 text-left">Детские спортивные комплексы для самых маленьких с
+                            качелями, лестницами и мягким покрытием</p>
+
+                        <div class="shved__zagol_item">
+                            <h3 class="shved__zagol_item-title">
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#pal-top"></use>
+                                </svg>
+                                <span>Оплата при получении теперь доступна</span>
+                            </h3>
+                            <p class="shved__zagol_item-text">в 21 городе РБ</p>
+                            <a href="popup-5" class="link-info-arrow shved__zagol_item-link js-btn-popup">
+                                <span>Посмотреть адреса пунктов выдачи заказов</span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-btn"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- убрать класс none -->
+                    <div class="shved__zagol shved__zagol-type-3 ">
+                        <h1 class="title-type-1">Цена шведской стенки рассчитывается с помощью калькулятора
+                        </h1>
+                        <div class="shved__zagol_row">
+                            <div class="shved__zagol_col shved__zagol_col-1">
+                                <h3 class="shved__zagol_col-title">Собери свою шведскую за 4 шага</h3>
+                                <ul class="shved__zagol_col-text">
+                                    <li>
+                                        <b>Выбирите тип и цвет стенки</b> - классическая (до 250 кг) или, усиленная (до
+                                        300кг и возможность крепленнния в распор).
+                                    </li>
+                                    <li>
+                                        <b>Выбирите цвет ступеней.</b>
+                                    </li>
+                                    <li>
+                                        <b>Выбирите дополнительное оборудовани</b>е - турник, брусья и все прочее
+                                        представленно в 2-х цветах на выбор
+                                    </li>
+                                    <li>
+                                        <b>Проверка выбраную комплектацию и нажмите кнопку Заказать</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="shved__zagol_col shved__zagol_col-2">
+                                <h3 class="shved__zagol_col-title">Не переплачивайте за лишнее оборудование. Его всегда
+                                    можно у нас докупить!</h3>
+
+                                <div class="item-bans">
+                                    <img src="img/gift-pod1.png" alt="img">
+                                    <div class="item-bans_col">
+                                        <p>Или получите бесплатно по акции</p>
+                                        <a href="#">Подробно</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-questions shved-questions">
+                <div class="container">
+                    <h2 class="title-type-1">Остались вопросы?</h2>
+                    <p class="subtitle-type-1 weight-norm">Оставьте заявку на консультацию и мы свяжемся с вами в
+                        течение 10 минут</p>
+                    <div class="section-questions__row">
+                        <form action="">
+                            <div class="section-questions__form-row">
+                                <div class="wrapp-input">
+                                    <input type="text" name="phone" class="input-form js-phone"
+                                        placeholder="+375 (__) ___-__-__">
+                                </div>
+                                <div class="wrapp-input">
+                                    <input type="text" name="e_mail" class="input-form" placeholder="E-mail">
+                                </div>
+                                <div class="wrapp-input">
+                                    <input type="text" name="name" class="input-form"
+                                        placeholder="Как к вам обращаться?">
+                                </div>
+                                <div class="section-questions__wrapp-btn"><button type="submit" class="new-btn">Получить
+                                        консультацию</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-swedish shved-swedish">
+                <div class="container">
+                    <h2 class="site-title-3 text-span-strong text-center">Спортивные товары и аксессуары к шведской
+                        стенке <span>для детей</span></h2>
+                    <p class="section-swedish__subtitle text-center">Доказано: кольца, лестница и канат сохраняют
+                        интерес к шведской стенке у ребенка в <span>10</span> раз. </p>
+                    <div class="shved__swedish_row">
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">“Стандарт”</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-1.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Турник + Брусья +
+                                    Пресс 3в1</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"><img src="img/img-swedi-2.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Скамья для пресса
+                                    и жима</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-3.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Веревочная
+                                    лестница</a>
+                            </div>
+
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-4.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Мат 100/100/10см</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-5.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Трапеция</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-6.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Канат</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item shved__swedish_item-add">
+
+                            <a href="#" class="new-btn btn-box-shad btn-dop-arrow"><span>Посмотреть ещё</span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-btn"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-swedish shved-swedish shved-swedish-adults">
+                <div class="container">
+                    <h2 class="site-title-3 text-span-strong text-center">Спортивные товары и аксессуары к шведской
+                        <span></span>стенке для взрослых</span>
+                    </h2>
+                    <p class="section-swedish__subtitle text-center">Дополните ваш спортивный комплекс дополнительным
+                        оборудованием
+                    </p>
+                    <div class="shved__swedish_row">
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">“Стандарт”</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-1.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Турник + Брусья +
+                                    Пресс 3в1</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"><img src="img/img-swedi-2.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Скамья для пресса
+                                    и жима</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-3.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Веревочная
+                                    лестница</a>
+                            </div>
+
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-4.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Мат 100/100/10см</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-5.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Трапеция</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item">
+                            <div>
+                                <div class="shved__swedish_img">
+                                    <a href="#"> <img src="img/img-swedi-6.png" alt="img"></a>
+                                </div>
+                                <a href="#" class="shved__swedish_item-title">Канат</a>
+                            </div>
+                            <div class="shved__swedish_bottom">
+                                <a href="#" class="shved__product_link-p">Подробнее</a>
+                                <div class="flex-col-price">
+                                    <div class="shved__swedish_item-price">590<span>руб</span></div>
+                                    <a href="#" class="shved__product_bas">
+                                        <svg class="svg-icon">
+                                            <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="shved__product-item_wrap-btn">
+                                    <a href="#" class="new-btn">Заказать в 1 клик</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shved__swedish_item shved__swedish_item-add">
+
+                            <a href="#" class="new-btn btn-box-shad btn-dop-arrow"><span>Посмотреть ещё</span>
+                                <svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#arrow-btn"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section__action js-pos-anchor action shved__action" data-pos-auchor="action">
+                <div class="container">
+                    <div class="section__action_row box-shad">
+                        <div class="section__action_top">
+                            <div class="action__text"> Акция
+                                <div class="action__text_from"><span>действует</span>до 12.12.2020</div>
+                            </div>
+                            <div class="action__price">
+                                <span>к каждому заказу </span>
+                                <span class="f-w-ekbold action__price_nom">более 100р</span>
+                            </div>
+                            <div class="action-present">
+                                <img src="img/present.png" alt="img">
+                                <span>подарок</span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-container js-action-swiper action__swiper">
+                            <div class="swiper-wrapper action__swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="action__swiper_item">
+                                        <div class="action__swiper_img">
+                                            <img src="img/action-img-1.png" alt="img">
+                                            <div class="limited">
+                                                <img src="img/limited.png" alt="png">
+                                            </div>
+                                        </div>
+                                        <div class="action__swiper_content">
+                                            <div class="action__swiper_text-top">
+                                                Дарим
+                                                <span> при заказе через сайт</span>
+                                            </div>
+                                            <div class="action__swiper_text-bot">
+                                                Резиновую петлю
+                                                <span>стоимостью 45руб</span>
+                                            </div>
+                                        </div>
+                                        <!-- <a href="#"></a> -->
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="action__swiper_item">
+                                        <div class="action__swiper_img">
+                                            <img src="img/action-img-1.png" alt="img">
+                                            <div class="limited">
+                                                <img src="img/limited.png" alt="png">
+                                            </div>
+                                        </div>
+                                        <div class="action__swiper_content action__swiper_video">
+                                            <div class="content-video js-conten-video content-action__swiper_video">
+                                                <iframe class="js-start-video" data-id="video"
+                                                    src="https://www.youtube.com/embed/nDGxL28gvzQ?rel=0&showinfo=0"
+                                                    frameborder="0"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+
+                                                <div class="top-video js-top-video">
+                                                    <img src="img/video-img.png" class="video_img" alt="img">
+                                                    <div class="opas-video"></div>
+                                                    <div class="icons-play-videos icons-play-videos-text">
+                                                        <span class="icons-play-text">посмотрите
+                                                            видеоотзыв</span>
+                                                        <img src="img/play-video-text.png" alt="icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <a href="#"></a> -->
+                                    </div>
+
+                                    <div class="action__swiper_content action__swiper_content-no-video">
+                                        <div class="action__swiper_text-top">
+                                            Дарим
+                                            <span> при заказе через сайт</span>
+                                        </div>
+                                        <div class="action__swiper_text-bot">
+                                            Резиновую петлю
+                                            <span>стоимостью 45руб</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="pagination-col">
+                            <div class="swiper-pagination js-pagin-col"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-buy shved__buy">
+                <div class="container">
+                    <div class="section-buy__top">
+                        <div class="section-buy__title buy-title">
+                            <span class="buy-title__top">АКЦИЯ ПОЧТИ ЗАКОН
+                                <span>ЧИЛАСЬ!</span>
+                            </span>
+                            <div class="buy-title__title">успей купить</div>
+                            <div class="buy-title__subtitle">пока есть в наличии</div>
+                        </div>
+                        <div class="section-buy__top_rigth buy-top-rigth">
+                            <div class="buy-top-rigth__info">
+                                <div class="buy-top-rigth__title">внимание!</div>
+                                <div class="buy-top-rigth__text">На 16 января подарков осталось всего:</div>
+                            </div>
+                            <div class="buy-top-rigth__img">
+                                <img src="img/gift-pod.png" alt="img">
+                                <span>12</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="section-buy__form">
+                        <form>
+                            <div class="section-buy__form_row">
+                                <div class="wrapp-input">
+                                    <input type="text" name="phone" class="input-form js-phone" placeholder="Телефон">
+                                </div>
+                                <div class="form-wrapp-bnt">
+                                    <button class="new-btn btn-type-2 btn-box-shad">Зафиксировать подарок на 3
+                                        дня</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-picking shved__picking">
+                <div class="container">
+                    <h2 class="site-title-3 text-center">Популярные комплектации шведских стенок для дома, квартиры</h2>
+                    <p class="section-swedish__subtitle text-center">Купите шведские стенки напрямую с завода
+                        производителя! Всегда без наценок посредников!</p>
+
+                    <div class="section-picking__row js-picking-closes">
+
+                        <div class="swiper-container swiper-picking js-swiper-picking">
+                            <div class="swiper-wrapper swiper-wrapper-picking">
+
+                                <div class="swiper-slide swiper-slide-picking">
+                                    <div class="item-slide-picking">
+                                        <div class="item-slide-picking__top">
+                                            <a href="#" class="item-slide-picking__title">Комплект <span>малыш</span>
+                                                </h4>
+                                                <div class="item-slide-picking__img">
+                                                    <a href="#">
+                                                        <img src="img/167.png" alt="img">
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <div class="item-slide-picking__bot">
+                                            <p class="item-slide-picking__list"><span>1.</span>Шведская стенка</p>
+                                            <p class="item-slide-picking__list"><span>2.</span>Турник три хвата</p>
+                                            <a href="#" class="shved__product_link-p">Подробнее</a>
+                                            <div class="shved__product_bot">
+                                                <span class="shved__product_price">590<span>руб</span> </span>
+                                                <a href="#" class="shved__product_bas">
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="#" class="new-btn btn-box-shad">Заказать в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-picking">
+                                    <div class="item-slide-picking">
+                                        <div class="item-slide-picking__top">
+                                            <a href="#" class="item-slide-picking__title">Комплект <span>детский</span>
+                                                </h4>
+                                                <div class="item-slide-picking__img">
+                                                    <a href="#">
+                                                        <img src="img/167.png" alt="img">
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <div class="item-slide-picking__bot">
+                                            <p class="item-slide-picking__list"><span>1.</span>Шведская стенка</p>
+                                            <p class="item-slide-picking__list"><span>2.</span>Турник три хвата</p>
+                                            <p class="item-slide-picking__list"><span>3.</span>Брусья плюс пресс</p>
+                                            <a href="#" class="shved__product_link-p">Подробнее</a>
+                                            <div class="shved__product_bot">
+                                                <span class="shved__product_price">590<span>руб</span> </span>
+                                                <a href="#" class="shved__product_bas">
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="#" class="new-btn btn-box-shad">Заказать в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide swiper-slide-picking">
+                                    <div class="item-slide-picking">
+                                        <div class="item-slide-picking__top">
+                                            <a href="#" class="item-slide-picking__title">Комплект
+                                                <span>старшеклассник</span></h4>
+                                                <div class="item-slide-picking__img">
+                                                    <a href="#">
+                                                        <img src="img/167.png" alt="img">
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <div class="item-slide-picking__bot">
+                                            <p class="item-slide-picking__list"><span>1.</span>Шведская стенка</p>
+                                            <p class="item-slide-picking__list"><span>2.</span>Турник три хвата</p>
+                                            <p class="item-slide-picking__list"><span>3.</span>Брусья плюс пресс</p>
+                                            <p class="item-slide-picking__list"><span>4.</span>Скамья с валиками</p>
+                                            <p class="item-slide-picking__list"><span>5.</span>Бесплатная доставка</p>
+                                            <a href="#" class="shved__product_link-p">Подробнее</a>
+                                            <div class="shved__product_bot">
+                                                <span class="shved__product_price">590<span>руб</span> </span>
+                                                <a href="#" class="shved__product_bas">
+                                                    <svg class="svg-icon">
+                                                        <use xlink:href="img/icons/sprite.svg#basket"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <a href="#" class="new-btn btn-box-shad">Заказать в 1 клик</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-nex button-picking button-picking-next"></div>
+                        <div class="swiper-button-prev button-picking button-picking-prev"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-questions shved-questions">
+                <div class="container">
+                    <h2 class="title-type-1">Остались вопросы?</h2>
+                    <p class="subtitle-type-1 weight-norm">Оставьте заявку на консультацию и мы свяжемся с вами в
+                        течение 10 минут</p>
+                    <div class="section-questions__row">
+                        <form action="">
+                            <div class="section-questions__form-row">
+                                <div class="wrapp-input">
+                                    <input type="text" name="phone" class="input-form js-phone"
+                                        placeholder="+375 (__) ___-__-__">
+                                </div>
+                                <div class="wrapp-input">
+                                    <input type="text" name="e_mail" class="input-form" placeholder="E-mail">
+                                </div>
+                                <div class="wrapp-input">
+                                    <input type="text" name="name" class="input-form"
+                                        placeholder="Как к вам обращаться?">
+                                </div>
+                                <div class="section-questions__wrapp-btn"><button type="submit" class="new-btn">Получить
+                                        консультацию</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-new-complexes shved-complexes line-top">
+                <div class="container">
+                    <h2 class="site-title-3">Вас интересуют напольные игровые комплексы?</h2>
+                </div>
+            </section>
+
+        </div>
+
+<footer class="new-footer footer shved__footer">
+    <div class="container">
+        <div class="footer__menu_top footer-menu none">
+            <div class="footer-menu__item">
+                <a href="#" class="footer-menu__link">
+                    <span class="footer-menu__icon">
+                        <img src="img/bot-menu-1.svg" alt="img">
+                    </span>
+                    <span class="footer-menu__text">онлайн конструктор</span>
+                </a>
+            </div>
+            <div class="footer-menu__item">
+                <a href="#" class="footer-menu__link">
+                    <span class="footer-menu__icon">
+                        <img src="img/bot-menu-2.svg" alt="img">
+                    </span>
+                    <span class="footer-menu__text">готовые
+                        комплекты
+                    </span>
+                </a>
+            </div>
+            <div class="footer-menu__item">
+                <a href="#" class="footer-menu__link">
+                    <span class="footer-menu__icon">
+                        <img src="img/bot-menu-3.svg" alt="img">
+                    </span>
+                    <span class="footer-menu__text">спорттовары,
+                        аксессуары
+                    </span>
+                </a>
+            </div>
+            <div class="footer-menu__item">
+                <a href="#" class="footer-menu__link">
+                    <span class="footer-menu__icon">
+                        <img src="img/bot-menu-4.svg" alt="img">
+                    </span>
+                    <span class="footer-menu__text">рассрочка
+                    </span>
+                </a>
+            </div>
+            <div class="footer-menu__item">
+                <a href="#" class="footer-menu__link">
+                    <span class="footer-menu__icon">
+                        <img src="img/bot-menu-5.svg" alt="img">
+                    </span>
+                    <span class="footer-menu__text">акция</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer__logo-mob">
+            <div class="foter__logo">
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="foter__contact">
+                <div class="foter__contact_info">Ежедневно с 8:00 до 23:00 </div>
+                <a href="tel:375293905562" class="footer__phone">+375 29 <span>390 55 62</span></a>
+            </div>
+        </div>
+        <div class="footer__menu-form">
+            <div class="footer__left-menu">
+                <ul>
+                    <li><a href="#">отзывы</a></li>
+                    <li><a href="#">доставка/оплата</a></li>
+                    <li><a href="#">установка</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <form class="form-footer">
+                    <div class="wrapp-input">
+                        <input type="text" name="phone" class="input-form js-phone" placeholder="Ваш номер телефона">
+                    </div>
+
+                    <div class="footer-btn">
+                        <button type="submit" class="new-btn btn-box-shad js-btn-popup">Заказать звонок</button>
+                    </div>
+                </form>
+                <div class="footet__text-arrow">Мы перезвоним Вам через 5 минут</div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom_payment bottom-payment">
+                <div class="bottom-payment__item">
+                    <img src="img/payment-1.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-2.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-3.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-5.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-6.png" alt="">
+                </div>
+                <div class="bottom-payment__item">
+                    <img src="img/payment-7.png" alt="">
+                </div>
+            </div>
+            <div class="footer__bot-text">
+                <p>ИП Шакун Алексей Михайлович. 220037, г. Минск, ул. Бумажкова, д. 37а, кв. 68
+                    УНП 191652405, р/с BY67 MTBK 3013 0001 0933 0003 0037 (BYN), ЗАО “МТББанк”, MTBKBY22, код 117 РКЦ№3
+                    ул.
+                    Короля, 51
+                    Свидетельство от 27 июня 2012 года выдано Минским горисполкомом</p>
+            </div>
+            <div class="footer__text-info">© 2017 Шведская стенка.бел</div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <!-- /ОБОЛОЧКА -->
+
+<!-- попап -->
+<div class="new-popup js-popup" data-id-popup="popup-0">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title text-center">Заказать обратный звонок</h3>
+                <div class="popup__wrapp-form">
+                    <form>
+                        <div class="wrapp-input popup__wrapp-input">
+                            <input type="text" name="name" class="input-form" placeholder="Ваше имя">
+                        </div>
+                        <div class="wrapp-input popup__wrapp-input">
+                            <input type="text" name="phone" class="input-form js-phone"
+                                placeholder="+375 (__) ___-__-__">
+                        </div>
+                        <div class="btn-wrapp">
+                            <button type="submit" class="new-btn btn-box-shad btn-box-shad-2 popup__btn">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- попап заказ -->
+<div class="new-popup js-popup" data-id-popup="popup-1">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title">Заказать</h3>
+                <p class="popup__subtitle">Шведскую стенку №1 для детей с<br> кольцами и лестницей</p>
+                <div class="popup__wrapp-form">
+                    <form>
+                        <div class="wrapp-input popup__wrapp-input">
+                            <input type="text" name="name" class="input-form" placeholder="Ваше имя">
+                        </div>
+                        <div class="wrapp-input popup__wrapp-input">
+                            <input type="text" name="phone" class="input-form js-phone"
+                                placeholder="+375 (__) ___-__-__">
+                        </div>
+                        <div class="wrapp-input popup__wrapp-input">
+                            <input type="text" name="email" class="input-form" placeholder="E-mail">
+                        </div>
+                        <div class="btn-wrapp">
+                            <button type="submit" class="new-btn btn-box-shad btn-box-shad-2 popup__btn">Заказать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- попап ок вызов по хештегу #assest -->
+<div class="new-popup js-popup js-popup-ok" data-id-popup="#assest">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-ok js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title popup__title-ok text-center">Заказ принят</h3>
+                <p class="popup-ok__subtitle text-center">В течение 5 минут с Вами свяжется наш менеджер для обсуждения
+                    заказа </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- попап ок вызов по хештегу #popup-ok-2 -->
+<div class="new-popup js-popup js-popup-ok" data-id-popup="#popup-ok-2">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-ok js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title-2 popup__title-ok text-center">На вашу сумму покупки вы можете выбрать 2 подарка</h3>
+                <p class="popup-ok__subtitle-2 text-center">Увеличьте сумму покупки или удалите из корзины подарок, чтобы выбрать дополнительный.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Попап доставка на терминал -->
+<div class="new-popup js-popup" data-id-popup="popup-2">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-new js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title">Доставка на терминал (пункт выдачи)</h3>
+                <p class="popup__new-subtitle">с помощью транспортной компании в вашем городе</p>
+                <p class="popup__info-text">Вы сможете приехать в пункт самовывоза в Вашем городе и получить заказ</p>
+                <div class="hr-block"></div>
+                <div class="popup__text-city">г. Минск</div>
+                <p class="popup__city_item">Доставка бесплатно</p>
+                <div class="hr-block"></div>
+                <div class="items__city">Барановичи, Бобруйск, Брест, Витебск, Гомель, Гродно, Лида, Могилев, Мозырь,
+                    Молодечно, Новополоцк, Орша, Пинск, Солигорск
+                    <!-- Береза, Вилейка, Волковыск, Глубокое, Горки, Дзержинск, Добруш, Жлобин, Ивацевичи, Калинковичи, Кобрин, Лепель, Логойск, Лунинец, Марьина Горка 2, Новогрудок, Осиповичи, Поставы, Пружаны, Речица, Рогачев, Светлогорск, Скидель, Слоним, Слуцк, Сморгонь, Столбцы, Фаниполь, Червень, Щучин-->
+                </div>
+                <div class="content-table">
+                    <table class="table-pop">
+                        <tr>
+                            <td colspan="2" class="td-type-1"><span>Вес, кг</span></td>
+                            <td rowspan="2" class="td-type-2">Цена, руб</td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-1">от</td>
+                            <td class="td-type-1">до</td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>0,00</span></td>
+                            <td class="td-type-3"><span>1,00</span></td>
+                            <td class="td-type-4"><span>3,30</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>1,01</span></td>
+                            <td class="td-type-3"><span>3,00</span></td>
+                            <td class="td-type-4"><span>3,80</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>3,01</span></td>
+                            <td class="td-type-3"><span>5,00</span></td>
+                            <td class="td-type-4"><span>5,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>5,01</span></td>
+                            <td class="td-type-3"><span>10,00</span></td>
+                            <td class="td-type-4"><span>6,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>10,01</span></td>
+                            <td class="td-type-3"><span>15,00</span></td>
+                            <td class="td-type-4"><span>7,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>15,01</span></td>
+                            <td class="td-type-3"><span>20,00</span></td>
+                            <td class="td-type-4"><span>8,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>20,01</span></td>
+                            <td class="td-type-3"><span>25,00</span></td>
+                            <td class="td-type-4"><span>8,50</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>25,01</span></td>
+                            <td class="td-type-3"><span>30,00</span></td>
+                            <td class="td-type-4"><span>9,00</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content-table content-table_ma-top">
+                    <table class="table-pop">
+                        <tr>
+                            <td colspan="2" class="td-type-1"><span>Вес, кг</span></td>
+                            <td rowspan="2" class="td-type-2">Цена, руб</td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-1">от</td>
+                            <td class="td-type-1">до</td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>0,00</span></td>
+                            <td class="td-type-3"><span>1,00</span></td>
+                            <td class="td-type-4"><span>3,30</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>1,01</span></td>
+                            <td class="td-type-3"><span>3,00</span></td>
+                            <td class="td-type-4"><span>3,80</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>3,01</span></td>
+                            <td class="td-type-3"><span>5,00</span></td>
+                            <td class="td-type-4"><span>5,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>5,01</span></td>
+                            <td class="td-type-3"><span>10,00</span></td>
+                            <td class="td-type-4"><span>6,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>10,01</span></td>
+                            <td class="td-type-3"><span>15,00</span></td>
+                            <td class="td-type-4"><span>7,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>15,01</span></td>
+                            <td class="td-type-3"><span>20,00</span></td>
+                            <td class="td-type-4"><span>8,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>20,01</span></td>
+                            <td class="td-type-3"><span>25,00</span></td>
+                            <td class="td-type-4"><span>8,50</span></td>
+                        </tr>
+                        <tr>
+                            <td class="td-type-3"><span>25,01</span></td>
+                            <td class="td-type-3"><span>30,00</span></td>
+                            <td class="td-type-4"><span>9,00</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="hr-block"></div>
+                <div class="items__city">Другие населенные пункты</div>
+                <p class="item__cit">Доставка рассчитывается индивидуально</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- попап курьером до двери  -->
+<div class="new-popup js-popup" data-id-popup="popup-3">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-new js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title">Курьером до двери </h3>
+                <p class="popup__new-subtitle">с помощью транспортной компании</p>
+                <div class="hr-block"></div>
+                <div class="popup__row">
+                    <div class="popup__row_col popup__row_col-1">
+                        <div class="items__city">Минск</div>
+                        <div class="content-table">
+                            <table class="table-pop">
+                                <tr>
+                                    <td colspan="2" class="td-type-1"><span>Вес, кг</span></td>
+                                    <td rowspan="2" class="td-type-2">Цена, руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-1">от</td>
+                                    <td class="td-type-1">до</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>0,00</span></td>
+                                    <td class="td-type-3"><span>1,00</span></td>
+                                    <td class="td-type-4"><span>3,30</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>1,01</span></td>
+                                    <td class="td-type-3"><span>3,00</span></td>
+                                    <td class="td-type-4"><span>3,80</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>3,01</span></td>
+                                    <td class="td-type-3"><span>5,00</span></td>
+                                    <td class="td-type-4"><span>5,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>5,01</span></td>
+                                    <td class="td-type-3"><span>10,00</span></td>
+                                    <td class="td-type-4"><span>6,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>10,01</span></td>
+                                    <td class="td-type-3"><span>15,00</span></td>
+                                    <td class="td-type-4"><span>7,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>15,01</span></td>
+                                    <td class="td-type-3"><span>20,00</span></td>
+                                    <td class="td-type-4"><span>8,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>20,01</span></td>
+                                    <td class="td-type-3"><span>25,00</span></td>
+                                    <td class="td-type-4"><span>8,50</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>25,01</span></td>
+                                    <td class="td-type-3"><span>30,00</span></td>
+                                    <td class="td-type-4"><span>9,00</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="popup__row_col">
+                        <div class="items__city">Барановичи, Бобруйск, Брест, Витебск, Гомель, Гродно, Лида, Могилев,
+                            Мозырь,
+                            Молодечно, Новополоцк, Орша, Пинск, Солигорск
+                        </div>
+                        <div class="content-table">
+                            <table class="table-pop">
+                                <tr>
+                                    <td colspan="2" class="td-type-1"><span>Вес, кг</span></td>
+                                    <td rowspan="2" class="td-type-2">Цена, руб</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-1">от</td>
+                                    <td class="td-type-1">до</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>0,00</span></td>
+                                    <td class="td-type-3"><span>1,00</span></td>
+                                    <td class="td-type-4"><span>3,30</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>1,01</span></td>
+                                    <td class="td-type-3"><span>3,00</span></td>
+                                    <td class="td-type-4"><span>3,80</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>3,01</span></td>
+                                    <td class="td-type-3"><span>5,00</span></td>
+                                    <td class="td-type-4"><span>5,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>5,01</span></td>
+                                    <td class="td-type-3"><span>10,00</span></td>
+                                    <td class="td-type-4"><span>6,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>10,01</span></td>
+                                    <td class="td-type-3"><span>15,00</span></td>
+                                    <td class="td-type-4"><span>7,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>15,01</span></td>
+                                    <td class="td-type-3"><span>20,00</span></td>
+                                    <td class="td-type-4"><span>8,00</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>20,01</span></td>
+                                    <td class="td-type-3"><span>25,00</span></td>
+                                    <td class="td-type-4"><span>8,50</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-type-3"><span>25,01</span></td>
+                                    <td class="td-type-3"><span>30,00</span></td>
+                                    <td class="td-type-4"><span>9,00</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-block"></div>
+                <div class="popup__rows">
+                    <div class="items__city">Населенные пункты Минского района</div>
+                    <p class="item__cit">Береза, Вилейка, Волковыск, Глубокое, Горки, Дзержинск, Добруш, Жлобин,
+                        Ивацевичи, Калинковичи, Кобрин, Лепель, Логойск, Лунинец, Марьина Горка 2, Новогрудок,
+                        Осиповичи, Поставы, Пружаны, Речица, Рогачев, Светлогорск, Скидель, Слоним, Слуцк, Сморгонь,
+                        Столбцы, Фаниполь, Червень, Щучин</p>
+
+                    <div class="content-table">
+                        <table class="table-pop">
+                            <tr>
+                                <td colspan="2" class="td-type-1"><span>Вес, кг</span></td>
+                                <td rowspan="2" class="td-type-2">Цена, руб</td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-1">от</td>
+                                <td class="td-type-1">до</td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>0,00</span></td>
+                                <td class="td-type-3"><span>1,00</span></td>
+                                <td class="td-type-4"><span>3,30</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>1,01</span></td>
+                                <td class="td-type-3"><span>3,00</span></td>
+                                <td class="td-type-4"><span>3,80</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>3,01</span></td>
+                                <td class="td-type-3"><span>5,00</span></td>
+                                <td class="td-type-4"><span>5,00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>5,01</span></td>
+                                <td class="td-type-3"><span>10,00</span></td>
+                                <td class="td-type-4"><span>6,00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>10,01</span></td>
+                                <td class="td-type-3"><span>15,00</span></td>
+                                <td class="td-type-4"><span>7,00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>15,01</span></td>
+                                <td class="td-type-3"><span>20,00</span></td>
+                                <td class="td-type-4"><span>8,00</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>20,01</span></td>
+                                <td class="td-type-3"><span>25,00</span></td>
+                                <td class="td-type-4"><span>8,50</span></td>
+                            </tr>
+                            <tr>
+                                <td class="td-type-3"><span>25,01</span></td>
+                                <td class="td-type-3"><span>30,00</span></td>
+                                <td class="td-type-4"><span>9,00</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="hr-block"></div>
+                <div class="items__city">Другие населенные пункты</div>
+                <p class="item__cit">Доставка рассчитывается индивидуально</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- попап Дни доставки товара по районам-->
+<div class="new-popup js-popup" data-id-popup="popup-4">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-new js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title">Дни доставки товара по районам</h3>
+                <div class="items__city items__city_mt">Минская, Витебская, Гродненская, Могилевская области</div>
+                <div class="row__table-days">
+                    <table class="table-days">
+                        <tr>
+                            <td class="days-td-1"><span>Районы РБ</span></td>
+                            <td><span>пн</span></td>
+                            <td><span>вт</span></td>
+                            <td><span>ср</span></td>
+                            <td><span>чт</span></td>
+                            <td><span>пт</span></td>
+                            <td class="color-red"><span>сб</span></td>
+                        </tr>
+                        <tr>
+                            <td><span>Барановичский</span></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Белыничский</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Березинский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Берестовицкий</span></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Бешенковичский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Бобруйский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Борисовский</span></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Брагинский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Брагинский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Брестский</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Буда-Кошелевский</span></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Быховский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Ветковский</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Вилейский</span></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Витебский</span></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Волковысский</span></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Воложинский</span></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Вороновский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Ганцевичский</span></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><span>Глубокский</span></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="bg-days"></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- попап 20 пунктов выдачи товара -->
+<div class="new-popup js-popup" data-id-popup="popup-5">
+    <div class="popup__opas"></div>
+    <div class="popup__wrapp popup__wrapp-new js-popup__wrapp">
+        <span class="popup__close js-popup__close">
+            <svg>
+                <use xlink:href="img/icons/sprite.svg#closes"></use>
+            </svg>
+        </span>
+        <div class="popup__scroll">
+            <div class="popup_container">
+                <h3 class="popup__title">20 пунктов выдачи товара</h3>
+                <div class="paragraph-content">
+                    <div class="items__paragraph">Барановичи, Бобруйск, Борисов, Брест, Витебск, Гомель, Гродно, Лида,
+                        Минск, Могилев, Мозырь, Молодечно, Новополоцк, Орша, Пинск, Солигорск</div>
+                </div>
+
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск (центральный офис)</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24 (склад)</a>
+                            <a href="tel:375296502424">+375 29 650-24-24</a>
+                            <a href="tel:375336502424">+375 33 650-24-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Липковский, 12, оф. 424-425 (офис)
+                                пер. Липковский, 9/1 (склад)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                            <a href="tel:375296502424">+375 29 650-24-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragraph__items">
+                    <div class="paragraph__items_col paragraph__items_col-1">
+                        <div class="paragraph__items_title">Минск</div>
+                        <div class="paragraph__items_phone">
+                            <a href="tel:375296168024" class="item-icon-phone"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#phone-icon"></use>
+                                </svg> +375 29 616-80-24</a>
+                        </div>
+                        <div class="paragraph__items_schedule">
+                            <div class="icon-schedule"><svg class="svg-icon">
+                                    <use xlink:href="img/icons/sprite.svg#icon-timer"></use>
+                                </svg> ПН-ПТ</div>
+                            <div>СБ</div>
+                            <div>ВС</div>
+                        </div>
+                    </div>
+                    <div class="paragraph__items_col paragraph__items_col-2">
+                        <div class="paragraph__items_time">
+                            <div>09:00 — 20:00</div>
+                            <div>09:00 — 18:00</div>
+                            <div>ВЫХОДНОЙ</div>
+                        </div>
+                        <div class="paragraph__items_adress">
+                            <svg class="svg-icon">
+                                <use xlink:href="img/icons/sprite.svg#icon-adress"></use>
+                            </svg>
+                            <p>пер. Дзержинского, 69/2, ком. 130 (ст.м. Петровщина, ТЦ “Шик”)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /попап -->
+
+<!-- кнопка прокрутки вверх -->
+<div class="srolles-top js-up">
+    <button class="srolles-top__btn js-srolles-top"></button>
+</div>
+<!-- /кнопка прокрутки вверх -->
+    <!-- Подключеине скриптов -->
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/mascet/jquery.maskedinput.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="libs/swiper-slick/js/swiper.min.js"></script>
+<script src="libs/fansubox/jquery.fancybox.min.js"></script>
+<script src="libs/wow/wow.min.js"></script>
+<script src="js/main.js"></script></body>
