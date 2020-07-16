@@ -1,0 +1,510 @@
+// <ПОДКЛЮЧЕНИЕ MIXIN>------------------------------------------------------
+@import "mixin.scss";
+// <ПОДКЛЮЧЕНИЕ MIXIN>------------------------------------------------------
+// <ШРИФТЫ>-----------------------------------------------------------------
+// <подключаем шрифты>------------------------------------------------------
+@import "fonts.scss";
+// </подключаем шрифты>-----------------------------------------------------
+// <шрифт по умолчанию>-----------------------------------------------------
+$font-family: "gilroy",
+sans-serif;
+// </шрифт по умолчанию>----------------------------------------------------
+// </ШРИФТЫ>----------------------------------------------------------------
+// <ПЕРЕМЕННЫЕ>-------------------------------------------------------------
+$max-width: 1210;
+$min-width: 360;
+$body-font-size: 14;
+$padd-container: 20;
+// </ПЕРЕМЕННЫЕ>------------------------------------------------------------
+// <ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>---------------------------------------------
+@import "resize-style.scss";
+// </ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>---------------------------------------------
+// <ОБОЛОЧКА>----------------------------------------------------------------
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+// </ОБОЛОЧКА>---------------------------------------------------------------
+// <КОНТЕЙНЕР>---------------------------------------------------------------
+.container {
+    max-width: $max-width+px;
+    margin: 0 auto;
+    padding: 0 $padd-container+px;
+}
+
+// </КОНТЕЙНЕР>--------------------------------------------------------------
+// <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>---------------------------
+@import "class.scss";
+// </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>--------------------------
+// <ШАПКА>-------------------------------------------------------------------
+@import 'header.scss';
+// </ШАПКА>------------------------------------------------------------------
+// <ОСНОВНОЙ БЛОК>-----------------------------------------------------------
+.main-screen {
+    position: relative;
+    &__box-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(../img/box-bg-main.png) center/ cover no-repeat;
+        z-index: -3;
+        background-position-x: -30%;
+    }
+}
+
+.main-wrapp {
+    position: relative;
+    z-index: 3;
+    .container {
+        position: relative;
+        padding-top: 96px;
+    }
+    &__header {
+        .site-sub-title {
+            margin-top: 27px;
+        }
+    }
+    &__row-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &__bg-img {
+        position: absolute;
+        background: url(../img/bg-main-img.png) center/ contain no-repeat;
+        background-position-y: 34%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        @include anim(0.2s, 0s);
+    }
+    .plane-img {
+        position: absolute;
+        background: url(../img/plane-img.png) center /contain no-repeat;
+        width: 105px;
+        height: 72px;
+        top: 29%;
+        left: 15%;
+        @include anim(0.2s, 0s);
+    }
+}
+
+.main-title-h1 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 1.33px;
+    font-weight: 700;
+}
+
+.site-sub-title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.91px;
+    font-size: 21px;
+    line-height: 33px;
+}
+
+.site-btn {
+    display: inline-block;
+    color: #ecf4fe;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.36px;
+    padding: 37px 39px;
+    background-image: linear-gradient(-30deg, #f06500 0%, #ffa05c 100%);
+    border-radius: 15px;
+    position: relative;
+    @include anim(0.4s, 0s);
+    span {
+        text-shadow: -1px -1px 6px rgba(255, 167, 103, 0.91), 1px 1px 6px rgba(73, 46, 20, 0.31);
+        position: relative;
+        z-index: 4;
+        padding-top: 2px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        bottom: -4px;
+        left: -4px;
+        z-index: -1;
+        border-radius: 17px;
+        background-image: linear-gradient(-30deg, #d75a00 0%, #ffffff 100%);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 15px;
+        z-index: 2;
+        background-image: linear-gradient(-30deg, #cc5703 0%, #ffa05c 100%);
+        transition: inherit;
+        opacity: 0;
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.site-btn_finger {
+    padding-left: 115px;
+    i {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        background: url(../img/fingerprint.png) center/ contain no-repeat;
+        left: 33px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+}
+
+.main-wrapp__block-chain {
+    margin-top: 315px;
+    box-shadow: 50px 50px 208px #3e3434;
+    border-radius: 10px;
+    border: 4px solid #3a4562;
+    background-image: linear-gradient(-30deg, #252d44 0%, #2b2f48 100%);
+}
+
+.title-sites {
+    color: #d6e1ef;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.06px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main-wrapp__block-chain {
+    padding: 0 23px 52px 23px;
+    .title-sites {
+        margin-top: 50px;
+    }
+}
+
+.block-chain {
+    &__row {
+        display: flex;
+        margin-top: 42px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    &__item {
+        margin: 0 8px;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.wr-pages {
+    margin-top: -180px;
+    padding-top: 305px;
+}
+
+.section-head {
+    .site-sub-title {
+        margin-top: 45px;
+    }
+}
+
+.section-cornel {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+    }
+    &__item {
+        padding-left: 100px;
+        position: relative;
+        &--content {
+            max-width: 423px;
+        }
+        &--img {
+            width: 59px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            img {
+                width: 100%;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &--title {
+            font-size: 24px;
+            letter-spacing: 2.18px;
+            font-weight: 700;
+        }
+        p {
+            color: #8799b1;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 33.97px;
+            letter-spacing: 1.91px;
+            margin-top: 25px;
+        }
+    }
+}
+
+.js-item-shadow i {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-study {
+    margin-top: 135px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        &--img {
+            img {
+                width: 100%;
+            }
+        }
+        &--content {
+            padding-top: 35px;
+        }
+    }
+    &__list li {
+        list-style-image: url(../img/check.png);
+        color: #d6e1ef;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 33.97px;
+        letter-spacing: 1.91px;
+        max-width: 285px;
+        margin-top: 40px;
+    }
+}
+
+.wr-btn-two {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    a {
+        margin: 0 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.btn-upercase {
+    text-transform: uppercase;
+}
+
+.btn-corect {
+    padding: 31px 46px;
+    letter-spacing: 1.94px;
+}
+
+.site-btn_arrow {
+    padding: 31px 100px 31px 44px;
+    i {
+        width: 30px;
+        height: 15px;
+        background: url(../img/arrow-btn.png) center/ contain no-repeat;
+        position: absolute;
+        right: 35px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+}
+
+.section-analytical {
+    margin-top: 120px;
+    &__row-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.section-top {
+    margin-top: 110px;
+    &__row {
+        margin-top: 75px;
+        position: relative;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.section-top__row--content {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(32, 39, 59, 0.8);
+    text-align: center;
+    padding-bottom: 50px;
+    backdrop-filter: blur(2px);
+    border-radius: 0 0 9px 9px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .site-sub-title {
+        margin-top: 25px;
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 1.91px;
+    }
+}
+
+.section-top__row-title {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    padding-top: 48px;
+}
+
+.section-top__row--btn {
+    margin-top: 50px;
+}
+
+.section-contact {
+    margin-top: 100px;
+    position: relative;
+    &__row {
+        margin-top: 50px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 50px 50px 208px #1b2e55;
+        background-image: linear-gradient(-30deg, #252d44 0%, #2b2f48 100%);
+        border: 4px solid #3c4964;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 990px;
+    }
+}
+
+.section-contact__item {
+    padding: 35px 60px 44px 60px;
+    text-align: center;
+    position: relative;
+    border-right: 4px solid #3c4964;
+    &:last-child {
+        border: none;
+    }
+    i {
+        z-index: 2;
+    }
+    .js-item-shadow {
+        position: relative;
+    }
+}
+
+.section-contact__item--title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2.18px;
+    color: #d6e1ef;
+    margin-top: 27px;
+}
+
+.section-contact__item--link {
+    display: block;
+    color: #8799b1;
+    font-weight: 500;
+    font-size: 21px;
+    margin-top: 18px;
+    @include anim(0.4s, 0s);
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+// </ОСНОВНОЙ БЛОК>----------------------------------------------------------
+// <404>---------------------------------------------------------------------
+//===========================================================================
+// </404>--------------------------------------------------------------------
+// <ПОДВАЛ>------------------------------------------------------------------
+@import "footer.scss";
+// </ПОДВАЛ>-----------------------------------------------------------------
+// <ПОПАП>-------------------------------------------------------------------
+@import "popup.scss";
+// </ПОПАП>------------------------------------------------------------------
+// <ПРОКРУТКА ВВЕРХ>---------------------------------------------------------
+.scroll-up {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 100;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    // box-shadow: inset 0 0 0 3px #dcdcdc;
+    @include anim(0.4s, 0s);
+    transform: translateY(25px);
+    opacity: 0;
+    visibility: hidden;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        border: 3px solid #ffa05c;
+        width: 10px;
+        height: 10px;
+        border-right-width: 0;
+        border-bottom-width: 0;
+        transition: inherit;
+        opacity: 1;
+    }
+    &__path {
+        box-sizing: border-box;
+        fill: none;
+        stroke: #ffa05c;
+        stroke-width: 3px;
+        @include anim(0.4s, 0s);
+    }
+    &.scroll-up_active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    &:hover {
+        &:before {
+            border-color: #cc5703;
+            opacity: 1;
+        }
+    }
+}
+
+// </ПРОКРУТКА ВВЕРХ>--------------------------------------------------------
+// <ПОДКЛЮЧЕНИЕ МЕДИАЗАПРОСОВ>-----------------------------------------------
+@import "media.scss";
+// </ПОДКЛЮЧЕНИЕ МЕДИАЗАПРОСОВ>----------------------------------------------
