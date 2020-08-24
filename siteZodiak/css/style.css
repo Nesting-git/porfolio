@@ -2684,7 +2684,7 @@ div.pad_bo {
 }
 
 .top-main__wrapp_bg {
-  background-color: #1f1111;
+  background-color: #1f1111 !important;
 }
 
 .loading {
